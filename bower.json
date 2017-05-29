@@ -1,0 +1,20 @@
+{
+  "name": "final-project",
+  "description": "JAUME REGAS FINAL PROJECT SKYLAB CODERS BOOTCAMP",
+  "main": "index.js",
+  "authors": [
+    "Jaume Regas <jaumeregas1@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jaumereg/final-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

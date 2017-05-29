@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="main">
+                <h3>Please Log In, or <a href="#">Sign Up</a></h3>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="inputUsernameEmail">Username or email</label>
+                        <input type="text" class="form-control" id="inputUsernameEmail">
+                    </div>
+                    <div class="form-group">
+                        <a class="pull-right" href="#">Forgot password?</a>
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                    <div class="checkbox pull-right">
+                        <label>
+                            <input type="checkbox"> Remember me </label>
+                    </div>
+                    <button type="submit" class="btn btn btn-primary">
+                        Log In
+                    </button>
+                </form>
+                <div class="login-or">
+                    <hr class="hr-or-left">
+                    <span class="span-or">or</span>
+                    <hr class="hr-or-right">
+                </div>
+                <button class="btn btn btn-primary guest-button">Continue as Guest</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

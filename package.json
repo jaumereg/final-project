@@ -1,0 +1,29 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "JAUME REGAS FINAL PROJECT SKYLAB CODERS BOOTCAMP",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "postinstall": "bower install",
+    "start": "node app",
+    "dev": "supervisor app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaumereg/final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaumereg/final-project/issues"
+  },
+  "homepage": "https://github.com/jaumereg/final-project#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  }
+}

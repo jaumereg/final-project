@@ -1,19 +1,22 @@
-* {
-	border: 1px solid red;
-}
-
+// * {
+// 	border: 1px solid red;
+// }
 body {
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     padding-top: 15px;
     font-size: 12px;
     background-image: url("../../img/main-background.jpg");
-  }
-  .main {
-    max-width: 320px;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 360px;
     margin: 0 auto;
-  }
-  .login-or {
-  	display: flex;
+    padding: 20px;
+}
+
+.login-or {
+    display: flex;
     position: relative;
     font-size: 18px;
     color: #aaa;
@@ -21,37 +24,64 @@ body {
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-  .span-or {
+}
+
+.span-or {
     display: inline-block;
     margin: 0 auto;
     position: relative;
     top: -14px;
-    background-color: #fff;
     width: 30px;
     text-align: center;
-  }
-  .hr-or-left {
-	background-color: #cdcdcd;
+    color: white;
+}
+
+.hr-or-left {
+    background-color: #cdcdcd;
     height: 1px;
     width: 127px;
-    margin: 0;
-    // float: left;
-  }
+    margin: 0 5px 0 0;
+}
 
-  .hr-or-right {
-  	background-color: #cdcdcd;
+.hr-or-right {
+    background-color: #cdcdcd;
     height: 1px;
-  	width: 127px;
-  	margin: 0;
-  	// float: right;
-  }
+    width: 127px;
+    margin: 0 0 0 5px;
+}
 
-  h3 {
+h3 {
     text-align: center;
     line-height: 300%;
     font-weight: bold;
-  }
-  .guest-button {
-  	width: 100%;
-  }
+    margin: 10px;
+}
+
+.guest-button {
+    width: 100%;
+}
+
+.form-control {
+    border: 0;
+    border-radius: 27px;
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+.submit-button {
+    font-weight: bold;
+    height: 19px;
+    color: gray;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 227px;
+    left: 807px;
+    width: 20px;
+    text-align: center;
+    border-radius: 0;
+    padding: 0 21px 0 1px;
+}
+.submit-button:hover {
+	border-bottom: 2px solid gray;
+	color: gray;
+}

@@ -12,7 +12,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     max-width: 360px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 55px 20px;
 }
 
 .login-or {
@@ -21,7 +21,6 @@ body {
     font-size: 18px;
     color: #aaa;
     margin-top: 10px;
-    margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -81,7 +80,93 @@ h3 {
     border-radius: 0;
     padding: 0 21px 0 1px;
 }
+
 .submit-button:hover {
-	border-bottom: 2px solid gray;
-	color: gray;
+    border-bottom: 2px solid gray;
+    color: gray;
+}
+
+.log-in-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-log {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 27px;
+    transition: 0.25s;
+}
+
+.btn-log:hover,
+.guest-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: white;
+    color: white;
+}
+
+p {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+p a {
+    color: #005DC7;
+}
+
+label,
+p {
+    padding-left: 14px;
+}
+
+
+/* enable absolute positioning */
+
+.inner-addon {
+    position: relative;
+}
+
+
+/* style icon */
+
+.inner-addon .fa {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+
+/* align icon */
+
+.left-addon .fa {
+    left: 0px;
+    padding-top: 31px;
+    padding-left: 12px;
+    color: #A9A9A9;
+    font-size: 15px;
+}
+.left-addon .glyphicon {
+    left: 0px;
+    padding-top: 31px;
+    padding-left: 12px;
+    color: #A9A9A9;
+}
+/* add padding  */
+
+.left-addon input {
+    padding-left: 32px;
+}
+
+.guest-button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 0px;
+    transition: 0.25s;
 }

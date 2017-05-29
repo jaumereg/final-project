@@ -6,6 +6,7 @@
     <title>Main Page</title>
     <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles/css/styles.css">
+    <link rel="stylesheet" href="bower_components/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
@@ -16,17 +17,24 @@
                 <!-- <h3>Please Log In, or <a href="#">Sign Up</a></h3> -->
                 <h3>PADEL<span style="color: white">FRIENDS</span></h3>
                 <form role="form">
-                    <div class="form-group">
-                        <label for="inputUsernameEmail">USERNAME OR EMAIL</label>
-                        <input type="text" class="form-control" id="inputUsernameEmail" autofocus>
+                    <div class="form-group inner-addon left-addon">
+                        <label for="inputUsernameEmail">USERNAME</label>
+                        <i class="glyphicon glyphicon-user"></i>
+                        <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                        <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Enter your Username or Email" autofocus>                        
                     </div>
-                    <div class="form-group">
+                    <div class="form-group inner-addon left-addon">
                         <!-- <a class="pull-right" href="#">Forgot password?</a> -->
                         <label for="inputPassword">PASSWORD</label>
-                        <input type="password" class="form-control" id="inputPassword">
-                        <button type="submit" class="btn submit-button">GO</button>
+                        <!-- <i class="glyphicon glyphicon-lock"></i> -->
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter the password">
+                        <!-- <button type="submit" class="btn submit-button">GO</button> -->
                     </div>
-                    
+                    <div class="log-in-up">
+                        <p>Don't have an account? <a href="#">Sign Up!</a></p>
+                        <button type="submit" class="btn btn-log">Log In</button>
+                    </div>
                 </form>
                 <div class="login-or">
                     <hr class="hr-or-left">

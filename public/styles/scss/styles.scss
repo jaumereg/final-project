@@ -1,172 +1,196 @@
-// * {
-// 	border: 1px solid red;
-// }
-body {
+$white-translucid-20: rgba(255, 255, 255, 0.2);
+$white-translucid-90: rgba(255, 255, 255, 0.9);
+$block-color: rgba(255, 255, 255, 0.7);
+$border-green: #286F3D;
+// ------------ LOGIN PAGE ------------ //
+.log-in {
     font-family: 'Raleway', sans-serif;
     padding-top: 15px;
     font-size: 12px;
     background-image: url("../../img/main-background.jpg");
+    .main {
+        background-color: $white-translucid-20;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 20px 20px 55px 20px;
+    }
+    .login-or {
+        display: flex;
+        position: relative;
+        font-size: 18px;
+        color: #aaa;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .span-or {
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        top: -14px;
+        width: 30px;
+        text-align: center;
+        color: white;
+    }
+    .hr-or-left {
+        background-color: #cdcdcd;
+        height: 1px;
+        width: 127px;
+        margin: 0 5px 0 0;
+    }
+    .hr-or-right {
+        background-color: #cdcdcd;
+        height: 1px;
+        width: 127px;
+        margin: 0 0 0 5px;
+    }
+    h3 {
+        text-align: center;
+        line-height: 300%;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .guest-button {
+        width: 100%;
+    }
+    .form-control {
+        border: 0;
+        border-radius: 27px;
+        background-color: $white-translucid-90;
+    }
+    .submit-button {
+        font-weight: bold;
+        height: 19px;
+        color: gray;
+        background: none;
+        border: none;
+        position: absolute;
+        top: 227px;
+        left: 807px;
+        width: 20px;
+        text-align: center;
+        border-radius: 0;
+        padding: 0 21px 0 1px;
+    }
+    .submit-button:hover {
+        border-bottom: 2px solid gray;
+        color: gray;
+    }
+    .log-in-up {
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-log {
+        background: none;
+        border: 1px solid white;
+        color: white;
+        border-radius: 27px;
+        transition: 0.25s;
+    }
+    .btn-log:hover,
+    .guest-button:hover {
+        background-color: $white-translucid-20;
+        border-color: white;
+        color: white;
+    }
+    p {
+        font-weight: bold;
+        padding-top: 10px;
+    }
+    p a {
+        color: midnightblue;
+    }
+    label,
+    p {
+        padding-left: 14px;
+    }
+    /* enable absolute positioning */
+    .inner-addon {
+        position: relative;
+    }
+    /* style icon */
+    .inner-addon .fa {
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+    }
+    .inner-addon .glyphicon {
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+    }
+    /* align icon */
+    .left-addon .fa {
+        left: 0px;
+        padding-top: 31px;
+        padding-left: 12px;
+        color: #A9A9A9;
+        font-size: 15px;
+    }
+    .left-addon .glyphicon {
+        left: 0px;
+        padding-top: 31px;
+        padding-left: 12px;
+        color: #A9A9A9;
+    }
+    /* add padding  */
+    .left-addon input {
+        padding-left: 32px;
+    }
+    .guest-button {
+        background: none;
+        border: 1px solid white;
+        border-radius: 0px;
+        transition: 0.25s;
+    }
 }
 
-.main {
-    background-color: rgba(255, 255, 255, 0.2);
-    max-width: 360px;
-    margin: 0 auto;
-    padding: 20px 20px 55px 20px;
-}
-
-.login-or {
-    display: flex;
-    position: relative;
-    font-size: 18px;
-    color: #aaa;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.span-or {
-    display: inline-block;
-    margin: 0 auto;
-    position: relative;
-    top: -14px;
-    width: 30px;
-    text-align: center;
-    color: white;
-}
-
-.hr-or-left {
-    background-color: #cdcdcd;
-    height: 1px;
-    width: 127px;
-    margin: 0 5px 0 0;
-}
-
-.hr-or-right {
-    background-color: #cdcdcd;
-    height: 1px;
-    width: 127px;
-    margin: 0 0 0 5px;
-}
-
-h3 {
-    text-align: center;
-    line-height: 300%;
-    font-weight: bold;
-    margin: 10px;
-}
-
-.guest-button {
-    width: 100%;
-}
-
-.form-control {
-    border: 0;
-    border-radius: 27px;
-    background-color: rgba(255, 255, 255, 0.9)
-}
-
-.submit-button {
-    font-weight: bold;
-    height: 19px;
-    color: gray;
-    background: none;
-    border: none;
-    position: absolute;
-    top: 227px;
-    left: 807px;
-    width: 20px;
-    text-align: center;
-    border-radius: 0;
-    padding: 0 21px 0 1px;
-}
-
-.submit-button:hover {
-    border-bottom: 2px solid gray;
-    color: gray;
-}
-
-.log-in-up {
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn-log {
-    background: none;
-    border: 1px solid white;
-    color: white;
-    border-radius: 27px;
-    transition: 0.25s;
-}
-
-.btn-log:hover,
-.guest-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: white;
-    color: white;
-}
-
-p {
-    font-weight: bold;
-    padding-top: 10px;
-}
-
-p a {
-    color: #005DC7;
-}
-
-label,
-p {
-    padding-left: 14px;
-}
-
-
-/* enable absolute positioning */
-
-.inner-addon {
-    position: relative;
-}
-
-
-/* style icon */
-
-.inner-addon .fa {
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
-}
-
-.inner-addon .glyphicon {
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
-}
-
-
-/* align icon */
-
-.left-addon .fa {
-    left: 0px;
-    padding-top: 31px;
-    padding-left: 12px;
-    color: #A9A9A9;
-    font-size: 15px;
-}
-.left-addon .glyphicon {
-    left: 0px;
-    padding-top: 31px;
-    padding-left: 12px;
-    color: #A9A9A9;
-}
-/* add padding  */
-
-.left-addon input {
-    padding-left: 32px;
-}
-
-.guest-button {
-    background: none;
-    border: 1px solid white;
-    border-radius: 0px;
-    transition: 0.25s;
+// ------------ USER PROFILE ------------ //
+.user-profile {
+    background-image: url("../../img/main-background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 1200px) {
+        .container {
+            width: 1000px;
+        }
+        .left-block-container {
+            width: 27%;
+        }
+        .right-block-container {
+            width: 73%;
+        }
+    }
+    .brand_network {
+        color: #9D9D9D;
+        float: left;
+        position: absolute;
+        left: 70px;
+        top: 30px;
+        font-size: smaller;
+    }
+    .post-content {
+        margin-left: 58px;
+    }
+    .badge-important {
+        margin-top: 3px;
+        margin-left: 25px;
+        position: absolute;
+    }
+    .left-block-container,
+    .right-block-container {
+        padding: 5px;
+    }
+    .bottom-user-block {
+        margin-bottom: 10px;
+    }
+    .panel-default {
+        background-color: $block-color;
+        border: none;
+    }
+    .user-image {
+        background-color: $border-green;
+        border-color: $border-green;
+    }
 }

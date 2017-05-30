@@ -1,10 +1,10 @@
 $white-translucid-20: rgba(255, 255, 255, 0.2);
 $white-translucid-90: rgba(255, 255, 255, 0.9);
 $block-color: rgba(255, 255, 255, 0.7);
-$border-green: #286F3D;
+$border-green: #043B05;
 // ------------ LOGIN PAGE ------------ //
 .log-in {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', 'Raleway', sans-serif;
     padding-top: 15px;
     font-size: 12px;
     background-image: url("../../img/main-background.jpg");
@@ -147,6 +147,7 @@ $border-green: #286F3D;
 
 // ------------ USER PROFILE ------------ //
 .user-profile {
+    font-family: 'Raleway', sans-serif;
     background-image: url("../../img/main-background.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -161,6 +162,10 @@ $border-green: #286F3D;
         .right-block-container {
             width: 73%;
         }
+    }
+    .panel-title {
+        font-weight: bold;
+        font-size: 30px;
     }
     .brand_network {
         color: #9D9D9D;
@@ -194,3 +199,44 @@ $border-green: #286F3D;
         border-color: $border-green;
     }
 }
+
+// ------------ HEADER - NAVBAR ------------ //
+.navbar-container {
+    background-color: $border-green;
+    border: none;
+    padding-top: 4px;
+    h3 {
+        margin: 0px;
+        display: inline-block;
+    }
+    .inner-addon {
+        position: relative;
+    }
+    .glyphicon-search {
+        position: absolute;
+        color: #A9A9A9;
+    }
+    .glyphicon-search:hover {
+        color: black;
+        text-decoration: none;
+    }
+    input {
+        width: 300px;
+        border-radius: 27px;
+        display: inline-block;
+        height: 30px;
+        border: none;
+        margin-top: 6px;
+    }
+    .search-button {
+        border: none;
+        border-radius: 0 27px 27px 0;
+        top: 6px;
+        bottom: 0px;
+    }
+    .navbar-left {
+        margin-top: 4px;
+    }
+}
+
+// ------------ FOOTER ------------ //

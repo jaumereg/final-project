@@ -1,5 +1,5 @@
 .log-in {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Ubuntu', 'Raleway', sans-serif;
   padding-top: 15px;
   font-size: 12px;
   background-image: url("../../img/main-background.jpg");
@@ -117,6 +117,7 @@
     transition: 0.25s; }
 
 .user-profile {
+  font-family: 'Raleway', sans-serif;
   background-image: url("../../img/main-background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -128,6 +129,9 @@
       width: 27%; }
     .user-profile .right-block-container {
       width: 73%; } }
+  .user-profile .panel-title {
+    font-weight: bold;
+    font-size: 30px; }
   .user-profile .brand_network {
     color: #9D9D9D;
     float: left;
@@ -150,7 +154,37 @@
     background-color: rgba(255, 255, 255, 0.7);
     border: none; }
   .user-profile .user-image {
-    background-color: #286F3D;
-    border-color: #286F3D; }
+    background-color: #043B05;
+    border-color: #043B05; }
+
+.navbar-container {
+  background-color: #043B05;
+  border: none;
+  padding-top: 4px; }
+  .navbar-container h3 {
+    margin: 0px;
+    display: inline-block; }
+  .navbar-container .inner-addon {
+    position: relative; }
+  .navbar-container .glyphicon-search {
+    position: absolute;
+    color: #A9A9A9; }
+  .navbar-container .glyphicon-search:hover {
+    color: black;
+    text-decoration: none; }
+  .navbar-container input {
+    width: 300px;
+    border-radius: 27px;
+    display: inline-block;
+    height: 30px;
+    border: none;
+    margin-top: 6px; }
+  .navbar-container .search-button {
+    border: none;
+    border-radius: 0 27px 27px 0;
+    top: 6px;
+    bottom: 0px; }
+  .navbar-container .navbar-left {
+    margin-top: 4px; }
 
 /*# sourceMappingURL=styles.css.map */

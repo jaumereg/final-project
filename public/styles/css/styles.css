@@ -129,9 +129,16 @@
       width: 27%; }
     .user-profile .right-block-container {
       width: 73%; } }
+  .user-profile .dropdown-toggle {
+    margin-right: 15px;
+    font-size: 16px; }
+  .user-profile .user-name-post {
+    display: inline-block; }
   .user-profile .panel-title {
     font-weight: bold;
-    font-size: 30px; }
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px; }
   .user-profile .brand_network {
     color: #9D9D9D;
     float: left;
@@ -140,27 +147,31 @@
     top: 30px;
     font-size: smaller; }
   .user-profile .post-content {
-    margin-left: 58px; }
+    margin-top: 27px;
+    margin-left: 10px; }
   .user-profile .badge-important {
     margin-top: 3px;
     margin-left: 25px;
     position: absolute; }
   .user-profile .left-block-container,
   .user-profile .right-block-container {
-    padding: 5px; }
+    padding: 0px; }
   .user-profile .bottom-user-block {
     margin-bottom: 10px; }
   .user-profile .panel-default {
     background-color: rgba(255, 255, 255, 0.7);
-    border: none; }
+    border: none;
+    margin: 10px 0 10px 10px; }
   .user-profile .user-image {
-    background-color: #043B05;
-    border-color: #043B05; }
+    background-color: #032403;
+    border-color: #032403; }
+  .user-profile .panel-post {
+    padding-top: 22px;
+    padding-left: 22px; }
 
 .navbar-container {
-  background-color: #043B05;
-  border: none;
-  padding-top: 4px; }
+  background-color: #032403;
+  border: none; }
   .navbar-container h3 {
     margin: 0px;
     display: inline-block; }

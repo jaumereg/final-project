@@ -1,7 +1,7 @@
 $white-translucid-20: rgba(255, 255, 255, 0.2);
 $white-translucid-90: rgba(255, 255, 255, 0.9);
 $block-color: rgba(255, 255, 255, 0.7);
-$border-green: #043B05;
+$border-green: #032403;
 // ------------ LOGIN PAGE ------------ //
 .log-in {
     font-family: 'Ubuntu', 'Raleway', sans-serif;
@@ -163,9 +163,18 @@ $border-green: #043B05;
             width: 73%;
         }
     }
+    .dropdown-toggle {
+    	    margin-right: 15px;
+    font-size: 16px;
+    }
+    .user-name-post {
+    	display: inline-block;
+    }
     .panel-title {
         font-weight: bold;
         font-size: 30px;
+        display: inline-block;
+        margin-bottom: 10px;
     }
     .brand_network {
         color: #9D9D9D;
@@ -176,7 +185,8 @@ $border-green: #043B05;
         font-size: smaller;
     }
     .post-content {
-        margin-left: 58px;
+        margin-top: 27px;
+    margin-left: 10px;
     }
     .badge-important {
         margin-top: 3px;
@@ -185,7 +195,7 @@ $border-green: #043B05;
     }
     .left-block-container,
     .right-block-container {
-        padding: 5px;
+        padding: 0px;
     }
     .bottom-user-block {
         margin-bottom: 10px;
@@ -193,10 +203,15 @@ $border-green: #043B05;
     .panel-default {
         background-color: $block-color;
         border: none;
+        margin: 10px 0 10px 10px;
     }
     .user-image {
         background-color: $border-green;
         border-color: $border-green;
+    }
+    .panel-post {
+    	padding-top: 22px;
+    padding-left: 22px;
     }
 }
 
@@ -204,7 +219,6 @@ $border-green: #043B05;
 .navbar-container {
     background-color: $border-green;
     border: none;
-    padding-top: 4px;
     h3 {
         margin: 0px;
         display: inline-block;

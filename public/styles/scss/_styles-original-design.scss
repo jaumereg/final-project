@@ -12,7 +12,6 @@ $border-green: #032403;
     background-size: cover;
     height: 100vh;
     background-position: center;
-
     .main {
         background-color: $white-translucid-20;
         max-width: 360px;
@@ -153,7 +152,8 @@ $border-green: #032403;
 // ------------ USER PROFILE ------------ //
 .user-profile {
     font-family: 'Raleway', sans-serif;
-    background-image: url("../../img/main-background.jpg");
+    // background-image: url("../../img/wallpaper-user.png");
+    background: darkslategrey;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,6 +167,10 @@ $border-green: #032403;
         .right-block-container {
             width: 73%;
         }
+    }
+    .mainbody {
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 150px 0 #000;
     }
     .dropdown-toggle {
         margin-right: 15px;
@@ -228,6 +232,7 @@ $border-green: #032403;
     background-color: black;
     border: none;
     border-radius: 0;
+    margin-bottom: 0;
     h3 {
         margin: 0px;
         display: inline-block;
@@ -328,7 +333,6 @@ $border-green: #032403;
         }
     }
     h1 {
-    	text-align: center;
+        text-align: center;
     }
 }
-

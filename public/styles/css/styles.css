@@ -122,7 +122,7 @@
 
 .user-profile {
   font-family: 'Raleway', sans-serif;
-  background-image: url("../../img/main-background.jpg");
+  background: darkslategrey;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -133,6 +133,9 @@
       width: 27%; }
     .user-profile .right-block-container {
       width: 73%; } }
+  .user-profile .mainbody {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 150px 0 #000; }
   .user-profile .dropdown-toggle {
     margin-right: 15px;
     font-size: 16px; }
@@ -178,7 +181,8 @@
 .navbar-container {
   background-color: black;
   border: none;
-  border-radius: 0; }
+  border-radius: 0;
+  margin-bottom: 0; }
   .navbar-container h3 {
     margin: 0px;
     display: inline-block; }
@@ -264,7 +268,7 @@
   .container {
     width: 100%; } }
 
-.container {
+.log-in-container {
   margin: 0;
   padding: 0; }
 

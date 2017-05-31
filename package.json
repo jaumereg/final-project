@@ -4,6 +4,8 @@
   "description": "JAUME REGAS FINAL PROJECT SKYLAB CODERS BOOTCAMP",
   "main": "index.js",
   "scripts": {
+  	"build:sass": "node-sass public/styles/scss/styles.scss public/styles/css/styles.css",
+  	"build:sass:watch": "node-sass public/styles/scss/styles.scss public/styles/css/styles.css --watch",
     "prestart": "npm install",
     "postinstall": "bower install",
     "start": "node app",
@@ -24,6 +26,7 @@
     "express": "^4.15.3"
   },
   "devDependencies": {
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "node-sass": "^4.5.3"
   }
 }

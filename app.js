@@ -1,14 +1,12 @@
-// const express = require('express')
+const express = require('express')
 
-// const app = express()
+require('dotenv').load()
 
-// if (process.env.NODE_ENV !== 'production') {
-//   require('dotenv').config()
-// }
+const app = express()
 
-// const PORT = process.env.PORT
+const PORT = process.env.PORT
 
-// app.use(express.static('public'))
+app.use(express.static('public'))
 
-// app.listen(PORT)
-// console.log(`Listening on PORT ${PORT}`)
+app.listen(PORT)
+console.log(`Listening on PORT ${PORT}`)

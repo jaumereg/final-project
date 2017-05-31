@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/styles.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+
+<body class="log-in">
+    <div class="container">
+        <div class="row">
+            <div class="main">
+                <!-- <h3>Please Log In, or <a href="#">Sign Up</a></h3> -->
+                <h3>PADEL<span style="color: white">GO</span></h3>
+                <form role="form">
+                    <div class="form-group inner-addon left-addon">
+                        <label for="inputUsernameEmail">USERNAME</label>
+                        <i class="glyphicon glyphicon-user"></i>
+                        <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                        <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Enter your Username or Email" autofocus>
+                    </div>
+                    <div class="form-group inner-addon left-addon left-addon">
+                        <!-- <a class="pull-right" href="#">Forgot password?</a> -->
+                        <label for="inputPassword">PASSWORD</label>
+                        <!-- <i class="glyphicon glyphicon-lock"></i> -->
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter the password">
+                        <!-- <button type="submit" class="btn submit-button">GO</button> -->
+                    </div>
+                    <div class="log-in-up">
+                        <p>New user? <a href="#">Sign Up</a></p>
+                        <a href="user-profile.html" type="submit" class="btn btn-log">Log In</a>
+                    </div>
+                </form>
+                <div class="login-or">
+                    <hr class="hr-or-left">
+                    <span class="span-or">or</span>
+                    <hr class="hr-or-right">
+                </div>
+                <button class="btn btn btn-primary guest-button">Continue as Guest</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -2,7 +2,11 @@
   font-family: 'Ubuntu', 'Raleway', sans-serif;
   padding-top: 15px;
   font-size: 12px;
-  background-image: url("../../img/main-background.jpg");
+  background-image: url(../../img/main-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
   /* enable absolute positioning */
   /* style icon */
   /* align icon */
@@ -252,5 +256,8 @@
       width: 1000px; } }
   .user-level h1 {
     text-align: center; }
+
+.gtco-cover a {
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */

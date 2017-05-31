@@ -4,8 +4,8 @@
   "description": "JAUME REGAS FINAL PROJECT SKYLAB CODERS BOOTCAMP",
   "main": "index.js",
   "scripts": {
-  	"build:sass": "node-sass public/styles/scss/styles.scss public/styles/css/styles.css",
-  	"build:sass:watch": "node-sass public/styles/scss/styles.scss public/styles/css/styles.css --watch",
+    "build:sass": "node-sass public/styles/scss/styles.scss public/styles/css/styles.css",
+    "build:sass:watch": "node-sass public/styles/scss/styles.scss public/styles/css/styles.css --watch",
     "prestart": "npm install",
     "postinstall": "bower install",
     "start": "node app",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jaumereg/final-project#readme",
   "dependencies": {
+    "bower": "^1.8.0",
     "express": "^4.15.3"
   },
   "devDependencies": {

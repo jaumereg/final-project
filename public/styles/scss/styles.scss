@@ -254,6 +254,10 @@ $border-green: #032403;
     .navbar-left {
         margin-top: 4px;
     }
+    .dropdown-toggle {
+    	margin: 0;
+    	padding-right: 0;
+    }
 }
 
 // ------------ FOOTER ------------ //
@@ -267,6 +271,7 @@ $border-green: #032403;
     	display: flex;
     	flex-wrap: wrap;
     	justify-content: center;
+    	padding: 0;
     }
     .user-container {
         display: inline-block;

@@ -199,6 +199,9 @@
     bottom: 0px; }
   .navbar-container .navbar-left {
     margin-top: 4px; }
+  .navbar-container .dropdown-toggle {
+    margin: 0;
+    padding-right: 0; }
 
 .user-search h1 {
   margin: 5px 0 20px 0;
@@ -206,7 +209,8 @@
 .user-search ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0; }
 .user-search .user-container {
   display: inline-block;
   max-width: 250px;

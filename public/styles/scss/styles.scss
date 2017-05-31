@@ -220,8 +220,9 @@ $border-green: #032403;
 
 // ------------ HEADER - NAVBAR ------------ //
 .navbar-container {
-    background-color: $border-green;
+    background-color: black;
     border: none;
+    border-radius: 0;
     h3 {
         margin: 0px;
         display: inline-block;
@@ -255,23 +256,37 @@ $border-green: #032403;
         margin-top: 4px;
     }
     .dropdown-toggle {
-    	margin: 0;
-    	padding-right: 0;
+        margin: 0;
+        padding-right: 0;
     }
 }
 
 // ------------ FOOTER ------------ //
 // ------------ USER SEARCH ------------ //
 .user-search {
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../../img/main-background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .user-image {
+        background-color: $border-green;
+        border-color: $border-green;
+    }
+    @media (min-width: 1200px) {
+        .container {
+            width: 1000px;
+        }
+    }
     h1 {
         margin: 5px 0 20px 0;
         text-align: center;
     }
-    ul {
-    	display: flex;
-    	flex-wrap: wrap;
-    	justify-content: center;
-    	padding: 0;
+    .user-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
     }
     .user-container {
         display: inline-block;
@@ -293,5 +308,21 @@ $border-green: #032403;
         .user-image {
             border: none;
         }
+    }
+}
+
+.user-level {
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../../img/main-background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 1200px) {
+        .container {
+            width: 1000px;
+        }
+    }
+    h1 {
+    	text-align: center;
     }
 }

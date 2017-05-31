@@ -172,8 +172,9 @@
     padding-left: 22px; }
 
 .navbar-container {
-  background-color: #032403;
-  border: none; }
+  background-color: black;
+  border: none;
+  border-radius: 0; }
   .navbar-container h3 {
     margin: 0px;
     display: inline-block; }
@@ -203,29 +204,53 @@
     margin: 0;
     padding-right: 0; }
 
-.user-search h1 {
-  margin: 5px 0 20px 0;
-  text-align: center; }
-.user-search ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0; }
-.user-search .user-container {
-  display: inline-block;
-  max-width: 250px;
-  padding: 15px;
-  margin: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
-  transition: 0.1s; }
-  .user-search .user-container:hover {
-    transform: scale(1.02);
-    background-color: rgba(255, 255, 255, 0.8); }
-  .user-search .user-container h4 {
-    font-weight: bold; }
-  .user-search .user-container .side-position {
-    margin: 5px 0; }
-  .user-search .user-container .user-image {
-    border: none; }
+.user-search {
+  font-family: 'Raleway', sans-serif;
+  background-image: url("../../img/main-background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .user-search .user-image {
+    background-color: #032403;
+    border-color: #032403; }
+  @media (min-width: 1200px) {
+    .user-search .container {
+      width: 1000px; } }
+  .user-search h1 {
+    margin: 5px 0 20px 0;
+    text-align: center; }
+  .user-search .user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0; }
+  .user-search .user-container {
+    display: inline-block;
+    max-width: 250px;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.1s; }
+    .user-search .user-container:hover {
+      transform: scale(1.02);
+      background-color: rgba(255, 255, 255, 0.8); }
+    .user-search .user-container h4 {
+      font-weight: bold; }
+    .user-search .user-container .side-position {
+      margin: 5px 0; }
+    .user-search .user-container .user-image {
+      border: none; }
+
+.user-level {
+  font-family: 'Raleway', sans-serif;
+  background-image: url("../../img/main-background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (min-width: 1200px) {
+    .user-level .container {
+      width: 1000px; } }
+  .user-level h1 {
+    text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

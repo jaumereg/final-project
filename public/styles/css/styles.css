@@ -155,7 +155,9 @@
     position: absolute; }
   .user-profile .left-block-container,
   .user-profile .right-block-container {
-    padding: 0px; }
+    padding: 0; }
+  .user-profile .right-block-container {
+    padding-right: 10px; }
   .user-profile .bottom-user-block {
     margin-bottom: 10px; }
   .user-profile .panel-default {
@@ -197,5 +199,29 @@
     bottom: 0px; }
   .navbar-container .navbar-left {
     margin-top: 4px; }
+
+.user-search h1 {
+  margin: 5px 0 20px 0;
+  text-align: center; }
+.user-search ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+.user-search .user-container {
+  display: inline-block;
+  max-width: 250px;
+  padding: 15px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 0.1s; }
+  .user-search .user-container:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.8); }
+  .user-search .user-container h4 {
+    font-weight: bold; }
+  .user-search .user-container .side-position {
+    margin: 5px 0; }
+  .user-search .user-container .user-image {
+    border: none; }
 
 /*# sourceMappingURL=styles.css.map */

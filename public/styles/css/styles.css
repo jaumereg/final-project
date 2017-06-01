@@ -214,27 +214,38 @@
 
 .user-search {
   font-family: 'Raleway', sans-serif;
-  background-image: url("../../img/main-background.jpg");
+  background-color: darkslategray;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
-  .user-search .user-image {
-    background-color: #032403;
-    border-color: #032403; }
+  .user-search .container-search {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 150px 0 #000; }
   @media (min-width: 1200px) {
     .user-search .container {
       width: 1000px; } }
+  @media (max-width: 991px) and (min-width: 743px) {
+    .user-search .user-list::after {
+      max-width: 463px !important; } }
+  @media (max-width: 510px) {
+    .user-search .user-list::after {
+      max-width: 0px !important; } }
   .user-search h1 {
-    margin: 5px 0 20px 0;
+    margin: 20px 0 20px 0;
     text-align: center; }
   .user-search .user-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0; }
+    .user-search .user-list:after {
+      max-width: 232px;
+      content: "";
+      flex: auto; }
   .user-search .user-container {
     display: inline-block;
-    max-width: 250px;
+    max-width: 212px;
+    border-radius: 5px;
     padding: 15px;
     margin: 10px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -243,11 +254,19 @@
       transform: scale(1.02);
       background-color: rgba(255, 255, 255, 0.8); }
     .user-search .user-container h4 {
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 17px; }
+    .user-search .user-container .user-image {
+      background-color: #032403;
+      border-color: #032403;
+      border-radius: 270px; }
     .user-search .user-container .side-position {
-      margin: 5px 0; }
+      margin: 5px 0;
+      font-size: 13px; }
     .user-search .user-container .user-image {
       border: none; }
+    .user-search .user-container .location {
+      font-size: 12px; }
 
 .user-level {
   font-family: 'Raleway', sans-serif;
@@ -260,6 +279,28 @@
       width: 1000px; } }
   .user-level h1 {
     text-align: center; }
+
+.main-page {
+  font-family: 'Raleway', sans-serif;
+  background: darkslategray;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (min-width: 1200px) {
+    .main-page .container {
+      width: 1000px; } }
+  .main-page .main-page-container {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 150px 0 #000; }
+  .main-page h1 {
+    text-align: center;
+    margin-top: 27px; }
+  .main-page .subtitle {
+    text-align: center;
+    padding: 0 50px; }
+  .main-page .divider {
+    margin: 20px 70px;
+    border-color: grey; }
 
 .gtco-cover a {
   color: white; }

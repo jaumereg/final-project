@@ -275,21 +275,33 @@ $border-green: #032403;
 // ------------ USER SEARCH ------------ //
 .user-search {
     font-family: 'Raleway', sans-serif;
-    background-image: url("../../img/main-background.jpg");
+    background-color: darkslategray;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    .user-image {
-        background-color: $border-green;
-        border-color: $border-green;
+    .container-search {
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 150px 0 #000;
     }
     @media (min-width: 1200px) {
         .container {
             width: 1000px;
         }
     }
+    @media (max-width: 991px) and (min-width: 743px) {
+        .user-list::after {
+            max-width: 463px !important;
+        }
+        
+    }
+    @media (max-width: 510px) {
+        .user-list::after {
+            max-width: 0px !important;
+        }
+        
+    }
     h1 {
-        margin: 5px 0 20px 0;
+        margin: 20px 0 20px 0;
         text-align: center;
     }
     .user-list {
@@ -297,10 +309,16 @@ $border-green: #032403;
         flex-wrap: wrap;
         justify-content: center;
         padding: 0;
+        &:after {
+            max-width: 232px;
+            content: "";
+            flex: auto;
+        }
     }
     .user-container {
         display: inline-block;
-        max-width: 250px;
+        max-width: 212px;
+        border-radius: 5px;
         padding: 15px;
         margin: 10px;
         background-color: $block-color;
@@ -311,12 +329,22 @@ $border-green: #032403;
         }
         h4 {
             font-weight: bold;
+            font-size: 17px;
+        }
+        .user-image {
+            background-color: $border-green;
+            border-color: $border-green;
+            border-radius: 270px;
         }
         .side-position {
             margin: 5px 0;
+            font-size: 13px;
         }
         .user-image {
             border: none;
+        }
+        .location {
+            font-size: 12px;
         }
     }
 }
@@ -334,5 +362,34 @@ $border-green: #032403;
     }
     h1 {
         text-align: center;
+    }
+}
+
+.main-page {
+    font-family: 'Raleway', sans-serif;
+    background: darkslategray;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 1200px) {
+        .container {
+            width: 1000px;
+        }
+    }
+    .main-page-container {
+        background: rgba(255,255,255,0.5);
+        box-shadow: 0 0 150px 0 #000;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 27px;
+    }
+    .subtitle {
+        text-align: center;
+        padding: 0 50px;
+    }
+    .divider {
+        margin: 20px 70px;
+        border-color: grey;
     }
 }

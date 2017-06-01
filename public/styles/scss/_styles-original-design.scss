@@ -366,7 +366,7 @@ $main-background-color: darkslategray;
 
 .main-page {
     font-family: 'Raleway', sans-serif;
-    background: $main-background-color;
+    background: yellowgreen;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -377,11 +377,12 @@ $main-background-color: darkslategray;
     }
     .main-page-container {
         background: rgba(255, 255, 255, 0.5);
-        box-shadow: 0 0 150px 0 #000;
+        box-shadow: 0 0 75px 0 #000;
     }
-    h1 {
+    h1,
+    h2 {
         text-align: center;
-        margin-top: 27px;
+        margin-top: 10px;
     }
     .subtitle {
         text-align: center;
@@ -393,6 +394,7 @@ $main-background-color: darkslategray;
     }
     .matches-container {
         display: flex;
+        justify-content: center;
         padding: 0;
         flex-wrap: wrap;
     }
@@ -457,7 +459,6 @@ $main-background-color: darkslategray;
             margin-left: 14px;
             margin-right: 6px;
         }
-
     }
     .user-1 {
         margin-left: 15px;
@@ -478,7 +479,33 @@ $main-background-color: darkslategray;
     .li-match {
         margin: 5px;
     }
+    // .header-main {
+    //     background-color: rgba(255,255,255,0.5);
+    //     margin-top: 15px;
+    //     padding: 15px 20px;
+    //     border-radius: 5px;
+    // }
     .header-main {
-        background-color: green;
+        position: absolute;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 15px 20px;
+        border-radius: 5px;
+        top: 243px;
+    max-width: 469px;
+    margin-left: 33px;
+    }
+    .title-matches {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hr-today {
+        max-width: 320px;
+        border-top: 1px solid black;
+        width: 100%;
+        margin: 27px 15px;
+    }
+    .container {
+        padding: 0;
     }
 }

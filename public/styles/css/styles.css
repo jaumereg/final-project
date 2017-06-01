@@ -349,7 +349,8 @@
       color: black; }
   .main-page .match-container {
     padding: 5px 15px 5px 15px;
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px; }
     .main-page .match-container h4 {
       font-weight: bold;
       text-align: center; }
@@ -373,6 +374,10 @@
   .main-page .user-4 {
     margin-left: 115px;
     margin-top: 152px; }
+  .main-page .li-match {
+    margin: 5px; }
+  .main-page .header-main {
+    background-color: green; }
 
 .gtco-cover a {
   color: white; }

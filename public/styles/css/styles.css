@@ -348,8 +348,19 @@
     .main-page .fa-plus-square-o:hover {
       color: black; }
   .main-page .match-container {
-    padding: 15px;
+    padding: 5px 15px 5px 15px;
     background-color: rgba(255, 255, 255, 0.5); }
+    .main-page .match-container h4 {
+      font-weight: bold;
+      text-align: center; }
+    .main-page .match-container .time {
+      margin-top: 10px; }
+    .main-page .match-container p .fa {
+      margin-left: 10px;
+      margin-right: 5px; }
+    .main-page .match-container p .fa-map-marker {
+      margin-left: 14px;
+      margin-right: 6px; }
   .main-page .user-1 {
     margin-left: 15px;
     margin-top: 58px; }

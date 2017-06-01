@@ -2,6 +2,7 @@ $white-translucid-20: rgba(255, 255, 255, 0.2);
 $white-translucid-90: rgba(255, 255, 255, 0.9);
 $block-color: rgba(255, 255, 255, 0.7);
 $border-green: #032403;
+$main-background-color: darkslategray;
 // ------------ LOGIN PAGE ------------ //
 .log-in {
     font-family: 'Ubuntu', 'Raleway', sans-serif;
@@ -153,7 +154,7 @@ $border-green: #032403;
 .user-profile {
     font-family: 'Raleway', sans-serif;
     // background-image: url("../../img/wallpaper-user.png");
-    background: darkslategrey;
+    background: $main-background-color;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,7 +276,7 @@ $border-green: #032403;
 // ------------ USER SEARCH ------------ //
 .user-search {
     font-family: 'Raleway', sans-serif;
-    background-color: darkslategray;
+    background-color: $main-background-color;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -292,13 +293,11 @@ $border-green: #032403;
         .user-list::after {
             max-width: 463px !important;
         }
-        
     }
     @media (max-width: 510px) {
         .user-list::after {
             max-width: 0px !important;
         }
-        
     }
     h1 {
         margin: 20px 0 20px 0;
@@ -367,7 +366,7 @@ $border-green: #032403;
 
 .main-page {
     font-family: 'Raleway', sans-serif;
-    background: darkslategray;
+    background: $main-background-color;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -377,7 +376,7 @@ $border-green: #032403;
         }
     }
     .main-page-container {
-        background: rgba(255,255,255,0.5);
+        background: rgba(255, 255, 255, 0.5);
         box-shadow: 0 0 150px 0 #000;
     }
     h1 {
@@ -391,5 +390,72 @@ $border-green: #032403;
     .divider {
         margin: 20px 70px;
         border-color: grey;
+    }
+    .matches-container {
+        display: flex;
+        padding:0;
+        flex-wrap: wrap;
+    }
+    .user-1,
+    .user-2,
+    .user-3,
+    .user-4 {
+        width: 70px;
+        height: 70px;
+        background: black;
+        position: absolute;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 270px;
+        overflow: hidden;
+        border: 1px solid grey;
+        img {
+            width: 70px;
+            border-radius: 270px;
+            position: absolute;
+            transition: 0.2s;
+            &:hover {
+                filter: grayscale(75%) blur(3px) opacity(60%);
+            }
+        }
+    }
+    .fa-eye {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 27px;
+        color: black;
+        z-index: 0;
+    }
+    .fa-plus-square-o {
+        position: absolute;
+        right: 20px;
+        top: 17px;
+        font-size: 35px;
+        color: grey;
+        z-index: 2;
+        &:hover {
+            color: black;
+        }
+    }
+    .match-container {
+        padding: 15px;
+        background-color: rgba(255,255,255,0.5);
+    }
+    .user-1 {
+        margin-left: 15px;
+        margin-top: 58px;
+    }
+    .user-2 {
+        margin-left: 115px;
+        margin-top: 58px;
+    }
+    .user-3 {
+        margin-left: 15px;
+        margin-top: 152px;
+    }
+    .user-4 {
+        margin-left: 115px;
+        margin-top: 152px;
     }
 }

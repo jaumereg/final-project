@@ -122,7 +122,7 @@
 
 .user-profile {
   font-family: 'Raleway', sans-serif;
-  background: darkslategrey;
+  background: darkslategray;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -301,6 +301,67 @@
   .main-page .divider {
     margin: 20px 70px;
     border-color: grey; }
+  .main-page .matches-container {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap; }
+  .main-page .user-1,
+  .main-page .user-2,
+  .main-page .user-3,
+  .main-page .user-4 {
+    width: 70px;
+    height: 70px;
+    background: black;
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 270px;
+    overflow: hidden;
+    border: 1px solid grey; }
+    .main-page .user-1 img,
+    .main-page .user-2 img,
+    .main-page .user-3 img,
+    .main-page .user-4 img {
+      width: 70px;
+      border-radius: 270px;
+      position: absolute;
+      transition: 0.2s; }
+      .main-page .user-1 img:hover,
+      .main-page .user-2 img:hover,
+      .main-page .user-3 img:hover,
+      .main-page .user-4 img:hover {
+        filter: grayscale(75%) blur(3px) opacity(60%); }
+  .main-page .fa-eye {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 27px;
+    color: black;
+    z-index: 0; }
+  .main-page .fa-plus-square-o {
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    font-size: 35px;
+    color: grey;
+    z-index: 2; }
+    .main-page .fa-plus-square-o:hover {
+      color: black; }
+  .main-page .match-container {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5); }
+  .main-page .user-1 {
+    margin-left: 15px;
+    margin-top: 58px; }
+  .main-page .user-2 {
+    margin-left: 115px;
+    margin-top: 58px; }
+  .main-page .user-3 {
+    margin-left: 15px;
+    margin-top: 152px; }
+  .main-page .user-4 {
+    margin-left: 115px;
+    margin-top: 152px; }
 
 .gtco-cover a {
   color: white; }

@@ -364,7 +364,7 @@ $main-background-color: darkslategray;
     }
 }
 
-.main-page {
+.main-matches {
     font-family: 'Raleway', sans-serif;
     background: yellowgreen;
     background-attachment: fixed;
@@ -508,4 +508,16 @@ $main-background-color: darkslategray;
     .container {
         padding: 0;
     }
+}
+
+
+.main-page {
+
+        .main-cover-bg {
+            height: 100%;
+            width: 100%;
+            background: url("../../img/main-background.jpg") no-repeat center top fixed;
+            background-size: cover;
+            opacity: 0.8;
+        }
 }

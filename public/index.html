@@ -50,7 +50,7 @@
 	<![endif]-->
 </head>
 
-<body>
+<body id="main">
 <div class="container log-in-container">
     <div class="gtco-loader"></div>
     <div id="page">
@@ -84,33 +84,59 @@
                                     <div class="form-wrap">
                                         <div class="tab">
                                             <ul class="tab-menu">
-                                                <li class=" gtco-first"><a href="#" data-tab="signup">Sign up</a></li>
-                                                <li class="active gtco-second"><a href="#" data-tab="login">Login</a></li>
+                                                <li class="active gtco-second"><a href="#" data-tab="login">LOGIN</a></li>
+                                                <li class=" gtco-first"><a href="#" data-tab="signup">SIGN UP</a></li>
                                             </ul>
                                             <div class="tab-content">
                                                 <div class="tab-content-inner " data-content="signup">
                                                     <form action="#">
+                                                    <div class="row form-group">
+                                                            <div class="col-md-6 left-input">
+                                                                <!-- <label for="password2" class="col-sm-2"></label> -->
+                                                                <input type="text" class="form-control" id="first-name" placeholder="First name">
+                                                            </div>
+                                                            <div class="col-md-6 right-input">
+                                                                <!-- <label for="password2" class="col-sm-2"></label> -->
+                                                                <input type="text" class="form-control" id="last-name" placeholder="Last name">
+                                                            </div>
+                                                        </div>
                                                         <div class="row form-group">
+                                                            <div class="col-md-6 left-input">
+                                                                <!-- <label for="password2" class="col-sm-2"></label> -->
+                                                                <input type="text" class="form-control" id="gender" placeholder="Gender">
+                                                            </div>
+                                                            <div class="col-md-6 right-input">
+                                                                <!-- <label for="password2" class="col-sm-2"></label> -->
+                                                                <input type="text" class="form-control" id="level" placeholder="Padel level">
+                                                            </div>
+                                                        </div>
+                                                    <div class="row form-group">
                                                             <div class="col-md-12">
-                                                                <label for="username">Username or Email</label>
-                                                                <input type="text" class="form-control" id="username">
+                                                                <!-- <label for="password2">Repeat Password</label> -->
+                                                                <input type="text" class="form-control" id="location" placeholder="Enter your city">
                                                             </div>
                                                         </div>
                                                         <div class="row form-group">
                                                             <div class="col-md-12">
-                                                                <label for="password">Password</label>
-                                                                <input type="password" class="form-control" id="password">
+                                                                <!-- <label for="username">Email</label> -->
+                                                                <input type="text" class="form-control" id="username" placeholder="example@email.com">
                                                             </div>
                                                         </div>
                                                         <div class="row form-group">
                                                             <div class="col-md-12">
-                                                                <label for="password2">Repeat Password</label>
-                                                                <input type="password" class="form-control" id="password2">
+                                                                <!-- <label for="password">Password</label> -->
+                                                                <input type="password" class="form-control" id="password" placeholder="*******">
                                                             </div>
                                                         </div>
                                                         <div class="row form-group">
                                                             <div class="col-md-12">
-                                                                <input type="submit" class="btn btn-primary" value="Sign up">
+                                                                <!-- <label for="password2">Repeat Password</label> -->
+                                                                <input type="password" class="form-control" id="password2" placeholder="*******">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row form-group">
+                                                            <div class="col-md-12">
+                                                                <input type="submit" class="btn btn-success" value="Sign up">
                                                             </div>
                                                         </div>
                                                     </form>
@@ -119,19 +145,19 @@
                                                     <form action="#">
                                                         <div class="row form-group">
                                                             <div class="col-md-12">
-                                                                <label for="username">Username or Email</label>
-                                                                <input type="text" class="form-control" id="username">
+                                                                <label class="label-login" for="username">Email</label>
+                                                                <input type="text" class="form-control" id="username" placeholder="example@email.com">
                                                             </div>
                                                         </div>
                                                         <div class="row form-group">
                                                             <div class="col-md-12">
-                                                                <label for="password">Password</label>
-                                                                <input type="password" class="form-control" id="password">
+                                                                <label class="label-login" for="password">Password</label>
+                                                                <input type="password" class="form-control" id="password" placeholder="*******">
                                                             </div>
                                                         </div>
                                                         <div class="row form-group">
                                                             <div class="col-md-12">
-                                                                <a href="main-page.html" type="submit" class="btn btn-primary">Login</a>
+                                                                <a href="main-page.html" type="submit" class="btn btn-success">GO!</a>
                                                             </div>
                                                         </div>
                                                     </form>

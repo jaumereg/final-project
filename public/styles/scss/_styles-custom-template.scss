@@ -1,26 +1,94 @@
-.gtco-cover a {
-    color: white;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 100%;
+#main {
+    .gtco-cover a {
+        color: white;
     }
-}
-
-.log-in-container {
-    margin: 0;
-    padding: 0;
-}
-
-#page .page-inner {
-    max-width: 100%;
-}
-
-.row-mt-15em {
-    margin-top: 147px;
-}
-
-#gtco-header .mt-text {
-    margin-top: 0;
+    @media (min-width: 769px) {
+        .container {
+            width: 100%;
+        }
+    }
+    @media (max-width: 991px) {
+        #first-name {
+            margin-bottom: 15px;
+        }
+        #gender {
+            margin-bottom: 15px;
+        }
+    }
+    @media (min-width: 991px) {
+        .left-input {
+            padding-right: 5px;
+        }
+        .right-input {
+            padding-left: 5px;
+        }
+    }
+    #gtco-header .form-wrap .tab-content {
+        background-color: transparent;
+    }
+    .log-in-container {
+        margin: 0;
+        padding: 0;
+    }
+    #page .page-inner {
+        max-width: 100%;
+    }
+    .row-mt-15em {
+        margin-top: 147px;
+    }
+    #gtco-header .mt-text {
+        margin-top: 0;
+    }
+    .form-control {
+        border-radius: 27px;
+        height: 35px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: white;
+    }
+    input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: black !important;
+    }
+    #gtco-header .form-wrap .tab-menu li.gtco-first a {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 5px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        background: transparent;
+        color: white;
+    }
+    #gtco-header .form-wrap .tab-menu li.gtco-second a {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        background: transparent;
+        color: white;
+    }
+    #gtco-header .form-wrap .tab-menu li.active a {
+        color: yellowgreen;
+        text-decoration: underline;
+    }
+    #gtco-header .form-wrap .tab-content {
+        padding-top: 20px;
+    }
+    .label-login {
+        color: white;
+    }
+    #gtco-header .form-wrap {
+        box-sizing: content-box;
+        border: 5px solid #A1A1A1;
+        margin-top: 0px;
+        padding-top: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+    }
+    .btn-success {
+        float: right;
+        border-radius: 27px;
+        background: rgba(0, 179, 0, 0.3);
+        border: none;
+    }
 }

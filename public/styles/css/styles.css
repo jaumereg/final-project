@@ -280,37 +280,37 @@
   .user-level h1 {
     text-align: center; }
 
-.main-page {
+.main-matches {
   font-family: 'Raleway', sans-serif;
   background: yellowgreen;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
   @media (min-width: 1200px) {
-    .main-page .container {
+    .main-matches .container {
       width: 1000px; } }
-  .main-page .main-page-container {
+  .main-matches .main-page-container {
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 75px 0 #000; }
-  .main-page h1,
-  .main-page h2 {
+  .main-matches h1,
+  .main-matches h2 {
     text-align: center;
     margin-top: 10px; }
-  .main-page .subtitle {
+  .main-matches .subtitle {
     text-align: center;
     padding: 0 50px; }
-  .main-page .divider {
+  .main-matches .divider {
     margin: 20px 70px;
     border-color: grey; }
-  .main-page .matches-container {
+  .main-matches .matches-container {
     display: flex;
     justify-content: center;
     padding: 0;
     flex-wrap: wrap; }
-  .main-page .user-1,
-  .main-page .user-2,
-  .main-page .user-3,
-  .main-page .user-4 {
+  .main-matches .user-1,
+  .main-matches .user-2,
+  .main-matches .user-3,
+  .main-matches .user-4 {
     width: 70px;
     height: 70px;
     background: black;
@@ -320,65 +320,65 @@
     border-radius: 270px;
     overflow: hidden;
     border: 1px solid grey; }
-    .main-page .user-1 img,
-    .main-page .user-2 img,
-    .main-page .user-3 img,
-    .main-page .user-4 img {
+    .main-matches .user-1 img,
+    .main-matches .user-2 img,
+    .main-matches .user-3 img,
+    .main-matches .user-4 img {
       width: 70px;
       border-radius: 270px;
       position: absolute;
       transition: 0.2s; }
-      .main-page .user-1 img:hover,
-      .main-page .user-2 img:hover,
-      .main-page .user-3 img:hover,
-      .main-page .user-4 img:hover {
+      .main-matches .user-1 img:hover,
+      .main-matches .user-2 img:hover,
+      .main-matches .user-3 img:hover,
+      .main-matches .user-4 img:hover {
         filter: grayscale(75%) blur(3px) opacity(60%); }
-  .main-page .fa-eye {
+  .main-matches .fa-eye {
     position: absolute;
     right: 20px;
     top: 20px;
     font-size: 27px;
     color: black;
     z-index: 0; }
-  .main-page .fa-plus-square-o {
+  .main-matches .fa-plus-square-o {
     position: absolute;
     right: 20px;
     top: 17px;
     font-size: 35px;
     color: grey;
     z-index: 2; }
-    .main-page .fa-plus-square-o:hover {
+    .main-matches .fa-plus-square-o:hover {
       color: black; }
-  .main-page .match-container {
+  .main-matches .match-container {
     padding: 5px 15px 5px 15px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px; }
-    .main-page .match-container h4 {
+    .main-matches .match-container h4 {
       font-weight: bold;
       text-align: center; }
-    .main-page .match-container .time {
+    .main-matches .match-container .time {
       margin-top: 10px; }
-    .main-page .match-container p .fa {
+    .main-matches .match-container p .fa {
       margin-left: 10px;
       margin-right: 5px; }
-    .main-page .match-container p .fa-map-marker {
+    .main-matches .match-container p .fa-map-marker {
       margin-left: 14px;
       margin-right: 6px; }
-  .main-page .user-1 {
+  .main-matches .user-1 {
     margin-left: 15px;
     margin-top: 58px; }
-  .main-page .user-2 {
+  .main-matches .user-2 {
     margin-left: 115px;
     margin-top: 58px; }
-  .main-page .user-3 {
+  .main-matches .user-3 {
     margin-left: 15px;
     margin-top: 152px; }
-  .main-page .user-4 {
+  .main-matches .user-4 {
     margin-left: 115px;
     margin-top: 152px; }
-  .main-page .li-match {
+  .main-matches .li-match {
     margin: 5px; }
-  .main-page .header-main {
+  .main-matches .header-main {
     position: absolute;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.5);
@@ -387,33 +387,107 @@
     top: 243px;
     max-width: 469px;
     margin-left: 33px; }
-  .main-page .title-matches {
+  .main-matches .title-matches {
     display: flex;
     justify-content: space-between; }
-  .main-page .hr-today {
+  .main-matches .hr-today {
     max-width: 320px;
     border-top: 1px solid black;
     width: 100%;
     margin: 27px 15px; }
-  .main-page .container {
+  .main-matches .container {
     padding: 0; }
 
-.gtco-cover a {
+.main-page .main-cover-bg {
+  height: 100%;
+  width: 100%;
+  background: url("../../img/main-background.jpg") no-repeat center top fixed;
+  background-size: cover;
+  opacity: 0.8; }
+
+#main .gtco-cover a {
   color: white; }
 
-@media (min-width: 1200px) {
-  .container {
+@media (min-width: 769px) {
+  #main .container {
     width: 100%; } }
 
-.log-in-container {
+@media (max-width: 991px) {
+  #main #first-name {
+    margin-bottom: 15px; }
+  #main #gender {
+    margin-bottom: 15px; } }
+
+@media (min-width: 991px) {
+  #main .left-input {
+    padding-right: 5px; }
+  #main .right-input {
+    padding-left: 5px; } }
+
+#main #gtco-header .form-wrap .tab-content {
+  background-color: transparent; }
+
+#main .log-in-container {
   margin: 0;
   padding: 0; }
 
-#page .page-inner {
+#main #page .page-inner {
   max-width: 100%; }
 
-.row-mt-15em {
+#main .row-mt-15em {
   margin-top: 147px; }
 
-#gtco-header .mt-text {
+#main #gtco-header .mt-text {
   margin-top: 0; }
+
+#main .form-control {
+  border-radius: 27px;
+  height: 35px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: white; }
+
+#main input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black !important; }
+
+#main #gtco-header .form-wrap .tab-menu li.gtco-first a {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  background: transparent;
+  color: white; }
+
+#main #gtco-header .form-wrap .tab-menu li.gtco-second a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  background: transparent;
+  color: white; }
+
+#main #gtco-header .form-wrap .tab-menu li.active a {
+  color: yellowgreen;
+  text-decoration: underline; }
+
+#main #gtco-header .form-wrap .tab-content {
+  padding-top: 20px; }
+
+#main .label-login {
+  color: white; }
+
+#main #gtco-header .form-wrap {
+  box-sizing: content-box;
+  border: 5px solid #A1A1A1;
+  margin-top: 0px;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px; }
+
+#main .btn-success {
+  float: right;
+  border-radius: 27px;
+  background: rgba(0, 179, 0, 0.3);
+  border: none; }

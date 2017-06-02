@@ -122,7 +122,7 @@
 
 .user-profile {
   font-family: 'Raleway', sans-serif;
-  background: darkslategray;
+  background: yellowgreen;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -214,7 +214,7 @@
 
 .user-search {
   font-family: 'Raleway', sans-serif;
-  background-color: darkslategray;
+  background-color: yellowgreen;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -255,18 +255,21 @@
       background-color: rgba(255, 255, 255, 0.8); }
     .user-search .user-container h4 {
       font-weight: bold;
-      font-size: 17px; }
+      font-size: 17px;
+      border-bottom: 1px solid grey;
+      padding-bottom: 7px; }
     .user-search .user-container .user-image {
-      background-color: #032403;
-      border-color: #032403;
-      border-radius: 270px; }
+      border-radius: 270px;
+      margin: 0 auto; }
     .user-search .user-container .side-position {
       margin: 5px 0;
-      font-size: 13px; }
+      font-size: 13px;
+      text-align: center; }
     .user-search .user-container .user-image {
       border: none; }
     .user-search .user-container .location {
-      font-size: 12px; }
+      font-size: 12px;
+      text-align: center; }
 
 .user-level {
   font-family: 'Raleway', sans-serif;
@@ -398,12 +401,32 @@
   .main-matches .container {
     padding: 0; }
 
-.main-page .main-cover-bg {
-  height: 100%;
-  width: 100%;
-  background: url("../../img/main-background.jpg") no-repeat center top fixed;
+.main-page {
+  font-family: 'Raleway', sans-serif;
+  background: yellowgreen;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8; }
+  overflow-y: hidden; }
+  @media (min-width: 1200px) {
+    .main-page .container {
+      width: 1000px; } }
+  .main-page .first-time {
+    background: url("../../img/wallpaper-padel.png") center center fixed;
+    background-size: cover;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 75px 0 #000; }
+    .main-page .first-time h1 {
+      margin-top: 10px; }
+    .main-page .first-time .items-main {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 15px; }
+      .main-page .first-time .items-main .btn {
+        margin: 10px; }
 
 #main .gtco-cover a {
   color: white; }

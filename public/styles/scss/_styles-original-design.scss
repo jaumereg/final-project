@@ -314,6 +314,22 @@ $main-background-color: yellowgreen;
             flex: auto;
         }
     }
+    .upper-background {
+        background: rgba(72,100,0,0.4);
+    border-radius: 5px 5px 0 0;
+    width: 203px;
+    height: 100px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 0;
+    }
+    .li-user {
+        transition: 0.1s;
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
     .user-container {
         display: inline-block;
         max-width: 212px;
@@ -321,11 +337,8 @@ $main-background-color: yellowgreen;
         padding: 15px;
         margin: 10px;
         background-color: $block-color;
-        transition: 0.1s;
-        &:hover {
-            transform: scale(1.02);
-            background-color: rgba(255, 255, 255, 0.8);
-        }
+        
+        
         h4 {
             font-weight: bold;
             font-size: 17px;
@@ -335,6 +348,7 @@ $main-background-color: yellowgreen;
         .user-image {
             border-radius: 270px;
             margin: 0 auto;
+            position: relative;
         }
         .side-position {
             margin: 5px 0;

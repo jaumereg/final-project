@@ -2,7 +2,7 @@ $white-translucid-20: rgba(255, 255, 255, 0.2);
 $white-translucid-90: rgba(255, 255, 255, 0.9);
 $block-color: rgba(255, 255, 255, 0.7);
 $border-green: #032403;
-$main-background-color: yellowgreen;
+$main-background-color: darkslategray;
 // ------------ LOGIN PAGE ------------ //
 .log-in {
     font-family: 'Ubuntu', 'Raleway', sans-serif;
@@ -383,7 +383,7 @@ $main-background-color: yellowgreen;
 
 .main-matches {
     font-family: 'Raleway', sans-serif;
-    background: yellowgreen;
+    background: $main-background-color;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -480,10 +480,12 @@ $main-background-color: yellowgreen;
     .user-1 {
         margin-left: 15px;
         margin-top: 58px;
+        border: none;
     }
     .user-2 {
         margin-left: 115px;
         margin-top: 58px;
+        border: none;
     }
     .user-3 {
         margin-left: 15px;

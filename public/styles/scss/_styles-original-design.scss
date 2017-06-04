@@ -154,7 +154,7 @@ $main-background-color: darkslategray;
 .user-profile {
     font-family: 'Raleway', sans-serif;
     // background-image: url("../../img/wallpaper-user.png");
-    background: $main-background-color;
+    background: #e9edf2;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,8 +170,8 @@ $main-background-color: darkslategray;
         }
     }
     .mainbody {
-        background: rgba(255, 255, 255, 0.5);
-        box-shadow: 0 0 150px 0 #000;
+        background: #c6d2e4;
+
     }
     .dropdown-toggle {
         margin-right: 15px;
@@ -207,6 +207,23 @@ $main-background-color: darkslategray;
     .right-block-container {
         padding: 0;
     }
+    .left-block-container {
+        h4 {
+            font-weight: bold;
+            font-size: 16px;
+            border-bottom: 1px solid grey;
+            padding-bottom: 5px;
+        }
+        .user-gender {
+            display: inline-block;
+            width: 45%;
+        }
+        .user-age {
+            display: inline-block;
+            float: right;
+            width: 45%;
+        }
+    }
     .right-block-container {
         padding-right: 10px;
     }
@@ -221,6 +238,7 @@ $main-background-color: darkslategray;
     .user-image {
         background-color: $border-green;
         border-color: $border-green;
+        margin-bottom: 10px;
     }
     .panel-post {
         padding-top: 22px;
@@ -315,14 +333,14 @@ $main-background-color: darkslategray;
         }
     }
     .upper-background {
-        background: rgba(72,100,0,0.4);
-    border-radius: 5px 5px 0 0;
-    width: 203px;
-    height: 100px;
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 10px;
-    z-index: 0;
+        background: rgba(72, 100, 0, 0.4);
+        border-radius: 5px 5px 0 0;
+        width: 203px;
+        height: 100px;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 10px;
+        z-index: 0;
     }
     .li-user {
         transition: 0.1s;
@@ -337,13 +355,11 @@ $main-background-color: darkslategray;
         padding: 15px;
         margin: 10px;
         background-color: $block-color;
-        
-        
         h4 {
             font-weight: bold;
             font-size: 17px;
             border-bottom: 1px solid grey;
-    padding-bottom: 7px;
+            padding-bottom: 7px;
         }
         .user-image {
             border-radius: 270px;
@@ -554,7 +570,7 @@ $main-background-color: darkslategray;
         }
         .items-main {
             text-align: center;
-            background: rgba(255,255,255, 0.5);
+            background: rgba(255, 255, 255, 0.5);
             padding: 15px;
             .btn {
                 margin: 10px;

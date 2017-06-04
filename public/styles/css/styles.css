@@ -122,7 +122,7 @@
 
 .user-profile {
   font-family: 'Raleway', sans-serif;
-  background: darkslategray;
+  background: #e9edf2;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -134,8 +134,7 @@
     .user-profile .right-block-container {
       width: 73%; } }
   .user-profile .mainbody {
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 150px 0 #000; }
+    background: #c6d2e4; }
   .user-profile .dropdown-toggle {
     margin-right: 15px;
     font-size: 16px; }
@@ -163,6 +162,18 @@
   .user-profile .left-block-container,
   .user-profile .right-block-container {
     padding: 0; }
+  .user-profile .left-block-container h4 {
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px; }
+  .user-profile .left-block-container .user-gender {
+    display: inline-block;
+    width: 45%; }
+  .user-profile .left-block-container .user-age {
+    display: inline-block;
+    float: right;
+    width: 45%; }
   .user-profile .right-block-container {
     padding-right: 10px; }
   .user-profile .bottom-user-block {
@@ -173,7 +184,8 @@
     margin: 10px 0 10px 10px; }
   .user-profile .user-image {
     background-color: #032403;
-    border-color: #032403; }
+    border-color: #032403;
+    margin-bottom: 10px; }
   .user-profile .panel-post {
     padding-top: 22px;
     padding-left: 22px; }

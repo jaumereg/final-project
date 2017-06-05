@@ -307,7 +307,7 @@
 
 .main-matches {
   font-family: 'Raleway', sans-serif;
-  background: darkslategray;
+  background: #bbd7d5;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -315,8 +315,7 @@
     .main-matches .container {
       width: 1000px; } }
   .main-matches .main-page-container {
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 75px 0 #000; }
+    background: rgba(255, 255, 255, 0.25); }
   .main-matches h1,
   .main-matches h2 {
     text-align: center;
@@ -376,7 +375,7 @@
       color: black; }
   .main-matches .match-container {
     padding: 5px 15px 5px 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 5px; }
     .main-matches .match-container h4 {
       font-weight: bold;
@@ -414,16 +413,15 @@
     top: 243px;
     max-width: 469px;
     margin-left: 33px; }
-  .main-matches .title-matches {
-    display: flex;
-    justify-content: space-between; }
-  .main-matches .hr-today {
-    max-width: 320px;
-    border-top: 1px solid black;
-    width: 100%;
-    margin: 27px 15px; }
+  .main-matches .title-matches h2 {
+    text-align: center; }
   .main-matches .container {
     padding: 0; }
+  .main-matches .button-match {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 .main-page {
   font-family: 'Raleway', sans-serif;
@@ -436,7 +434,7 @@
     .main-page .container {
       width: 1000px; } }
   .main-page .first-time {
-    background: url("../../img/wallpaper-padel.png") center center fixed;
+    background: url("../../img/wallpaper-padel3.png") center center fixed;
     background-size: cover;
     height: 93vh;
     display: flex;

@@ -171,7 +171,6 @@ $main-background-color: darkslategray;
     }
     .mainbody {
         background: #c6d2e4;
-
     }
     .dropdown-toggle {
         margin-right: 15px;
@@ -399,7 +398,7 @@ $main-background-color: darkslategray;
 
 .main-matches {
     font-family: 'Raleway', sans-serif;
-    background: $main-background-color;
+    background: #bbd7d5;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -409,8 +408,7 @@ $main-background-color: darkslategray;
         }
     }
     .main-page-container {
-        background: rgba(255, 255, 255, 0.5);
-        box-shadow: 0 0 75px 0 #000;
+        background: rgba(255, 255, 255, 0.25);
     }
     h1,
     h2 {
@@ -475,7 +473,7 @@ $main-background-color: darkslategray;
     }
     .match-container {
         padding: 5px 15px 5px 15px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.4);
         border-radius: 5px;
         h4 {
             font-weight: bold;
@@ -531,17 +529,26 @@ $main-background-color: darkslategray;
         margin-left: 33px;
     }
     .title-matches {
-        display: flex;
-        justify-content: space-between;
+        h2 {
+            text-align: center;
+        }
+        // display: flex;
+        // justify-content: space-between;
     }
-    .hr-today {
-        max-width: 320px;
-        border-top: 1px solid black;
-        width: 100%;
-        margin: 27px 15px;
-    }
+    // .hr-today {
+    //     max-width: 320px;
+    //     border-top: 1px solid black;
+    //     width: 100%;
+    //     margin: 27px 15px;
+    // }
     .container {
         padding: 0;
+    }
+    .button-match {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    margin-bottom: 20px;
     }
 }
 
@@ -558,7 +565,7 @@ $main-background-color: darkslategray;
         }
     }
     .first-time {
-        background: url("../../img/wallpaper-padel.png") center center fixed;
+        background: url("../../img/wallpaper-padel3.png") center center fixed;
         background-size: cover;
         height: 93vh;
         display: flex;

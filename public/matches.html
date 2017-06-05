@@ -75,15 +75,124 @@
         <!--..............-->
         <!--..............-->
         <div class="container main-page-container">
+            <!-- MODAL -->
+            <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+            <div class="container">
+                <!-- Button trigger modal -->
+                <button class="btn btn-success btn-lg button-match" title="Create a new match" data-toggle="modal" data-target="#create-match">
+                    <i class="fa fa-bullseye"></i> Create your match!
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="create-match" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Match creator</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Write all match info.</p>
+                                <div class="form-group">
+                                    <label class="label-court" for="location">Where?</label>
+                                    <select class="form-control" id="location">
+                                        <option>Barcelona, Spain</option>
+                                        <option>Madrid, Spain</option>
+                                    </select>
+                                    <label class="label-club" for="club">Club</label>
+                                    <select class="form-control" id="club">
+                                        <option>Club Polo</option>
+                                        <option>Tennis Vallparc</option>
+                                        <option>Club Padel Barcelona</option>
+                                    </select>
+                                    <label class="label-duration" for="duration">Duration</label>
+                                    <select class="form-control" id="duration">
+                                        <option>1 hour</option>
+                                        <option>1 hour 15 min</option>
+                                        <option>1 hour 30 min</option>
+                                        <option>1 hour 45 min</option>
+                                        <option>2 hours</option>
+                                    </select>
+                                    <label class="label-price" for="price">Price (total)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">€</span>
+                                        <input type="number" value="0" min="0" step="0.5" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+                                    </div>
+                                    <h5>Match level</h5>
+                                    <label class="label-from" for="from">From</label>
+                                    <select class="form-control" id="from">
+                                        <option>A+</option>
+                                        <option>A</option>
+                                        <option>B+</option>
+                                        <option>B</option>
+                                        <option>C</option>
+                                        <option>D</option>
+                                    </select>
+                                    <label class="label-to" for="to">To</label>
+                                    <select class="form-control" id="to">
+                                        <option>A+</option>
+                                        <option>A</option>
+                                        <option>B+</option>
+                                        <option>B</option>
+                                        <option>C</option>
+                                        <option>D</option>
+                                    </select>
+                                    <label class="label-type" for="type">Type</label>
+                                    <select class="form-control" id="type">
+                                        <option>Masculin</option>
+                                        <option>Femenin</option>
+                                        <option>Mixed</option>
+                                    </select>
+                                    <h5>Players</h5>
+                                    <h6>Team 1</h6>
+                                    <label class="label-team1-left" for="team1-left">Left position</label>
+                                    <select class="form-control" id="team1-left">
+                                        <option>Empty</option>
+                                        <option>Me</option>
+                                        <option>Friend (male)</option>
+                                        <option>Friend (female)</option>
+                                    </select>
+                                    <label class="label-team1-right" for="team1-right">Right position</label>
+                                    <select class="form-control" id="team1-right">
+                                        <option>Empty</option>
+                                        <option>Me</option>
+                                        <option>Friend (male)</option>
+                                        <option>Friend (female)</option>
+                                    </select>
+                                    <h6>Team 1</h6>
+                                    <label class="label-team2-left" for="team2-left">Left position</label>
+                                    <select class="form-control" id="team2-left">
+                                        <option>Empty</option>
+                                        <option>Me</option>
+                                        <option>Friend (male)</option>
+                                        <option>Friend (female)</option>
+                                    </select>
+                                    <label class="label-team2-right" for="team2-right">Right position</label>
+                                    <select class="form-control" id="team2-right">
+                                        <option>Empty</option>
+                                        <option>Me</option>
+                                        <option>Friend (male)</option>
+                                        <option>Friend (female)</option>
+                                    </select>
+                                </div>
+                                <form action="" method="post">
+                                    <button type="submit" value="sub" name="sub" class="btn btn-primary"><i class="fa fa-share"></i> Create match!</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL -->
             <!-- <div class="header-main">
                 <h1>WELCOME TO PADELGO!</h1>
                 <hr class="divider">
                 <p class="subtitle">Would you like to join someone's match in your city? Do you want to find who plays near you?</p>
             </div> -->
             <div class="title-matches">
-                <hr class="hr-today">
                 <h2>Today's matches</h2>
-                <hr class="hr-today">
             </div>
             <ul class="matches-container">
                 <li class="list-unstyled li-match">

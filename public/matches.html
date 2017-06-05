@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
 </head>
 
 <body>
@@ -103,9 +104,9 @@
                                         <option>Tennis Vallparc</option>
                                         <option>Club Padel Barcelona</option>
                                     </select>
-                                    <label class="label-club" for="club">Date</label>
+                                    <label class="label-date" for="date">Date</label>
                                     <div class="input-append date form_datetime">
-                                        <input size="16" type="text" value="" readonly>
+                                        <input size="16" type="date" value="" readonly>
                                         <span class="add-on"><i class="glyphicon glyphicon-user"></i></span>
                                     </div>
                                     <label class="label-duration" for="duration">Duration</label>
@@ -162,7 +163,7 @@
                                         <option>Friend (male)</option>
                                         <option>Friend (female)</option>
                                     </select>
-                                    <h6>Team 1</h6>
+                                    <h6>Team 2</h6>
                                     <label class="label-team2-left" for="team2-left">Left position</label>
                                     <select class="form-control" id="team2-left">
                                         <option>Empty</option>
@@ -318,12 +319,13 @@
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script type="text/javascript" src="js/tooltip.js"></script>
+        <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+        <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
         <script type="text/javascript">
         $(".form_datetime").datetimepicker({
             format: "dd MM yyyy - hh:ii",
-            autoclose: true,
-            todayBtn: true,
-            pickerPosition: "bottom-left"
+            keepOpen: true,
+            showTodayButton: true
         });
         </script>
     </div>

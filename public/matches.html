@@ -96,7 +96,6 @@
                                     <label class="label-court" for="location">Where?</label>
                                     <select class="form-control" id="location">
                                         <option>Barcelona, Spain</option>
-                                        <option>Madrid, Spain</option>
                                     </select>
                                     <label class="label-club" for="club">Club</label>
                                     <select class="form-control" id="club">
@@ -104,6 +103,11 @@
                                         <option>Tennis Vallparc</option>
                                         <option>Club Padel Barcelona</option>
                                     </select>
+                                    <label class="label-club" for="club">Date</label>
+                                    <div class="input-append date form_datetime">
+                                        <input size="16" type="text" value="" readonly>
+                                        <span class="add-on"><i class="glyphicon glyphicon-user"></i></span>
+                                    </div>
                                     <label class="label-duration" for="duration">Duration</label>
                                     <select class="form-control" id="duration">
                                         <option>1 hour</option>
@@ -314,6 +318,14 @@
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script type="text/javascript" src="js/tooltip.js"></script>
+        <script type="text/javascript">
+        $(".form_datetime").datetimepicker({
+            format: "dd MM yyyy - hh:ii",
+            autoclose: true,
+            todayBtn: true,
+            pickerPosition: "bottom-left"
+        });
+        </script>
     </div>
 </body>
 

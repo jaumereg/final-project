@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
+const collection = 'matches'
 
 const MatchSchema = new Schema ({
     location: {
@@ -50,9 +51,7 @@ const MatchSchema = new Schema ({
        type: String,
        required: true
     }
-
-
-})
+}, { collection })
 
 const Match = mongoose.model('Match', MatchSchema)
 

@@ -4,52 +4,52 @@ const collection = 'matches'
 
 const MatchSchema = new Schema ({
     location: {
-      type: String,
-      required: true
+      type: String
+      
     },
     court: {
-       type: String,
-       required: true
+       type: String
+       
     },
     date: {
-       type: Number,
-       required: true
+       type: Number
+       
     },
     hour: {
-       type: Number,
-       required: true
+       type: Number
+       
     },
     price: {
-       type: Number,
-       required: true
+       type: Number
+       
     },
     levelFrom: {
-       type: String,
-       required: true
+       type: String
+       
     },
     levelTo: {
-       type: String,
-       required: true
+       type: String
+       
     },
     gender: {
-       type: String,
-       required: true
+       type: String
+       
     },
     team1Left: {
-       type: String,
-       required: true
+       type: String
+       
     },
     team1Right: {
-       type: String,
-       required: true
+       type: String
+       
     },
     team2Left: {
-       type: String,
-       required: true
+       type: String
+       
     },
     team2Right: {
-       type: String,
-       required: true
+       type: String
+       
     }
 }, { collection })
 

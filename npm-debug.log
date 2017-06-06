@@ -10,8 +10,8 @@
 6 silly lifecycle final-project@1.0.0~predev: no script for predev, continuing
 7 info lifecycle final-project@1.0.0~dev: final-project@1.0.0
 8 verbose lifecycle final-project@1.0.0~dev: unsafe-perm in lifecycle true
-9 verbose lifecycle final-project@1.0.0~dev: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\James\Desktop\padel-go\padel-go\node_modules\.bin;C:\Users\James\Documents\CMDER\bin;C:\Users\James\Documents\CMDER\vendor\git-for-windows\cmd;C:\Users\James\Documents\CMDER\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\James\Documents\CMDER\vendor\conemu-maximus5;C:\Users\James\Documents\CMDER\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\3.4\bin;C:\Users\James\AppData\Roaming\npm;C:\Users\James\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Heroku\bin;;C:\Users\James\Documents\CMDER\vendor\git-for-windows\usr\bin;C:\Users\James\Documents\CMDER\vendor\git-for-windows\usr\share\vim\vim74;C:\Users\James\Documents\CMDER\
-10 verbose lifecycle final-project@1.0.0~dev: CWD: C:\Users\James\Desktop\padel-go\padel-go
+9 verbose lifecycle final-project@1.0.0~dev: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\James\Desktop\padel-go\node_modules\.bin;C:\Users\James\Documents\CMDER\bin;C:\Users\James\Documents\CMDER\vendor\git-for-windows\cmd;C:\Users\James\Documents\CMDER\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\James\Documents\CMDER\vendor\conemu-maximus5;C:\Users\James\Documents\CMDER\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\3.4\bin;C:\Users\James\AppData\Roaming\npm;C:\Users\James\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Heroku\bin;;C:\Users\James\Documents\CMDER\vendor\git-for-windows\usr\bin;C:\Users\James\Documents\CMDER\vendor\git-for-windows\usr\share\vim\vim74;C:\Users\James\Documents\CMDER\
+10 verbose lifecycle final-project@1.0.0~dev: CWD: C:\Users\James\Desktop\padel-go
 11 silly lifecycle final-project@1.0.0~dev: Args: [ '/d /s /c', 'supervisor index' ]
 12 verbose stack Error: kill ENOSYS
 12 verbose stack     at exports._errnoException (util.js:1018:11)
@@ -22,7 +22,7 @@
 12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
 12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
 12 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
-13 verbose cwd C:\Users\James\Desktop\padel-go\padel-go
+13 verbose cwd C:\Users\James\Desktop\padel-go
 14 error Windows_NT 10.0.15063
 15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev"
 16 error node v6.10.2

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/clockpicker/bootstrap-clockpicker.min.css">
 </head>
 
 <body>
@@ -104,10 +105,18 @@
                                         <option>Tennis Vallparc</option>
                                         <option>Club Padel Barcelona</option>
                                     </select>
-                                    <label class="label-date" for="date">Date</label>
-                                    <div class="input-append date form_datetime">
-                                        <input size="16" type="date" value="" readonly>
-                                        <span class="add-on"><i class="glyphicon glyphicon-user"></i></span>
+                                    <div class="form-group">
+                                        <!-- Date input -->
+                                        <label class="control-label" for="date">Date</label>
+                                        <input class="form-control" id="date" name="date" placeholder="DD/MM/YYY" type="text" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group clockpicker">
+                                            <input type="text" class="form-control" value="18:00">
+                                            <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                                        </div>
                                     </div>
                                     <label class="label-duration" for="duration">Duration</label>
                                     <select class="form-control" id="duration">
@@ -143,8 +152,8 @@
                                     </select>
                                     <label class="label-type" for="type">Type</label>
                                     <select class="form-control" id="type">
-                                        <option>Masculin</option>
-                                        <option>Femenin</option>
+                                        <option>Masculine</option>
+                                        <option>Femenine</option>
                                         <option>Mixed</option>
                                     </select>
                                     <h5>Players</h5>
@@ -153,30 +162,30 @@
                                     <select class="form-control" id="team1-left">
                                         <option>Empty</option>
                                         <option>Me</option>
-                                        <option>Friend (male)</option>
-                                        <option>Friend (female)</option>
+                                        <option>Team mate (male)</option>
+                                        <option>Team mate (female)</option>
                                     </select>
                                     <label class="label-team1-right" for="team1-right">Right position</label>
                                     <select class="form-control" id="team1-right">
                                         <option>Empty</option>
                                         <option>Me</option>
-                                        <option>Friend (male)</option>
-                                        <option>Friend (female)</option>
+                                        <option>Team mate (male)</option>
+                                        <option>Team mate (female)</option>
                                     </select>
                                     <h6>Team 2</h6>
                                     <label class="label-team2-left" for="team2-left">Left position</label>
                                     <select class="form-control" id="team2-left">
                                         <option>Empty</option>
                                         <option>Me</option>
-                                        <option>Friend (male)</option>
-                                        <option>Friend (female)</option>
+                                        <option>Team mate (male)</option>
+                                        <option>Team mate (female)</option>
                                     </select>
                                     <label class="label-team2-right" for="team2-right">Right position</label>
                                     <select class="form-control" id="team2-right">
                                         <option>Empty</option>
                                         <option>Me</option>
-                                        <option>Friend (male)</option>
-                                        <option>Friend (female)</option>
+                                        <option>Team mate (male)</option>
+                                        <option>Team mate (female)</option>
                                     </select>
                                 </div>
                                 <form action="" method="post">
@@ -321,11 +330,27 @@
         <script type="text/javascript" src="js/tooltip.js"></script>
         <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
         <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/clockpicker/bootstrap-clockpicker.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            var date_input = $('input[name="date"]'); //our date input has the name "date"
+            var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+            var options = {
+                format: 'dd/mm/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true
+            };
+            date_input.datepicker(options);
+        })
+        </script>
         <script type="text/javascript">
-        $(".form_datetime").datetimepicker({
-            format: "dd MM yyyy - hh:ii",
-            keepOpen: true,
-            showTodayButton: true
+        $('.clockpicker').clockpicker({
+            placement: 'top',
+            align: 'left',
+            donetext: 'Done',
+            autoclose: true
         });
         </script>
     </div>

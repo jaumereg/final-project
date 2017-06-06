@@ -4,12 +4,14 @@
   "description": "JAUME REGAS FINAL PROJECT SKYLAB CODERS BOOTCAMP",
   "main": "index.js",
   "scripts": {
+    "build:js": "browserify src/js/app.js > public/app.js",
+    "build:js:watch": "watchify -t babelify src/js/app.js -d -o public/app.js -v",
     "build:sass": "node-sass public/styles/scss/styles.scss public/styles/css/styles.css",
     "build:sass:watch": "node-sass public/styles/scss/styles.scss public/styles/css/styles.css --watch",
     "prestart": "npm install",
     "postinstall": "bower install",
-    "start": "node app",
-    "dev": "supervisor app"
+    "start": "node index",
+    "dev": "supervisor index"
   },
   "repository": {
     "type": "git",
@@ -23,12 +25,20 @@
   },
   "homepage": "https://github.com/jaumereg/final-project#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "bower": "^1.8.0",
     "dotenv": "^4.0.0",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "mongoose": "^4.10.4"
   },
   "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
     "dotenv": "^4.0.0",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "supervisor": "^0.12.0",
+    "watchify": "^3.9.0"
   }
 }

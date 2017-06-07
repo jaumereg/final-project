@@ -19,6 +19,10 @@ const MatchSchema = new Schema ({
        type: String
        
     },
+    duration: {
+       type: String
+       
+    },
     price: {
        type: Number
        

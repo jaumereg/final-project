@@ -1,25 +1,30 @@
-// angular.module('matchApp')
-//     .controller('MainController', function($scope, $location, ApiService, $window) {
+angular.module('matchApp')
+    .controller('ProfileController', function($scope, $location, ApiService) {
 
-//         ApiService.getAllMatches()
-//             .then(matches => $scope.matches = matches)
+        ApiService.getProfile()
+            .then(profile => $scope.profile = profile)
 
-//         $scope.addMatch = function() {
+        // $scope.addMatch = function() {
 
-//             const { location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right } = $scope
+        //     const { location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right } = $scope
 
-//             ApiService.addMatch({ location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right })
-//                 .then(matches => {
-//                     $scope.matches = matches
-//                 })
-//                 $window.location.reload()
+        //     ApiService.addMatch({ location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right })
+        //         .then(matches => {
+        //             $scope.matches = matches
+        //         })
+        //         $window.location.reload()
             
-//         }
+        // }
 
-//         $scope.removeMatch = function(id) {
+        $scope.editProfile = function(id) {
 
-//             ApiService.removeMatch(id)
-//                 .then( $window.location.reload() )
+            const { name, description, image } = $scope
+
+            ApiService.editProfile({ name, description, image }, id)
+                .then(profile => {
+                    $scope.profile = profile
+                })
+                $location.path('/user-profile')
                 
-//         }
-//     })
+        }
+    })

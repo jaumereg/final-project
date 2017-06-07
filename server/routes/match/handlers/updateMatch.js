@@ -2,14 +2,21 @@ const Match = require( __base + 'models/Match')
 
 function updateMatch (req,res) {
   const { id } = req.params
-  const { 
-    // name, description, image 
-  } = req.body
+  const { location, court, date, hour, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right } = req.body
 
   const dataToUpdate = {}
-  // if (name) dataToUpdate.name = name
-  // if (description) dataToUpdate.description = description
-  // if (image) dataToUpdate.image = image
+  if (location) dataToUpdate.location = location
+  if (court) dataToUpdate.court = court
+  if (date) dataToUpdate.date = date
+  if (hour) dataToUpdate.hour = hour
+  if (price) dataToUpdate.price = price
+  if (levelFrom) dataToUpdate.levelFrom = levelFrom
+  if (levelTo) dataToUpdate.levelTo = levelTo
+  if (gender) dataToUpdate.gender = gender
+  if (team1Left) dataToUpdate.team1Left = team1Left
+  if (team1Right) dataToUpdate.team1Right = team1Right
+  if (team2Left) dataToUpdate.team2Left = team2Left
+  if (team2Right) dataToUpdate.team2Right = team2Right
 
   Match.findByIdAndUpdate( id,  dataToUpdate)
     .then( () => res.status(200).json({ msg: `match w/ id ${id} updated properly`}) )

@@ -12,11 +12,11 @@ const MatchSchema = new Schema ({
        
     },
     date: {
-       type: Number
+       type: String
        
     },
     hour: {
-       type: Number
+       type: String
        
     },
     price: {

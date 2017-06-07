@@ -21,5 +21,10 @@ angular.module('matchApp')
       .then( response => response.data )
   }
 
-  return { getAllMatches, addMatch, removeMatch, editMatch }
+  function editProfile( data ) {
+    return $http.put(`/api/profile/${id}`, data)
+      .then( response => response.data )
+  }
+
+  return { getAllMatches, addMatch, removeMatch, editMatch, editProfile }
 })

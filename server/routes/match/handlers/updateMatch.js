@@ -22,7 +22,6 @@ function updateMatch (req,res) {
     .then( () => res.status(200).json({ msg: `match w/ id ${id} updated properly`}) )
     .catch( () => res.status(500).json({ msg: `error updating  match w/ id ${id} `}) )
 
-
 }
 
 module.exports = updateMatch

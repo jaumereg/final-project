@@ -16,7 +16,7 @@
                         </div>
                         <div class="modal-body">
                             <p>Write all match info.</p>
-                            <form ng-submit="addMatch()">
+                            <form ng-submit="addMatch($event)">
                                 <div class="form-group">
                                     <label class="label-court" for="location">Where?</label>
                                     <select ng-model="location" class="form-control" id="location">

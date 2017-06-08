@@ -4,8 +4,8 @@ angular.module('matchApp')
         ApiService.getAllMatches()
             .then(matches => $scope.matches = matches)
 
-        $scope.addMatch = function() {
-
+        $scope.addMatch = function(e) {
+            e.preventDefault()
             const { location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right } = $scope
 
             ApiService.addMatch({ location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right })

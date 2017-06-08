@@ -2,83 +2,96 @@
     <div class="container container-search">
         <h1>Showing 27 results for "bela"</h1>
         <ul class="user-list">
-            <li class="list-unstyled li-user">
+            <li ng-repeat="profile in profiles" class="list-unstyled li-user">
                 <div class="upper-background">
                 </div>
                 <div class="user-container">
                     <a class="links" href="#!/user-profile">
-                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
-                    <h4>Fernando Belasteguin</h4>
-                    <p class="side-position">Left-side player (preferably)</p>
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
-                </div>
-            </li>
-            <li class="list-unstyled li-user">
-                <div class="upper-background">
-                </div>
-                <div class="user-container">
-                    <a class="links" href="#!/user-profile">
-                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
-                    <h4>Fernando Belasteguin</h4>
-                    <p class="side-position">Left-side player (preferably)</p>
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
-                </div>
-            </li>
-            <li class="list-unstyled li-user">
-                <div class="upper-background">
-                </div>
-                <div class="user-container">
-                    <a class="links" href="#!/user-profile">
-                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
-                    <h4>Fernando Belasteguin</h4>
-                    <p class="side-position">Left-side player (preferably)</p>
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
-                </div>
-            </li>
-            <li class="list-unstyled li-user">
-                <div class="upper-background">
-                </div>
-                <div class="user-container">
-                    <a class="links" href="#!/user-profile">
-                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
-                    <h4>Fernando Belasteguin</h4>
-                    <p class="side-position">Left-side player (preferably)</p>
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
-                </div>
-            </li>
-            <li class="list-unstyled li-user">
-                <div class="upper-background">
-                </div>
-                <div class="user-container">
-                    <a class="links" href="#!/user-profile">
-                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
-                    <h4>Fernando Belasteguin</h4>
-                    <p class="side-position">Left-side player (preferably)</p>
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
-                </div>
-            </li>
-            <li class="list-unstyled li-user">
-                <div class="upper-background">
-                </div>
-                <div class="user-container">
-                    <a class="links" href="#!/user-profile">
-                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
-                    <h4>Fernando Belasteguin</h4>
-                    <p class="side-position">Left-side player (preferably)</p>
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
-                </div>
-            </li>
-            <li class="list-unstyled li-user">
-                <div class="upper-background">
-                </div>
-                <div class="user-container">
-                    <a class="links" href="#!/user-profile">
-                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
-                    <h4>Fernando Belasteguin</h4>
+                        <img class="img-responsive user-image" ng-src="{{profile.image}}" width="150px"></a>
+                    <h4>{{profile.name}}</h4>
                     <p class="side-position">Left-side player (preferably)</p>
                     <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
                 </div>
             </li>
         </ul>
+        <!-- <ul class="user-list">
+            <li class="list-unstyled li-user">
+                <div class="upper-background">
+                </div>
+                <div class="user-container">
+                    <a class="links" href="#!/user-profile">
+                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
+                    <h4>Fernando Belasteguin</h4>
+                    <p class="side-position">Left-side player (preferably)</p>
+                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
+                </div>
+            </li>
+            <li class="list-unstyled li-user">
+                <div class="upper-background">
+                </div>
+                <div class="user-container">
+                    <a class="links" href="#!/user-profile">
+                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
+                    <h4>Fernando Belasteguin</h4>
+                    <p class="side-position">Left-side player (preferably)</p>
+                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
+                </div>
+            </li>
+            <li class="list-unstyled li-user">
+                <div class="upper-background">
+                </div>
+                <div class="user-container">
+                    <a class="links" href="#!/user-profile">
+                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
+                    <h4>Fernando Belasteguin</h4>
+                    <p class="side-position">Left-side player (preferably)</p>
+                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
+                </div>
+            </li>
+            <li class="list-unstyled li-user">
+                <div class="upper-background">
+                </div>
+                <div class="user-container">
+                    <a class="links" href="#!/user-profile">
+                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
+                    <h4>Fernando Belasteguin</h4>
+                    <p class="side-position">Left-side player (preferably)</p>
+                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
+                </div>
+            </li>
+            <li class="list-unstyled li-user">
+                <div class="upper-background">
+                </div>
+                <div class="user-container">
+                    <a class="links" href="#!/user-profile">
+                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
+                    <h4>Fernando Belasteguin</h4>
+                    <p class="side-position">Left-side player (preferably)</p>
+                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
+                </div>
+            </li>
+            <li class="list-unstyled li-user">
+                <div class="upper-background">
+                </div>
+                <div class="user-container">
+                    <a class="links" href="#!/user-profile">
+                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
+                    <h4>Fernando Belasteguin</h4>
+                    <p class="side-position">Left-side player (preferably)</p>
+                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
+                </div>
+            </li>
+            <li class="list-unstyled li-user">
+                <div class="upper-background">
+                </div>
+                <div class="user-container">
+                    <a class="links" href="#!/user-profile">
+                        <img class="img-responsive user-image" src="img/bela.jpg" width="150px"></a>
+                    <h4>Fernando Belasteguin</h4>
+                    <p class="side-position">Left-side player (preferably)</p>
+                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Barcelona, Spain</span></p>
+                </div>
+            </li>
+        </ul> -->
     </div>
 </div>

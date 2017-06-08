@@ -166,13 +166,12 @@ $main-background-color: darkslategray;
 // ------------ USER SEARCH ------------ //
 .user-search {
     font-family: 'Raleway', sans-serif;
-    background-color: $main-background-color;
+    background-color: #c6d2e4;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     .container-search {
         background-color: rgba(255, 255, 255, 0.5);
-        box-shadow: 0 0 150px 0 #000;
     }
     @media (min-width: 1200px) {
         .container {
@@ -205,7 +204,7 @@ $main-background-color: darkslategray;
         }
     }
     .upper-background {
-        background: rgba(72, 100, 0, 0.4);
+        background: #a6b5cb;
         border-radius: 5px 5px 0 0;
         width: 203px;
         height: 100px;

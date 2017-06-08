@@ -15,6 +15,10 @@ angular.module('matchApp')
                 templateUrl: '../templates/user-profile.html',
                 controller: 'ProfileController'
             })
+            .when('/user-search', {
+                templateUrl: '../templates/user-search.html',
+                controller: 'SearchController'
+            })
             .when('/edit-profile', {
                 templateUrl: '../templates/edit-profile.html',
                 controller: 'ProfileController'

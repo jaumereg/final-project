@@ -116,13 +116,12 @@
 
 .user-search {
   font-family: 'Raleway', sans-serif;
-  background-color: darkslategray;
+  background-color: #c6d2e4;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
   .user-search .container-search {
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 150px 0 #000; }
+    background-color: rgba(255, 255, 255, 0.5); }
   @media (min-width: 1200px) {
     .user-search .container {
       width: 1000px; } }
@@ -145,7 +144,7 @@
       content: "";
       flex: auto; }
   .user-search .upper-background {
-    background: rgba(72, 100, 0, 0.4);
+    background: #a6b5cb;
     border-radius: 5px 5px 0 0;
     width: 203px;
     height: 100px;

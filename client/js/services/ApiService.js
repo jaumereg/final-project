@@ -22,11 +22,16 @@ angular.module('matchApp')
   }
 
   function getProfile() {
-    return $http.get('/api/profile')
+    return $http.get('/api/profiles')
       .then( response => response.data )
   }
 
-  function editProfile( data ) {
+  function addProfile(data) {
+    return $http.post('/api/profiles', data)
+      .then( response => response.data )
+  }
+
+  function editProfile( data, id ) {
     return $http.put(`/api/profile/${id}`, data)
       .then( response => response.data )
   }

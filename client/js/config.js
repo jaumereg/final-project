@@ -12,7 +12,8 @@ angular.module('matchApp')
                 controller: 'MainController'
             })
             .when('/user-profile', {
-                templateUrl: '../templates/user-profile.html'
+                templateUrl: '../templates/user-profile.html',
+                controller: 'ProfileController'
             })
             .when('/edit-profile', {
                 templateUrl: '../templates/edit-profile.html',

@@ -146,11 +146,12 @@
                     <a href="#" class="user-3 user-empty" data-toggle="tooltip" data-placement="bottom" title="Join match"><i class="fa  fa-plus-square-o"></i><img src="img/blank.jpg"></a>
                     <a href="#" class="user-4 user empty" data-toggle="tooltip" data-placement="bottom" title="Join match"><i class="fa  fa-plus-square-o"></i><img src="img/blank.jpg"></a>
                     <img class="img-responsive" src="img/padel-court2.jpg" width="200px">
-                    <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i><span>{{ match.hour | date : "HH:mm" }}</span></p>
+                    <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i><span>{{ match.hour | date : "HH:mm" }} ({{match.duration}})</span></p>
                     <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i><span>
                     {{ match.date | date : "dd - MM - y" }}</span></p>
                     <p></p>
-                    <p class="users-level"><i class="fa fa-users" aria-hidden="true"></i><span>{{ match.levelFrom }}/{{ match.levelTo }} players</span></p>
+                    <p class="price"><i class="fa fa-eur" aria-hidden="true"></i><span>{{ match.price }}€ ({{match.price/4}} € per player)</span></p>
+                    <p class="users-level"><i class="fa fa-users" aria-hidden="true"></i><span>{{ match.levelFrom }}/{{ match.levelTo }} players ({{match.gender}})</span></p>
                     <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>{{ match.location }}</span></p>
                     <p><a href="" class="btn btn-danger" role="button" ng-click="removeMatch(match._id)">x</a></p>
                 </div>

@@ -1,10 +1,10 @@
 const Profile = require( __base + 'models/Profile')
 
-function getProfile( req, res ) {
+function getAll( req, res ) {
 
-  Match.find()
+  Profile.find()
     .then( profile => res.json(profile) )
 
 }
 
-module.exports = getProfile
+module.exports = getAll

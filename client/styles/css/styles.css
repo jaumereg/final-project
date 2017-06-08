@@ -1,198 +1,117 @@
-.user-profile {
-  font-family: 'Raleway', sans-serif;
-  background: #e9edf2;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  @media (min-width: 1200px) {
-    .user-profile .container {
-      width: 1000px; }
-    .user-profile .left-block-container {
-      width: 27%; }
-    .user-profile .right-block-container {
-      width: 73%; } }
-  .user-profile .mainbody {
-    background: #c6d2e4; }
-  .user-profile .dropdown-toggle {
-    margin-right: 15px;
-    font-size: 16px; }
-  .user-profile .user-name-post {
-    display: inline-block; }
-  .user-profile .panel-title {
-    font-weight: bold;
-    font-size: 30px;
-    display: inline-block;
-    margin-bottom: 10px; }
-  .user-profile .brand_network {
-    color: #9D9D9D;
-    float: left;
-    position: absolute;
-    left: 70px;
-    top: 30px;
-    font-size: smaller; }
-  .user-profile .post-content {
-    margin-top: 27px;
-    margin-left: 10px; }
-  .user-profile .badge-important {
-    margin-top: 3px;
-    margin-left: 25px;
-    position: absolute; }
-  .user-profile .left-block-container,
-  .user-profile .right-block-container {
-    padding: 0; }
-  .user-profile .left-block-container h4 {
-    font-weight: bold;
-    font-size: 16px;
-    border-bottom: 1px solid grey;
-    padding-bottom: 5px; }
-  .user-profile .left-block-container .user-gender {
-    display: inline-block;
-    width: 45%; }
-  .user-profile .left-block-container .user-age {
-    display: inline-block;
-    float: right;
-    width: 45%; }
-  .user-profile .right-block-container {
-    padding-right: 10px; }
-  .user-profile .bottom-user-block {
-    margin-bottom: 10px; }
-  .user-profile .panel-default {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    margin: 10px 0 10px 10px; }
-  .user-profile .user-image {
-    background-color: #032403;
-    border-color: #032403;
-    margin-bottom: 10px; }
-  .user-profile .panel-post {
-    padding-top: 22px;
-    padding-left: 22px; }
+#main .gtco-cover a {
+  color: white; }
 
-.navbar-container {
-  font-family: 'Raleway', sans-serif;
-  background-color: black;
+@media (min-width: 769px) {
+  #main .container {
+    width: 100%; } }
+
+@media (max-width: 991px) {
+  #main #first-name {
+    margin-bottom: 15px; }
+  #main #gender {
+    margin-bottom: 15px; } }
+
+@media (min-width: 991px) {
+  #main .left-input {
+    padding-right: 5px; }
+  #main .right-input {
+    padding-left: 5px; } }
+
+#main #gtco-header .form-wrap .tab-content {
+  background-color: transparent; }
+
+#main .log-in-container {
+  margin: 0;
+  padding: 0; }
+
+#main #page .page-inner {
+  max-width: 100%; }
+
+#main .row-mt-15em {
+  margin-top: 147px; }
+
+#main #gtco-header .mt-text {
+  margin-top: 0; }
+
+#main .form-control {
+  border-radius: 27px;
+  height: 35px;
   border: none;
-  border-radius: 0;
-  margin-bottom: 0; }
-  @media (min-width: 1200px) {
-    .navbar-container .container {
-      width: 1000px; } }
-  @media (max-width: 991px) and (min-width: 743px) {
-    .navbar-container .user-list::after {
-      max-width: 463px !important; } }
-  @media (max-width: 510px) {
-    .navbar-container .user-list::after {
-      max-width: 0px !important; } }
-  .navbar-container h3 {
-    margin: 0px;
-    display: inline-block; }
-  .navbar-container .navbar-brand {
-    padding-top: 12px; }
-  .navbar-container .inner-addon {
-    position: relative; }
-  .navbar-container .glyphicon-search {
-    position: absolute;
-    color: #A9A9A9; }
-  .navbar-container .glyphicon-search:hover {
-    color: black;
-    text-decoration: none; }
-  .navbar-container input {
-    width: 300px;
-    border-radius: 27px;
-    display: inline-block;
-    height: 30px;
-    border: none;
-    margin-top: 6px; }
-  .navbar-container .search-button {
-    border: none;
-    border-radius: 0 27px 27px 0;
-    top: 6px;
-    bottom: 0px; }
-  .navbar-container .navbar-left {
-    margin-top: 4px; }
-  .navbar-container .dropdown-toggle {
-    margin: 0;
-    padding-right: 0; }
+  background-color: rgba(255, 255, 255, 0.6);
+  color: white; }
 
-.user-search {
+#main input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black !important; }
+
+#main #gtco-header .form-wrap .tab-menu li.gtco-first a {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  background: transparent;
+  color: white; }
+
+#main #gtco-header .form-wrap .tab-menu li.gtco-second a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  background: transparent;
+  color: white; }
+
+#main #gtco-header .form-wrap .tab-menu li.active a {
+  color: yellowgreen;
+  text-decoration: underline; }
+
+#main #gtco-header .form-wrap .tab-content {
+  padding-top: 20px; }
+
+#main .label-login {
+  color: white; }
+
+#main #gtco-header .form-wrap {
+  box-sizing: content-box;
+  border: 5px solid #A1A1A1;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 0px;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px; }
+
+#main .btn-success {
+  float: right;
+  border-radius: 27px;
+  background: rgba(0, 179, 0, 0.3);
+  border: none; }
+
+.main-page {
   font-family: 'Raleway', sans-serif;
-  background-color: #c6d2e4;
+  background: white;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover; }
-  .user-search .container-search {
-    background-color: rgba(255, 255, 255, 0.5); }
+  background-size: cover;
+  overflow-y: hidden; }
   @media (min-width: 1200px) {
-    .user-search .container {
+    .main-page .container {
       width: 1000px; } }
-  @media (max-width: 991px) and (min-width: 743px) {
-    .user-search .user-list::after {
-      max-width: 463px !important; } }
-  @media (max-width: 510px) {
-    .user-search .user-list::after {
-      max-width: 0px !important; } }
-  .user-search h1 {
-    margin: 20px 0 20px 0;
-    text-align: center; }
-  .user-search .user-list {
+  .main-page .first-time {
+    background: url("../../img/wallpaper-padel3.png") center center fixed;
+    background-size: cover;
+    height: 93vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 0; }
-    .user-search .user-list:after {
-      max-width: 232px;
-      content: "";
-      flex: auto; }
-  .user-search .upper-background {
-    background: #a6b5cb;
-    border-radius: 5px 5px 0 0;
-    width: 203px;
-    height: 100px;
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 10px;
-    z-index: 0; }
-  .user-search .li-user {
-    transition: 0.1s; }
-    .user-search .li-user:hover {
-      transform: scale(1.02); }
-  .user-search .user-container {
-    display: inline-block;
-    max-width: 212px;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.7); }
-    .user-search .user-container h4 {
-      font-weight: bold;
-      font-size: 17px;
-      border-bottom: 1px solid grey;
-      padding-bottom: 7px; }
-    .user-search .user-container .user-image {
-      border-radius: 270px;
-      margin: 0 auto;
-      position: relative; }
-    .user-search .user-container .side-position {
-      margin: 5px 0;
-      font-size: 13px;
-      text-align: center; }
-    .user-search .user-container .user-image {
-      border: none; }
-    .user-search .user-container .location {
-      font-size: 12px;
-      text-align: center; }
-
-.user-level {
-  font-family: 'Raleway', sans-serif;
-  background-image: url("../../img/main-background.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  @media (min-width: 1200px) {
-    .user-level .container {
-      width: 1000px; } }
-  .user-level h1 {
-    text-align: center; }
+    align-items: center;
+    box-shadow: 0 0 75px 0 #000; }
+    .main-page .first-time h1 {
+      margin-top: 10px; }
+    .main-page .first-time .items-main {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 15px; }
+      .main-page .first-time .items-main .btn {
+        margin: 10px; }
 
 .main-matches {
   font-family: 'Raleway', sans-serif;
@@ -312,117 +231,186 @@
     margin-top: 20px;
     margin-bottom: 20px; }
 
-.main-page {
+.navbar-container {
   font-family: 'Raleway', sans-serif;
-  background: white;
+  background-color: black;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0; }
+  @media (min-width: 1200px) {
+    .navbar-container .container {
+      width: 1000px; } }
+  @media (max-width: 991px) and (min-width: 743px) {
+    .navbar-container .user-list::after {
+      max-width: 463px !important; } }
+  @media (max-width: 510px) {
+    .navbar-container .user-list::after {
+      max-width: 0px !important; } }
+  .navbar-container h3 {
+    margin: 0px;
+    display: inline-block; }
+  .navbar-container .navbar-brand {
+    padding-top: 12px; }
+  .navbar-container .inner-addon {
+    position: relative; }
+  .navbar-container .glyphicon-search {
+    position: absolute;
+    color: #A9A9A9; }
+  .navbar-container .glyphicon-search:hover {
+    color: black;
+    text-decoration: none; }
+  .navbar-container input {
+    width: 300px;
+    border-radius: 27px;
+    display: inline-block;
+    height: 30px;
+    border: none;
+    margin-top: 6px; }
+  .navbar-container .search-button {
+    border: none;
+    border-radius: 0 27px 27px 0;
+    top: 6px;
+    bottom: 0px; }
+  .navbar-container .navbar-left {
+    margin-top: 4px; }
+  .navbar-container .dropdown-toggle {
+    margin: 0;
+    padding-right: 0; }
+
+.user-profile {
+  font-family: 'Raleway', sans-serif;
+  background: #e9edf2;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow-y: hidden; }
+  background-size: cover; }
   @media (min-width: 1200px) {
-    .main-page .container {
+    .user-profile .container {
+      width: 1000px; }
+    .user-profile .left-block-container {
+      width: 27%; }
+    .user-profile .right-block-container {
+      width: 73%; } }
+  .user-profile .mainbody {
+    background: #c6d2e4; }
+  .user-profile .dropdown-toggle {
+    margin-right: 15px;
+    font-size: 16px; }
+  .user-profile .user-name-post {
+    display: inline-block; }
+  .user-profile .panel-title {
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px; }
+  .user-profile .brand_network {
+    color: #9D9D9D;
+    float: left;
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    font-size: smaller; }
+  .user-profile .post-content {
+    margin-top: 27px;
+    margin-left: 10px; }
+  .user-profile .badge-important {
+    margin-top: 3px;
+    margin-left: 25px;
+    position: absolute; }
+  .user-profile .left-block-container,
+  .user-profile .right-block-container {
+    padding: 0; }
+  .user-profile .left-block-container h4 {
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px; }
+  .user-profile .left-block-container .user-gender {
+    display: inline-block;
+    width: 45%; }
+  .user-profile .left-block-container .user-age {
+    display: inline-block;
+    float: right;
+    width: 45%; }
+  .user-profile .right-block-container {
+    padding-right: 10px; }
+  .user-profile .bottom-user-block {
+    margin-bottom: 10px; }
+  .user-profile .panel-default {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    margin: 10px 0 10px 10px; }
+  .user-profile .user-image {
+    background-color: #032403;
+    border-color: #032403;
+    margin-bottom: 10px; }
+  .user-profile .panel-post {
+    padding-top: 22px;
+    padding-left: 22px; }
+
+.user-search {
+  font-family: 'Raleway', sans-serif;
+  background-color: #c6d2e4;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .user-search .container-search {
+    background-color: rgba(255, 255, 255, 0.5); }
+  @media (min-width: 1200px) {
+    .user-search .container {
       width: 1000px; } }
-  .main-page .first-time {
-    background: url("../../img/wallpaper-padel3.png") center center fixed;
-    background-size: cover;
-    height: 93vh;
+  @media (max-width: 991px) and (min-width: 743px) {
+    .user-search .user-list::after {
+      max-width: 463px !important; } }
+  @media (max-width: 510px) {
+    .user-search .user-list::after {
+      max-width: 0px !important; } }
+  .user-search h1 {
+    margin: 20px 0 20px 0;
+    text-align: center; }
+  .user-search .user-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 75px 0 #000; }
-    .main-page .first-time h1 {
-      margin-top: 10px; }
-    .main-page .first-time .items-main {
-      text-align: center;
-      background: rgba(255, 255, 255, 0.5);
-      padding: 15px; }
-      .main-page .first-time .items-main .btn {
-        margin: 10px; }
-
-#main .gtco-cover a {
-  color: white; }
-
-@media (min-width: 769px) {
-  #main .container {
-    width: 100%; } }
-
-@media (max-width: 991px) {
-  #main #first-name {
-    margin-bottom: 15px; }
-  #main #gender {
-    margin-bottom: 15px; } }
-
-@media (min-width: 991px) {
-  #main .left-input {
-    padding-right: 5px; }
-  #main .right-input {
-    padding-left: 5px; } }
-
-#main #gtco-header .form-wrap .tab-content {
-  background-color: transparent; }
-
-#main .log-in-container {
-  margin: 0;
-  padding: 0; }
-
-#main #page .page-inner {
-  max-width: 100%; }
-
-#main .row-mt-15em {
-  margin-top: 147px; }
-
-#main #gtco-header .mt-text {
-  margin-top: 0; }
-
-#main .form-control {
-  border-radius: 27px;
-  height: 35px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: white; }
-
-#main input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: black !important; }
-
-#main #gtco-header .form-wrap .tab-menu li.gtco-first a {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 5px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  background: transparent;
-  color: white; }
-
-#main #gtco-header .form-wrap .tab-menu li.gtco-second a {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 0px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  background: transparent;
-  color: white; }
-
-#main #gtco-header .form-wrap .tab-menu li.active a {
-  color: yellowgreen;
-  text-decoration: underline; }
-
-#main #gtco-header .form-wrap .tab-content {
-  padding-top: 20px; }
-
-#main .label-login {
-  color: white; }
-
-#main #gtco-header .form-wrap {
-  box-sizing: content-box;
-  border: 5px solid #A1A1A1;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin-top: 0px;
-  padding-top: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0px; }
-
-#main .btn-success {
-  float: right;
-  border-radius: 27px;
-  background: rgba(0, 179, 0, 0.3);
-  border: none; }
+    padding: 0; }
+    .user-search .user-list:after {
+      max-width: 232px;
+      content: "";
+      flex: auto; }
+  .user-search .upper-background {
+    background: #a6b5cb;
+    border-radius: 5px 5px 0 0;
+    width: 203px;
+    height: 100px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 0; }
+  .user-search .li-user {
+    transition: 0.1s; }
+    .user-search .li-user:hover {
+      transform: scale(1.02); }
+  .user-search .user-container {
+    display: inline-block;
+    max-width: 212px;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.7); }
+    .user-search .user-container h4 {
+      font-weight: bold;
+      font-size: 17px;
+      border-bottom: 1px solid grey;
+      padding-bottom: 7px; }
+    .user-search .user-container .user-image {
+      border-radius: 270px;
+      margin: 0 auto;
+      position: relative; }
+    .user-search .user-container .side-position {
+      margin: 5px 0;
+      font-size: 13px;
+      text-align: center; }
+    .user-search .user-container .user-image {
+      border: none; }
+    .user-search .user-container .location {
+      font-size: 12px;
+      text-align: center; }

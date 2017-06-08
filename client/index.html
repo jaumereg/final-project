@@ -53,29 +53,6 @@
     <!-- MATCHES PAGE -->
     <script type="text/javascript" src="js/tooltip.js"></script>
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap/clockpicker/bootstrap-clockpicker.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        var date_input = $('input[name="date"]');
-        var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
-        var options = {
-            format: 'dd/mm/yyyy',
-            container: container,
-            todayHighlight: true,
-            autoclose: true
-        };
-        date_input.datepicker(options);
-    })
-    </script>
-    <script type="text/javascript">
-    $('.clockpicker').clockpicker({
-        placement: 'top',
-        align: 'left',
-        donetext: 'Done',
-        autoclose: true
-    });
-    </script>
 
     <!-- /SCRIPTS -->
 </body>

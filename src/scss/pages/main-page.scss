@@ -1,0 +1,33 @@
+.main-page {
+    font-family: 'Raleway', sans-serif;
+    background: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    @media (min-width: 1200px) {
+        .container {
+            width: 1000px;
+        }
+    }
+    .first-time {
+        background: url("../../img/wallpaper-padel3.png") center center fixed;
+        background-size: cover;
+        height: 93vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 75px 0 #000;
+        h1 {
+            margin-top: 10px;
+        }
+        .items-main {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 15px;
+            .btn {
+                margin: 10px;
+            }
+        }
+    }
+}

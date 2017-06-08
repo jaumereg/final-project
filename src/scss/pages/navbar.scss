@@ -1,0 +1,61 @@
+.navbar-container {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+     @media (min-width: 1200px) {
+        .container {
+            width: 1000px;
+        }
+    }
+    @media (max-width: 991px) and (min-width: 743px) {
+        .user-list::after {
+            max-width: 463px !important;
+        }
+    }
+    @media (max-width: 510px) {
+        .user-list::after {
+            max-width: 0px !important;
+        }
+    }
+    h3 {
+        margin: 0px;
+        display: inline-block;
+    }
+    .navbar-brand {
+        padding-top: 12px;
+    }
+    .inner-addon {
+        position: relative;
+    }
+    .glyphicon-search {
+        position: absolute;
+        color: #A9A9A9;
+    }
+    .glyphicon-search:hover {
+        color: black;
+        text-decoration: none;
+    }
+    input {
+        width: 300px;
+        border-radius: 27px;
+        display: inline-block;
+        height: 30px;
+        border: none;
+        margin-top: 6px;
+    }
+    .search-button {
+        border: none;
+        border-radius: 0 27px 27px 0;
+        top: 6px;
+        bottom: 0px;
+    }
+    .navbar-left {
+        margin-top: 4px;
+    }
+    .dropdown-toggle {
+        margin: 0;
+        padding-right: 0;
+    }
+}

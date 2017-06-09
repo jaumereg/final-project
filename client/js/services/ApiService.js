@@ -20,7 +20,7 @@ angular.module('matchApp')
     return $http.put(`/api/match/${id}`, data)
       .then( response => response.data )
   }
-
+  // IN PROGRESS
   function getProfile() {
     return $http.get('/api/profiles')
       .then( response => response.data )

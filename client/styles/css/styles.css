@@ -196,6 +196,12 @@
     .main-matches .match-container p .fa-map-marker {
       margin-left: 14px;
       margin-right: 6px; }
+    .main-matches .match-container .edit-btn, .main-matches .match-container .remove-btn {
+      background: none;
+      border: 1px solid grey;
+      color: grey; }
+      .main-matches .match-container .edit-btn:hover, .main-matches .match-container .remove-btn:hover {
+        background-color: rgba(255, 255, 255, 0.7); }
   .main-matches .user-1 {
     margin-left: 15px;
     margin-top: 58px;

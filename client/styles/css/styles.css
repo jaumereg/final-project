@@ -230,12 +230,30 @@
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px; }
+  .main-matches .modal-content .modal-title {
+    text-align: center; }
+  .main-matches .modal-content h4, .main-matches .modal-content h5 {
+    margin-left: 10px; }
   .main-matches .modal-content .form-group {
     margin: 5px 10px;
     display: inline-block;
     width: 180px; }
-    .main-matches .modal-content .form-group input, .main-matches .modal-content .form-group select {
+    .main-matches .modal-content .form-group input,
+    .main-matches .modal-content .form-group select {
       font-size: 12px; }
+  .main-matches .modal-content .where-group {
+    display: inline-block;
+    width: 200px; }
+  .main-matches .modal-content .when-group {
+    display: inline-block;
+    width: 163px; }
+    .main-matches .modal-content .when-group .form-group {
+      width: 143px; }
+  .main-matches .modal-content .others-group {
+    display: inline-block;
+    width: 147px; }
+    .main-matches .modal-content .others-group .form-group {
+      width: 127px; }
 
 .navbar-container {
   font-family: 'Raleway', sans-serif;

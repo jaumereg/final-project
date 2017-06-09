@@ -114,7 +114,6 @@
     .li-match {
         margin: 5px;
     }
-
     .header-main {
         position: absolute;
         display: inline-block;
@@ -130,7 +129,6 @@
             text-align: center;
         }
     }
-    
     .container {
         padding: 0;
     }
@@ -138,17 +136,42 @@
         display: block;
         margin: 0 auto;
         margin-top: 20px;
-    margin-bottom: 20px;
+        margin-bottom: 20px;
     }
     .modal-content {
+        .modal-title {
+            text-align: center;
+        }
+        h4, h5 {
+            margin-left: 10px;
+        }
         .form-group {
             margin: 5px 10px;
             display: inline-block;
-            width:180px;
-        input, select {
-            font-size: 12px;
+            width: 180px;
+            input,
+            select {
+                font-size: 12px;
+            }
         }
-    }
+        .where-group {
+            display: inline-block;
+            width: 200px;
+        }
+        .when-group {
+            display: inline-block;
+            width: 163px;
+            .form-group {
+                width: 143px;
+            }
+        }
+        .others-group {
+            display: inline-block;
+            width: 147px;
+            .form-group {
+                width: 127px;
+            }
+        }
         // #location, #court, #date, #time, #duration, #price, #levelFrom, #levelTo, #team1-right, #team1-left, #team2-right, #team2-left
         // #court {
         //     width:180px;

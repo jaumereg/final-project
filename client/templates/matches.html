@@ -6,144 +6,9 @@
             <button class="btn btn-success btn-lg button-match" title="Create a new match" data-toggle="modal" data-target="#create-match">
                 <i class="fa fa-bullseye"></i> Create your match!
             </button>
-            <!-- Modal -->
-            <div class="modal fade" id="create-match" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Match creator</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Write all match info.</p>
-                            <form ng-submit="addMatch($event)">
-                                <div class="where-group">
-                                    <div class="form-group">
-                                        <label class="label-court" for="location">Location</label>
-                                        <select ng-model="location" class="form-control" id="location" required ng-init="location='Barcelona, Spain'" value="Barcelona, Spain">
-                                            <option>Barcelona, Spain</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-court" for="court">Club</label>
-                                        <select ng-model="court" class="form-control" id="court" value="A" required>
-                                            <option disabled value="">Choose a club to play</option>
-                                            <option>Club Polo</option>
-                                            <option>Tennis Vallparc</option>
-                                            <option>Club Padel Barcelona</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="when-group">
-                                    <div class="form-group">
-                                        <label class="control-label" for="date">Date</label>
-                                        <input ng-model="date" class="form-control" id="date" type="date" value={{date}}>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-time" for="time">Time</label>
-                                        <input ng-model="hour" class="form-control" type="time" id="time" value={{hour}}>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-duration" for="duration">Duration</label>
-                                        <select ng-model="duration" class="form-control" id="duration" ng-init="duration='1 hour'" value="1 hour">
-                                            <option>1 hour</option>
-                                            <option>1 hour 15 min</option>
-                                            <option>1 hour 30 min</option>
-                                            <option>1 hour 45 min</option>
-                                            <option>2 hours</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="others-group">
-                                    <div class="form-group">
-                                        <label class="label-price" for="price">Price (total)</label>
-                                        <input ng-model="price" type="number" required min="0" step="0.5" class="form-control" id="price">
-                                    </div>
-                                    <h5>Match level</h5>
-                                    <div class="form-group">
-                                        <label class="label-from" for="from">Match level</label>
-                                        <select ng-model="levelFrom" class="form-control" id="from" ng-init="levelFrom='Any'" value="Any">
-                                            <option>Any</option>
-                                            <option>A+</option>
-                                            <option>A</option>
-                                            <option>B+</option>
-                                            <option>B</option>
-                                            <option>C</option>
-                                            <option>D</option>
-                                        </select>
-                                    </div>
-                                    <!-- <div class="form-group">
-                                    <label class="label-to" for="to">To</label>
-                                    <select ng-model="levelTo" class="form-control" id="to">
-                                        <option>A+</option>
-                                        <option>A</option>
-                                        <option>B+</option>
-                                        <option>B</option>
-                                        <option>C</option>
-                                        <option>D</option>
-                                    </select>
-                                </div> -->
-                                    <div class="form-group">
-                                        <label class="label-type" for="type">Type</label>
-                                        <select ng-model="gender" class="form-control" id="type" ng-init="gender='Masculine'" value="Masculine">
-                                            <option>Masculine</option>
-                                            <option>Femenine</option>
-                                            <option>Mixed</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="players-group">
-                                    <h5>Players</h5>
-                                    <h6>Team 1</h6>
-                                    <div class="form-group">
-                                        <label class="label-team1-left" for="team1-left">Left position</label>
-                                        <select ng-model="team1Left" class="form-control" id="team1-left" ng-init="team1Left='Empty'" value="Empty">
-                                            <option>Empty</option>
-                                            <option>Me</option>
-                                            <option>Team mate (male)</option>
-                                            <option>Team mate (female)</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-team1-right" for="team1-right">Right position</label>
-                                        <select ng-model="team1Right" class="form-control" id="team1-right" ng-init="team1Right='Empty'" value="Empty">
-                                            <option>Empty</option>
-                                            <option>Me</option>
-                                            <option>Team mate (male)</option>
-                                            <option>Team mate (female)</option>
-                                        </select>
-                                    </div>
-                                    <h6>Team 2</h6>
-                                    <div class="form-group">
-                                        <label class="label-team2-left" for="team2-left">Left position</label>
-                                        <select ng-model="team2Left" class="form-control" id="team2-left" ng-init="team2Left='Empty'" value="Empty">
-                                            <option>Empty</option>
-                                            <option>Me</option>
-                                            <option>Team mate (male)</option>
-                                            <option>Team mate (female)</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-team2-right" for="team2-right">Right position</label>
-                                        <select ng-model="team2Right" class="form-control" id="team2-right" ng-init="team2Right='Empty'" value="Empty">
-                                            <option>Empty</option>
-                                            <option>Me</option>
-                                            <option>Team mate (male)</option>
-                                            <option>Team mate (female)</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div>
-                                    <button type="submit" class="btn btn-primary"><i class="fa fa-share"></i> Create match!</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Modals -->
+            <div ng-include src="'templates/includes/create-match.html'" ng-controller="MainController"></div>
+            <div ng-include src="'templates/includes/edit-match.html'" ng-controller="MainController"></div>
         </div>
         <div class="title-matches">
             <h2>Today's matches</h2>
@@ -165,7 +30,7 @@
                     <p class="users-level"><i class="fa fa-users" aria-hidden="true"></i><span>Level: {{ match.levelFrom }} ({{match.gender}})</span></p>
                     <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>{{match.location}}</span></p>
                     <p><a style="float: left; margin-right: 20px" href="" class="btn btn-danger" role="button" ng-click="removeMatch(match._id)">Remove</a></p>
-                    <p><a href="" class="btn btn-success" role="button" ng-click="updateMatch(match._id)">Edit</a></p>
+                    <p><a href="" class="btn btn-success" role="button" data-toggle="modal" data-target="#edit-match" ng-click="updateMatch(match._id)">Edit</a></p>
                 </div>
             </li>
         </ul>

@@ -20,13 +20,13 @@
                                 <div class="where-group">
                                     <div class="form-group">
                                         <label class="label-court" for="location">Location</label>
-                                        <select ng-model="location" class="form-control" id="location">
-                                            <option value="">Barcelona, Spain</option>
+                                        <select ng-model="location" class="form-control" id="location" required ng-init="location='Barcelona, Spain'" value="Barcelona, Spain">
+                                            <option>Barcelona, Spain</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label class="label-court" for="court">Club</label>
-                                        <select ng-model="court" class="form-control" id="court" value="A">
+                                        <select ng-model="court" class="form-control" id="court" value="A" required>
                                             <option disabled value="">Choose a club to play</option>
                                             <option>Club Polo</option>
                                             <option>Tennis Vallparc</option>
@@ -41,11 +41,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="label-time" for="time">Time</label>
-                                        <input ng-model="hour" class="form-control" type="time" id="time" name="usr_time">
+                                        <input ng-model="hour" class="form-control" type="time" id="time" value={{hour}}>
                                     </div>
                                     <div class="form-group">
                                         <label class="label-duration" for="duration">Duration</label>
-                                        <select ng-model="duration" class="form-control" id="duration">
+                                        <select ng-model="duration" class="form-control" id="duration" ng-init="duration='1 hour'" value="1 hour">
                                             <option>1 hour</option>
                                             <option>1 hour 15 min</option>
                                             <option>1 hour 30 min</option>
@@ -57,13 +57,13 @@
                                 <div class="others-group">
                                     <div class="form-group">
                                         <label class="label-price" for="price">Price (total)</label>
-                                        <input ng-model="price" type="number" value="0" min="0" step="0.5" class="form-control" id="price">
+                                        <input ng-model="price" type="number" required min="0" step="0.5" class="form-control" id="price">
                                     </div>
                                     <h5>Match level</h5>
                                     <div class="form-group">
                                         <label class="label-from" for="from">Match level</label>
-                                        <select ng-model="levelFrom" class="form-control" id="from">
-                                            <option value="">Doesn't care</option>
+                                        <select ng-model="levelFrom" class="form-control" id="from" ng-init="levelFrom='Any'" value="Any">
+                                            <option>Any</option>
                                             <option>A+</option>
                                             <option>A</option>
                                             <option>B+</option>
@@ -85,8 +85,8 @@
                                 </div> -->
                                     <div class="form-group">
                                         <label class="label-type" for="type">Type</label>
-                                        <select ng-model="gender" class="form-control" id="type">
-                                            <option value="">Masculine</option>
+                                        <select ng-model="gender" class="form-control" id="type" ng-init="gender='Masculine'" value="Masculine">
+                                            <option>Masculine</option>
                                             <option>Femenine</option>
                                             <option>Mixed</option>
                                         </select>
@@ -97,7 +97,7 @@
                                     <h6>Team 1</h6>
                                     <div class="form-group">
                                         <label class="label-team1-left" for="team1-left">Left position</label>
-                                        <select ng-model="team1Left" class="form-control" id="team1-left">
+                                        <select ng-model="team1Left" class="form-control" id="team1-left" ng-init="team1Left='Empty'" value="Empty">
                                             <option>Empty</option>
                                             <option>Me</option>
                                             <option>Team mate (male)</option>
@@ -106,7 +106,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="label-team1-right" for="team1-right">Right position</label>
-                                        <select ng-model="team1Right" class="form-control" id="team1-right">
+                                        <select ng-model="team1Right" class="form-control" id="team1-right" ng-init="team1Right='Empty'" value="Empty">
                                             <option>Empty</option>
                                             <option>Me</option>
                                             <option>Team mate (male)</option>
@@ -116,15 +116,16 @@
                                     <h6>Team 2</h6>
                                     <div class="form-group">
                                         <label class="label-team2-left" for="team2-left">Left position</label>
-                                        <select ng-model="team2Left" class="form-control" id="team2-left">
+                                        <select ng-model="team2Left" class="form-control" id="team2-left" ng-init="team2Left='Empty'" value="Empty">
                                             <option>Empty</option>
+                                            <option>Me</option>
                                             <option>Team mate (male)</option>
                                             <option>Team mate (female)</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label class="label-team2-right" for="team2-right">Right position</label>
-                                        <select ng-model="team2Right" class="form-control" id="team2-right">
+                                        <select ng-model="team2Right" class="form-control" id="team2-right" ng-init="team2Right='Empty'" value="Empty">
                                             <option>Empty</option>
                                             <option>Me</option>
                                             <option>Team mate (male)</option>
@@ -161,9 +162,10 @@
                     {{ match.date | date : "dd - MM - y" }}</span></p>
                     <p></p>
                     <p class="price"><i class="fa fa-eur" aria-hidden="true"></i><span>{{ match.price }}€ ({{match.price/4}} € per player)</span></p>
-                    <p class="users-level"><i class="fa fa-users" aria-hidden="true"></i><span>{{ match.levelFrom }}/{{ match.levelTo }} players ({{match.gender}})</span></p>
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>{{ match.location }}</span></p>
-                    <p><a href="" class="btn btn-danger" role="button" ng-click="removeMatch(match._id)">x</a></p>
+                    <p class="users-level"><i class="fa fa-users" aria-hidden="true"></i><span>Level: {{ match.levelFrom }} ({{match.gender}})</span></p>
+                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>{{match.location}}</span></p>
+                    <p><a style="float: left; margin-right: 20px" href="" class="btn btn-danger" role="button" ng-click="removeMatch(match._id)">Remove</a></p>
+                    <p><a href="" class="btn btn-success" role="button" ng-click="updateMatch(match._id)">Edit</a></p>
                 </div>
             </li>
         </ul>

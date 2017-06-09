@@ -23,6 +23,13 @@ angular.module('matchApp')
                 
         }
 
+        $scope.editMatch = function(id) {
+
+            ApiService.editMatch(id)
+                .then( $window.location.reload() )
+                
+        }
+
         var today = moment().format('YYYY, MM, DD')
         $scope.date = new Date(today)
 

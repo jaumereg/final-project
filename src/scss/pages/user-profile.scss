@@ -1,7 +1,7 @@
 .user-profile {
     font-family: 'Raleway', sans-serif;
     // background-image: url("../../img/wallpaper-user.png");
-    background: #e9edf2;
+    background: $main-background-color;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +33,7 @@
         margin-bottom: 10px;
     }
     .brand_network {
-        color: #9D9D9D;
+        color: #d4d4d4;
         float: left;
         position: absolute;
         left: 70px;

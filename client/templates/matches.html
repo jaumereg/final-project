@@ -17,55 +17,62 @@
                         <div class="modal-body">
                             <p>Write all match info.</p>
                             <form ng-submit="addMatch($event)">
-                                <div class="form-group">
-                                    <label class="label-court" for="location">Where?</label>
-                                    <select ng-model="location" class="form-control" id="location">
-                                        <option>Barcelona, Spain</option>
-                                    </select>
+                                <div class="where-group">
+                                    <div class="form-group">
+                                        <label class="label-court" for="location">Location</label>
+                                        <select ng-model="location" class="form-control" id="location">
+                                            <option value="">Barcelona, Spain</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-court" for="court">Club</label>
+                                        <select ng-model="court" class="form-control" id="court" value="A">
+                                            <option disabled value="">Choose a club to play</option>
+                                            <option>Club Polo</option>
+                                            <option>Tennis Vallparc</option>
+                                            <option>Club Padel Barcelona</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="label-court" for="court">Club</label>
-                                    <select ng-model="court" class="form-control" id="court">
-                                        <option>Club Polo</option>
-                                        <option>Tennis Vallparc</option>
-                                        <option>Club Padel Barcelona</option>
-                                    </select>
+                                <div class="when-group">
+                                    <div class="form-group">
+                                        <label class="control-label" for="date">Date</label>
+                                        <input ng-model="date" class="form-control" id="date" type="date" value={{date}}>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-time" for="time">Time</label>
+                                        <input ng-model="hour" class="form-control" type="time" id="time" name="usr_time">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-duration" for="duration">Duration</label>
+                                        <select ng-model="duration" class="form-control" id="duration">
+                                            <option>1 hour</option>
+                                            <option>1 hour 15 min</option>
+                                            <option>1 hour 30 min</option>
+                                            <option>1 hour 45 min</option>
+                                            <option>2 hours</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="control-label" for="date">Date</label>
-                                    <input ng-model="date" class="form-control" id="date" type="date" />
-                                </div>
-                                <div class="form-group">
-                                    <label class="label-time" for="time">Time</label>
-                                    <input ng-model="hour" class="form-control" type="time" id="time" name="usr_time">
-                                </div>
-                                <div class="form-group">
-                                    <label class="label-duration" for="duration">Duration</label>
-                                    <select ng-model="duration" class="form-control" id="duration">
-                                        <option>1 hour</option>
-                                        <option>1 hour 15 min</option>
-                                        <option>1 hour 30 min</option>
-                                        <option>1 hour 45 min</option>
-                                        <option>2 hours</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label class="label-price" for="price">Price (total)</label>
-                                    <input ng-model="price" type="number" value="0" min="0" step="0.5" class="form-control" id="price">
-                                </div>
-                                <h5>Match level</h5>
-                                <div class="form-group">
-                                    <label class="label-from" for="from">From</label>
-                                    <select ng-model="levelFrom" class="form-control" id="from">
-                                        <option>A+</option>
-                                        <option>A</option>
-                                        <option>B+</option>
-                                        <option>B</option>
-                                        <option>C</option>
-                                        <option>D</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
+                                <div class="others-group">
+                                    <div class="form-group">
+                                        <label class="label-price" for="price">Price (total)</label>
+                                        <input ng-model="price" type="number" value="0" min="0" step="0.5" class="form-control" id="price">
+                                    </div>
+                                    <h5>Match level</h5>
+                                    <div class="form-group">
+                                        <label class="label-from" for="from">Match level</label>
+                                        <select ng-model="levelFrom" class="form-control" id="from">
+                                            <option value="">Doesn't care</option>
+                                            <option>A+</option>
+                                            <option>A</option>
+                                            <option>B+</option>
+                                            <option>B</option>
+                                            <option>C</option>
+                                            <option>D</option>
+                                        </select>
+                                    </div>
+                                    <!-- <div class="form-group">
                                     <label class="label-to" for="to">To</label>
                                     <select ng-model="levelTo" class="form-control" id="to">
                                         <option>A+</option>
@@ -75,52 +82,55 @@
                                         <option>C</option>
                                         <option>D</option>
                                     </select>
+                                </div> -->
+                                    <div class="form-group">
+                                        <label class="label-type" for="type">Type</label>
+                                        <select ng-model="gender" class="form-control" id="type">
+                                            <option value="">Masculine</option>
+                                            <option>Femenine</option>
+                                            <option>Mixed</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="label-type" for="type">Type</label>
-                                    <select ng-model="gender" class="form-control" id="type">
-                                        <option>Masculine</option>
-                                        <option>Femenine</option>
-                                        <option>Mixed</option>
-                                    </select>
-                                </div>
-                                <h5>Players</h5>
-                                <h6>Team 1</h6>
-                                <div class="form-group">
-                                    <label class="label-team1-left" for="team1-left">Left position</label>
-                                    <select ng-model="team1Left" class="form-control" id="team1-left">
-                                        <option>Empty</option>
-                                        <option>Me</option>
-                                        <option>Team mate (male)</option>
-                                        <option>Team mate (female)</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label class="label-team1-right" for="team1-right">Right position</label>
-                                    <select ng-model="team1Right" class="form-control" id="team1-right">
-                                        <option>Empty</option>
-                                        <option>Me</option>
-                                        <option>Team mate (male)</option>
-                                        <option>Team mate (female)</option>
-                                    </select>
-                                </div>
-                                <h6>Team 2</h6>
-                                <div class="form-group">
-                                    <label class="label-team2-left" for="team2-left">Left position</label>
-                                    <select ng-model="team2Left" class="form-control" id="team2-left">
-                                        <option>Empty</option>
-                                        <option>Team mate (male)</option>
-                                        <option>Team mate (female)</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label class="label-team2-right" for="team2-right">Right position</label>
-                                    <select ng-model="team2Right" class="form-control" id="team2-right">
-                                        <option>Empty</option>
-                                        <option>Me</option>
-                                        <option>Team mate (male)</option>
-                                        <option>Team mate (female)</option>
-                                    </select>
+                                <div class="players-group">
+                                    <h5>Players</h5>
+                                    <h6>Team 1</h6>
+                                    <div class="form-group">
+                                        <label class="label-team1-left" for="team1-left">Left position</label>
+                                        <select ng-model="team1Left" class="form-control" id="team1-left">
+                                            <option>Empty</option>
+                                            <option>Me</option>
+                                            <option>Team mate (male)</option>
+                                            <option>Team mate (female)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-team1-right" for="team1-right">Right position</label>
+                                        <select ng-model="team1Right" class="form-control" id="team1-right">
+                                            <option>Empty</option>
+                                            <option>Me</option>
+                                            <option>Team mate (male)</option>
+                                            <option>Team mate (female)</option>
+                                        </select>
+                                    </div>
+                                    <h6>Team 2</h6>
+                                    <div class="form-group">
+                                        <label class="label-team2-left" for="team2-left">Left position</label>
+                                        <select ng-model="team2Left" class="form-control" id="team2-left">
+                                            <option>Empty</option>
+                                            <option>Team mate (male)</option>
+                                            <option>Team mate (female)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-team2-right" for="team2-right">Right position</label>
+                                        <select ng-model="team2Right" class="form-control" id="team2-right">
+                                            <option>Empty</option>
+                                            <option>Me</option>
+                                            <option>Team mate (male)</option>
+                                            <option>Team mate (female)</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div>
                                     <button type="submit" class="btn btn-primary"><i class="fa fa-share"></i> Create match!</button>

@@ -140,4 +140,59 @@
         margin-top: 20px;
     margin-bottom: 20px;
     }
+    .modal-content {
+        .form-group {
+            margin: 5px 10px;
+            display: inline-block;
+            width:180px;
+        input, select {
+            font-size: 12px;
+        }
+    }
+        // #location, #court, #date, #time, #duration, #price, #levelFrom, #levelTo, #team1-right, #team1-left, #team2-right, #team2-left
+        // #court {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #date {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #time {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #duration {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #price {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #levelFrom {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #levelTo {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #team1-left {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #team1-right {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #team2-left {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+        // #team2-right {
+        //     width:180px;
+        //     font-size: 12px;
+        // }
+    }
 }

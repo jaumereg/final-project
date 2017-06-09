@@ -230,6 +230,12 @@
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px; }
+  .main-matches .modal-content .form-group {
+    margin: 5px 10px;
+    display: inline-block;
+    width: 180px; }
+    .main-matches .modal-content .form-group input, .main-matches .modal-content .form-group select {
+      font-size: 12px; }
 
 .navbar-container {
   font-family: 'Raleway', sans-serif;

@@ -50,7 +50,7 @@
 	<![endif]-->
 </head>
 
-<body id="main">
+<body id="main" style="background-color: black">
 <div class="container log-in-container">
     <div class="gtco-loader"></div>
     <div id="page">
@@ -70,7 +70,11 @@
                     </div>
                 </div>
             </nav>
-            <header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(img/padel-dark.jpg)">
+            <header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(img/padel-dark.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    overflow-y: hidden; height:100vh;">
                 <div class="overlay"></div>
                 <div class="gtco-container">
                     <div class="row">
@@ -80,7 +84,8 @@
                                     <span class="intro-text-small">Welcome to PADELGO</span>
                                     <h1>Where padel connections happens.</h1>
                                 </div>
-                                <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+                                <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight" style="
+    margin-right: 30px;">
                                     <div class="form-wrap">
                                         <div class="tab">
                                             <ul class="tab-menu">

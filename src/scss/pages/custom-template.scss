@@ -1,7 +1,4 @@
 #main {
-    .gtco-cover a {
-        color: white;
-    }
     @media (min-width: 769px) {
         .container {
             width: 100%;
@@ -23,6 +20,12 @@
             padding-left: 5px;
         }
     }
+    .gtco-cover a {
+        color: white;
+    }
+    #gtco-header {
+    background: black;
+}
     #gtco-header .form-wrap .tab-content {
         background-color: transparent;
     }

@@ -147,11 +147,23 @@
         margin-bottom: 20px;
     }
     .modal-content {
+        background-color: #f8f8f8;
+        max-width: 632px;
         .modal-title {
             text-align: center;
         }
+        h3 {
+            font-size: 15px;
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+        }
         h4, h5 {
             margin-left: 10px;
+        }
+        .modal-items {
+            display: flex;
+    flex-wrap: wrap;
         }
         .form-group {
             margin: 5px 10px;
@@ -168,16 +180,13 @@
         }
         .when-group {
             display: inline-block;
-            width: 163px;
-            .form-group {
-                width: 143px;
-            }
+            width: 200px;
         }
         .others-group {
             display: inline-block;
-            width: 147px;
+            width: 168px;
             .form-group {
-                width: 127px;
+            width: 150px;                
             }
         }
         // #location, #court, #date, #time, #duration, #price, #levelFrom, #levelTo, #team1-right, #team1-left, #team2-right, #team2-left

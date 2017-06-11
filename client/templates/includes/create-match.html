@@ -8,7 +8,9 @@
             <div class="modal-body">
                 <form ng-submit="addMatch($event)">
                     <div class="form-container">
+                    <div class="modal-items">
                         <div class="where-group">
+                        <h3> WHERE? </h3>
                             <div class="form-group">
                                 <label class="label-court" for="location">Location</label>
                                 <select ng-model="$parent.location" class="form-control" id="location" required ng-init="$parent.location='Barcelona, Spain'" value="Barcelona, Spain">
@@ -26,6 +28,7 @@
                             </div>
                         </div>
                         <div class="when-group">
+                        <h3> WHEN? </h3>
                             <div class="form-group">
                                 <label class="control-label" for="date">Date</label>
                                 <input ng-model="$parent.date" class="form-control" id="date" type="date" value={{date}}>
@@ -46,10 +49,7 @@
                             </div>
                         </div>
                         <div class="others-group">
-                            <div class="form-group">
-                                <label class="label-price" for="price">Price (total)</label>
-                                <input ng-model="$parent.price" type="number" required min="0" step="0.5" class="form-control" id="price">
-                            </div>
+                        <h3> HOW? </h3>
                             <div class="form-group">
                                 <label class="label-from" for="from">Match level</label>
                                 <select ng-model="$parent.levelFrom" class="form-control" id="from" ng-init="$parent.levelFrom='Any'" value="Any">
@@ -62,17 +62,6 @@
                                     <option>D</option>
                                 </select>
                             </div>
-                            <!-- <div class="form-group">
-                                    <label class="label-to" for="to">To</label>
-                                    <select ng-model="levelTo" class="form-control" id="to">
-                                        <option>A+</option>
-                                        <option>A</option>
-                                        <option>B+</option>
-                                        <option>B</option>
-                                        <option>C</option>
-                                        <option>D</option>
-                                    </select>
-                                </div> -->
                             <div class="form-group">
                                 <label class="label-type" for="type">Type</label>
                                 <select ng-model="$parent.gender" class="form-control" id="type" ng-init="$parent.gender='Masculine'" value="Masculine">
@@ -81,8 +70,13 @@
                                     <option>Mixed</option>
                                 </select>
                             </div>
+                            <div class="form-group">
+                                <label class="label-price" for="price">Price in € (total)</label>
+                                <input ng-model="$parent.price" type="number" required min="0" step="0.5" class="form-control" id="price">
+                            </div>
                         </div>
                         <div class="players-group">
+                        <h3> WHO? </h3>
                             <h4><strong>Players</strong></h4>
                             <h5><strong>Team 1</strong></h5>
                             <div class="form-group">
@@ -123,14 +117,12 @@
                                 </select>
                             </div>
                         </div>
+                        </div>
                         <div>
                             <button type="submit" class="btn btn-primary"><i class="fa fa-share"></i> Create match!</button>
                         </div>
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

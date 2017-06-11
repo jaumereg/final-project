@@ -1,58 +1,40 @@
-@media (min-width: 769px) {
-  #main .container {
-    width: 100%; } }
-
-@media (max-width: 991px) {
-  #main #first-name {
-    margin-bottom: 15px; }
-  #main #gender {
-    margin-bottom: 15px; } }
-
-@media (min-width: 991px) {
-  #main .left-input {
-    padding-right: 5px; }
-  #main .right-input {
-    padding-left: 5px; } }
-
-#main .gtco-cover a {
-  color: white; }
-
-#main #gtco-header {
-  background: black; }
-
-#main #gtco-header .form-wrap .tab-content {
-  background-color: transparent; }
-
-#main .log-in-container {
-  margin: 0;
-  padding: 0; }
-
-#main #page .page-inner {
-  max-width: 100%; }
-
-#main .row-mt-15em {
-  margin-top: 147px; }
-
-#main #gtco-header .mt-text {
-  margin-top: 0; }
-
-#main .form-control {
-  border-radius: 27px;
-  height: 35px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: white; }
-
-#main input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: black !important; }
-
-#main #gtco-header .form-wrap .tab-menu li.gtco-first a {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 5px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  background: transparent;
+.main-page {
+  font-family: 'Raleway', sans-serif;
+  background: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden; }
+  @media (min-width: 1200px) {
+    .main-page .container {
+      width: 1000px; } }
+  .main-page .first-time {
+    background: url("../../img/wallpaper-padel3.png") center center fixed;
+    background-size: cover;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 75px 0 #000; }
+    .main-page .first-time h1 {
+      margin-top: 10px; }
+    .main-page .first-time .items-main {
+      text-align: center;
+      border: 5px solid white;
+      color: white;
+      margin: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px; }
+      .main-page .first-time .items-main .btn {
+        margin: 10px;
+        background: none;
+        border: 1px solid white;
+        border-radius: 0px;
+        transition: 0.2s; }
+        .main-page .first-time .items-main .btn:hover {
+          background: rgba(255, 255, 255, 0.2);
+          transform: scale(1.05); }
+ansparent;
   color: white; }
 
 #main #gtco-header .form-wrap .tab-menu li.gtco-second a {
@@ -111,10 +93,20 @@
       margin-top: 10px; }
     .main-page .first-time .items-main {
       text-align: center;
-      background: rgba(255, 255, 255, 0.5);
+      border: 5px solid white;
+      color: white;
+      margin: 10px;
+      background: rgba(255, 255, 255, 0.1);
       padding: 15px; }
       .main-page .first-time .items-main .btn {
-        margin: 10px; }
+        margin: 10px;
+        background: none;
+        border: 1px solid white;
+        border-radius: 0px;
+        transition: 0.2s; }
+        .main-page .first-time .items-main .btn:hover {
+          background: rgba(255, 255, 255, 0.2);
+          transform: scale(1.05); }
 
 .main-matches {
   font-family: 'Raleway', sans-serif;

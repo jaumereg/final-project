@@ -214,7 +214,7 @@
         .main-matches .match-container .navbar-right .dropdown-menu a:hover {
           background-color: lightgrey; }
       .main-matches .match-container .navbar-right #dd1 {
-        color: black; }
+        color: #586D6E; }
     .main-matches .match-container p .fa {
       margin-left: 10px;
       margin-right: 5px; }
@@ -293,6 +293,9 @@
     .main-matches .modal-content .where-group {
       display: inline-block;
       width: 200px; }
+      .main-matches .modal-content .where-group .required-fields {
+        margin-left: 10px;
+        font-size: 11px; }
     .main-matches .modal-content .when-group {
       display: inline-block;
       width: 200px; }

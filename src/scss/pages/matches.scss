@@ -99,7 +99,7 @@
                 }
             }
             #dd1 {
-                color: black;
+                color: #586D6E;
             }
         }
         p .fa {
@@ -173,7 +173,7 @@
         }
         .modal-header {
             background: #50B948;
-            border-radius: 7px 7px 0 0;
+            border-radius: 5px 5px 0 0;
             color: white;
         }
         h3 {
@@ -202,6 +202,10 @@
         .where-group {
             display: inline-block;
             width: 200px;
+            .required-fields {
+                margin-left: 10px;
+                font-size: 11px;
+            }
         }
         .when-group {
             display: inline-block;

@@ -30,15 +30,15 @@
                             </div>
                             <div class="when-group">
                                 <h3> WHEN? </h3>
-                                <!-- <p>Date: {{match.date}}</p>
-                                <p>Date format: {{match.date | date: 'yyyy-MM-dd'}}</p> -->
+                                <!-- <p>Date format: {{match.date | date: 'yyyy-MM-dd'}}</p> -->
                                 <!-- <input class="form-control" id="date" type="date" value="2006-11-27"> -->
                                 <div class="form-group">
                                     <label class="control-label" for="date">Date</label>
                                     <input ng-model="$parent.date" class="form-control" id="date" type="date" value="{{match.date | date: 'yyyy-MM-dd'}}">
                                 </div>
-                                <!-- <p> Hour format: {{match.hour | date : 'HH:mm'}}</p> --> 
                                 <div class="form-group">
+                                <!-- <p> Hour format: {{match.hour | date : 'HH:mm'}}</p> -->
+                                <!-- <input class="form-control" id="time" type="time" value="11:27"> -->
                                     <label class="label-time" for="time">Time</label>
                                     <input ng-model="$parent.date" class="form-control" type="time" id="time" value="{{match.hour | date : 'HH:mm'}}">
                                 </div>

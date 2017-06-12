@@ -21,7 +21,7 @@ function updateMatch (req,res) {
 
   Match.findByIdAndUpdate( id,  dataToUpdate)
     .then( () => res.status(200).json({ msg: `match w/ id ${id} updated properly`}) )
-    .catch( () => res.status(500).json({ msg: `error updating  match w/ id ${id} `}) )
+    .catch( () => res.status(500).json({ msg: `error updating  match w/ id ${id}`}) )
 
 }
 

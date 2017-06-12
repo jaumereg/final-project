@@ -202,7 +202,19 @@
       font-weight: bold;
       text-align: center; }
     .main-matches .match-container .time {
-      margin-top: 10px; }
+      margin-top: 10px;
+      display: inline-block; }
+    .main-matches .match-container .navbar-right {
+      margin-right: 0;
+      margin-top: 7px;
+      font-size: 15px;
+      color: grey; }
+      .main-matches .match-container .navbar-right .dropdown-menu {
+        min-width: 0; }
+        .main-matches .match-container .navbar-right .dropdown-menu a:hover {
+          background-color: lightgrey; }
+      .main-matches .match-container .navbar-right #dd1 {
+        color: black; }
     .main-matches .match-container p .fa {
       margin-left: 10px;
       margin-right: 5px; }
@@ -258,7 +270,7 @@
       text-align: center; }
     .main-matches .modal-content .modal-header {
       background: #50B948;
-      border-radius: 5px 5px 0 0;
+      border-radius: 7px 7px 0 0;
       color: white; }
     .main-matches .modal-content h3 {
       font-size: 15px;

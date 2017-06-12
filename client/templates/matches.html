@@ -23,14 +23,24 @@
                     <a href="#" class="user-4 user empty" data-toggle="tooltip" data-placement="bottom" title="Join match"><i class="fa  fa-plus-square-o"></i><img src="img/blank.jpg"></a>
                     <img class="img-responsive" src="img/padel-court2.jpg" width="200px">
                     <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i><span>{{ match.hour | date : "HH:mm" }} ({{match.duration}})</span></p>
+                     <div class="navbar-right">
+                        <div class="dropdown">
+                            <button class="btn btn-link btn-xs dropdown-toggle " style="text-decoration:none;" type="button" id="dd1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dd1" style="float: right;">
+                                <li><a href="" role="button" data-toggle="modal" data-target="#editMatch_{{ match._id }}"><i class="fa fa-fw fa-edit" aria-hidden="true"></i> Edit</a></li>
+                                <li><a href="" role="button" ng-click="removeMatch(match._id)"><i class="fa fa-fw fa-trash" aria-hidden="true"></i> Delete</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i><span>
                     {{ match.date | date : "dd - MM - y" }}</span></p>
                     <p></p>
                     <p class="price"><i class="fa fa-eur" aria-hidden="true"></i><span>{{ match.price }}€ ({{match.price/4}} € per player)</span></p>
                     <p class="users-level"><i class="fa fa-users" aria-hidden="true"></i><span>Level: {{ match.levelFrom }} ({{match.gender}})</span></p>
                     <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>{{match.location}}</span></p>
-                    <p><a style="float: left; margin-left:20px; margin-right: 20px" href="" class="btn btn-danger remove-btn" role="button" ng-click="removeMatch(match._id)">Remove</a></p>
-                    <p><a href="" class="btn btn-success edit-btn" role="button" data-toggle="modal" data-target="#editMatch_{{ match._id }}">Edit</a></p>
                 </div>
             </li>
         </ul>

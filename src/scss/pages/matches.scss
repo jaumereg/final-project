@@ -83,6 +83,24 @@
         }
         .time {
             margin-top: 10px;
+            display: inline-block;
+        }
+        .navbar-right {
+            margin-right: 0;
+            margin-top: 7px;
+            font-size: 15px;
+            color: grey;
+            .dropdown-menu {
+                min-width: 0;
+                a {
+                    &:hover {
+                        background-color: lightgrey;
+                    }
+                }
+            }
+            #dd1 {
+                color: black;
+            }
         }
         p .fa {
             margin-left: 10px;
@@ -155,7 +173,7 @@
         }
         .modal-header {
             background: #50B948;
-            border-radius: 5px 5px 0 0;
+            border-radius: 7px 7px 0 0;
             color: white;
         }
         h3 {

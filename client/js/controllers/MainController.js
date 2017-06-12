@@ -24,7 +24,6 @@ angular.module('matchApp')
         }
 
         $scope.editMatch = function(id) {
-            console.log('hola')
             const { location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right } = $scope
 
             ApiService.editMatch({ location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right }, id)

@@ -1,125 +1,135 @@
-<div class="modal fade" id="edit-match" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="editMatch_{{ match._id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Match creator</h4>
+                <h4 class="modal-title" id="myModalLabel">EDIT YOUR MATCH</h4>
             </div>
             <div class="modal-body">
                 <form ng-submit="editMatch(match._id)">
                     <div class="form-container">
-                        <div class="where-group">
-                            <div class="form-group">
-                                <label class="label-court" for="location">Location</label>
-                                <select ng-model="$parent.location" class="form-control" id="location" required value="Barcelona, Spain">
-                                    <option>Barcelona, Spain</option>
-                                </select>
+                        <div class="modal-items">
+                            <div class="where-group">
+                                <h3> WHERE? </h3>
+                                <div class="form-group">
+                                    <label class="label-court" for="location">Location</label>
+                                    <select ng-model="$parent.location" class="form-control" id="location" required ng-init="$parent.location='Barcelona, Spain'" value="{{match.location}}">
+                                        <option value="" hidden>{{match.duration}}</option>
+                                        <option>Barcelona, Spain</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-court" for="court">Club</label>
+                                    <select ng-model="$parent.court" class="form-control" id="court" required value="{{match.court}}">
+                                        <option value="" hidden>{{match.court}}</option>
+                                        <option>Club Polo</option>
+                                        <option>Tennis Vallparc</option>
+                                        <option>Club Padel Barcelona</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="label-court" for="court">Club</label>
-                                <select ng-model="$parent.court" class="form-control" id="court" required value="{{match.court}}">
-                                    <option>Choose a club to play</option>
-                                    <option>Club Polo</option>
-                                    <option>Tennis Vallparc</option>
-                                    <option>Club Padel Barcelona</option>
-                                </select>
+                            <div class="when-group">
+                                <h3> WHEN? </h3>
+                                <div class="form-group">
+                                    <label class="control-label" for="date">Date</label>
+                                    <input ng-model="$parent.date" class="form-control" id="date" type="date" value={{match.date}}>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-time" for="time">Time</label>
+                                    <input ng-model="$parent.hour" class="form-control" type="time" id="time" value={{match.hour}}>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-duration" for="duration">Duration</label>
+                                    <select ng-model="$parent.duration" class="form-control" id="duration" value="{{match.duration}}">
+                                        <option value="" hidden>{{match.duration}}</option>
+                                        <option>1 hour</option>
+                                        <option>1 hour 15 min</option>
+                                        <option>1 hour 30 min</option>
+                                        <option>1 hour 45 min</option>
+                                        <option>2 hours</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="when-group">
-                            <div class="form-group">
-                                <label class="control-label" for="date">Date</label>
-                                <input ng-model="$parent.date" class="form-control" id="date" type="date" value={{match.date}}>
+                            <div class="others-group">
+                                <h3> HOW? </h3>
+                                <div class="form-group">
+                                    <label class="label-price" for="price">Price (total)</label>
+                                    <input ng-model="$parent.price" type="number" required min="0" step="0.5" class="form-control" id="price" value="{{match.price}}">
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-from" for="from">Match level</label>
+                                    <select ng-model="$parent.levelFrom" class="form-control" id="from" value="{{match.levelFrom}}">
+                                        <option value="" hidden>{{match.levelFrom}}</option>
+                                        <option>Any</option>
+                                        <option>A+</option>
+                                        <option>A</option>
+                                        <option>B+</option>
+                                        <option>B</option>
+                                        <option>C</option>
+                                        <option>D</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-type" for="type">Type</label>
+                                    <select ng-model="$parent.gender" class="form-control" id="type" value="{{match.gender}}">
+                                        <option value="" hidden>{{match.gender}}</option>
+                                        <option>Masculine</option>
+                                        <option>Femenine</option>
+                                        <option>Mixed</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="label-time" for="time">Time</label>
-                                <input ng-model="$parent.hour" class="form-control" type="time" id="time" value={{match.hour}}>
+                            <div class="players-group">
+                                <h3> WHO? </h3>
+                                <h5 class="team-number"><strong>Team 1</strong></h5>
+                                <div class="form-group">
+                                    <label class="label-team1-left" for="team1-left">Left position</label>
+                                    <select ng-model="$parent.team1Left" class="form-control" id="team1-left" value="{{match.team1Left}}">
+                                        <option value="" hidden>{{match.team1Left}}</option>
+                                        <option>Empty</option>
+                                        <option>Me</option>
+                                        <option>Team mate (male)</option>
+                                        <option>Team mate (female)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-team1-right" for="team1-right">Right position</label>
+                                    <select ng-model="$parent.team1Right" class="form-control" id="team1-right" value="{{match.team1Right}}">
+                                        <option value="" hidden>{{match.team1Right}}</option>
+                                        <option>Empty</option>
+                                        <option>Me</option>
+                                        <option>Team mate (male)</option>
+                                        <option>Team mate (female)</option>
+                                    </select>
+                                </div>
+                                <h5 class="team-number"><strong>Team 2</strong></h5>
+                                <div class="form-group">
+                                    <label class="label-team2-left" for="team2-left">Left position</label>
+                                    <select ng-model="$parent.team2Left" class="form-control" id="team2-left" value="{{match.team2Left}}">
+                                        <option value="" hidden>{{match.team2Left}}</option>
+                                        <option>Empty</option>
+                                        <option>Me</option>
+                                        <option>Team mate (male)</option>
+                                        <option>Team mate (female)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-team2-right" for="team2-right">Right position</label>
+                                    <select ng-model="$parent.team2Right" class="form-control" id="team2-right" value="{{match.team2Right}}">
+                                        <option value="" hidden>{{match.team2Right}}</option>
+                                        <option>Empty</option>
+                                        <option>Me</option>
+                                        <option>Team mate (male)</option>
+                                        <option>Team mate (female)</option>
+                                    </select>
+                                </div>
+                                <div class="submit-modal">
+                                    <button type="submit" class="btn btn-success"><i class="fa fa-edit"></i> Edit Match</button>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="label-duration" for="duration">Duration</label>
-                                <select ng-model="$parent.duration" class="form-control" id="duration" value="{{match.duration}}">
-                                    <option>1 hour</option>
-                                    <option>1 hour 15 min</option>
-                                    <option>1 hour 30 min</option>
-                                    <option>1 hour 45 min</option>
-                                    <option>2 hours</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="others-group">
-                            <div class="form-group">
-                                <label class="label-price" for="price">Price (total)</label>
-                                <input ng-model="$parent.price" type="number" required min="0" step="0.5" class="form-control" id="price" value="{{match.price}}">
-                            </div>
-                            <div class="form-group">
-                                <label class="label-from" for="from">Match level</label>
-                                <select ng-model="$parent.levelFrom" class="form-control" id="from" value="{{match.levelFrom}}">
-                                    <option>Any</option>
-                                    <option>A+</option>
-                                    <option>A</option>
-                                    <option>B+</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="label-type" for="type">Type</label>
-                                <select ng-model="$parent.gender" class="form-control" id="type" value="{{match.location}}">
-                                    <option>Masculine</option>
-                                    <option>Femenine</option>
-                                    <option>Mixed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="players-group">
-                            <h4><strong>Players</strong></h4>
-                            <h5><strong>Team 1</strong></h5>
-                            <div class="form-group">
-                                <label class="label-team1-left" for="team1-left">Left position</label>
-                                <select ng-model="$parent.team1Left" class="form-control" id="team1-left" value="{{match.team1Left}}">
-                                    <option>Empty</option>
-                                    <option>Me</option>
-                                    <option>Team mate (male)</option>
-                                    <option>Team mate (female)</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="label-team1-right" for="team1-right">Right position</label>
-                                <select ng-model="$parent.team1Right" class="form-control" id="team1-right" value="{{match.team1Right}}">
-                                    <option>Empty</option>
-                                    <option>Me</option>
-                                    <option>Team mate (male)</option>
-                                    <option>Team mate (female)</option>
-                                </select>
-                            </div>
-                            <h5><strong>Team 2</strong></h5>
-                            <div class="form-group">
-                                <label class="label-team2-left" for="team2-left">Left position</label>
-                                <select ng-model="$parent.team2Left" class="form-control" id="team2-left" value="{{match.team2Left}}">
-                                    <option>Empty</option>
-                                    <option>Me</option>
-                                    <option>Team mate (male)</option>
-                                    <option>Team mate (female)</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="label-team2-right" for="team2-right">Right position</label>
-                                <select ng-model="$parent.team2Right" class="form-control" id="team2-right" value="{{match.team2Right}}">
-                                    <option>Empty</option>
-                                    <option>Me</option>
-                                    <option>Team mate (male)</option>
-                                    <option>Team mate (female)</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary"><i class="fa fa-share"></i> Edit match!</button>
                         </div>
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

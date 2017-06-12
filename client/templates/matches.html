@@ -8,13 +8,13 @@
             </button>
             <!-- Modals -->
             <div ng-include src="'templates/includes/create-match.html'" ng-controller="MainController"></div>
-            <div ng-include src="'templates/includes/edit-match.html'" ng-controller="MainController"></div>
         </div>
         <div class="title-matches">
             <h2>Today's matches</h2>
         </div>
         <ul class="list-unstyled matches-container">
             <li ng-repeat="match in matches" class="li-match">
+                <div ng-include src="'templates/includes/edit-match.html'" ng-controller="MainController"></div>
                 <div class="match-container">
                     <h4>{{ match.court }}</h4>
                     <a href="#!/user-profile" class="user-1 user-filled" data-toggle="tooltip" title="Pablo Lima"><i class="fa fa-eye"></i><img src="img/lima.jpg"></a>
@@ -30,7 +30,7 @@
                     <p class="users-level"><i class="fa fa-users" aria-hidden="true"></i><span>Level: {{ match.levelFrom }} ({{match.gender}})</span></p>
                     <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>{{match.location}}</span></p>
                     <p><a style="float: left; margin-left:20px; margin-right: 20px" href="" class="btn btn-danger remove-btn" role="button" ng-click="removeMatch(match._id)">Remove</a></p>
-                    <p><a href="" class="btn btn-success edit-btn" role="button" data-toggle="modal" data-target="#edit-match">Edit</a></p>
+                    <p><a href="" class="btn btn-success edit-btn" role="button" data-toggle="modal" data-target="#editMatch_{{ match._id }}">Edit</a></p>
                 </div>
             </li>
         </ul>

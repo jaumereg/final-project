@@ -89,6 +89,16 @@
   background: rgba(0, 179, 0, 0.3);
   border: none; }
 
+.login-form-container {
+  border: 5px solid white;
+  padding: 25px; }
+
+.tab-menu {
+  display: flex;
+  justify-content: space-around; }
+  .tab-menu li {
+    display: inline-block; }
+
 .main-page {
   font-family: 'Raleway', sans-serif;
   background: white;

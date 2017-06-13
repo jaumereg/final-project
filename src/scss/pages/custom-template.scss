@@ -96,3 +96,15 @@
         border: none;
     }
 }
+// NEW SASS
+.login-form-container {
+    border: 5px solid white;
+    padding: 25px;
+}
+.tab-menu {
+    display: flex;
+    justify-content: space-around;
+    li {
+        display: inline-block;
+    }
+}

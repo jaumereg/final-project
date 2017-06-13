@@ -15,6 +15,17 @@ body {
             width: 73%;
         }
     }
+    @media (max-width: 767px) {
+        .left-block-container {
+            margin-right: 10px;
+            .media-body {
+                max-width: 250px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+    }
     .mainbody {
         background: #c6d2e4;
     }

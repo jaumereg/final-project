@@ -185,15 +185,13 @@
     font-size: 27px;
     color: black;
     z-index: 0; }
-  .main-matches .fa-plus-square-o {
+  .main-matches .ionicons {
     position: absolute;
-    right: 20px;
-    top: 17px;
+    right: 23px;
+    top: 16px;
     font-size: 35px;
     color: grey;
     z-index: 2; }
-    .main-matches .fa-plus-square-o:hover {
-      color: black; }
   .main-matches .match-container {
     padding: 5px 15px 5px 15px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -208,7 +206,9 @@
       margin-right: 0;
       margin-top: 7px;
       font-size: 15px;
-      color: grey; }
+      color: grey;
+      display: inline-block;
+      float: right; }
       .main-matches .match-container .navbar-right .dropdown-menu {
         min-width: 0; }
         .main-matches .match-container .navbar-right .dropdown-menu a:hover {
@@ -270,7 +270,7 @@
       text-align: center; }
     .main-matches .modal-content .modal-header {
       background: #50B948;
-      border-radius: 7px 7px 0 0;
+      border-radius: 5px 5px 0 0;
       color: white; }
     .main-matches .modal-content h3 {
       font-size: 15px;
@@ -376,6 +376,13 @@ body {
       width: 27%; }
     .user-profile .right-block-container {
       width: 73%; } }
+  @media (max-width: 767px) {
+    .user-profile .left-block-container {
+      margin-right: 10px; }
+      .user-profile .left-block-container .media-body {
+        max-width: 250px;
+        display: block;
+        margin: 0 auto; } }
   .user-profile .mainbody {
     background: #c6d2e4; }
   .user-profile .dropdown-toggle {

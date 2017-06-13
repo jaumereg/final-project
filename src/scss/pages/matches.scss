@@ -52,6 +52,7 @@
             &:hover {
                 filter: grayscale(75%) blur(3px) opacity(60%);
             }
+
         }
     }
     .fa-eye {
@@ -62,16 +63,13 @@
         color: black;
         z-index: 0;
     }
-    .fa-plus-square-o {
+    .ionicons {
         position: absolute;
-        right: 20px;
-        top: 17px;
+        right: 23px;
+        top: 16px;
         font-size: 35px;
         color: grey;
         z-index: 2;
-        &:hover {
-            color: black;
-        }
     }
     .match-container {
         padding: 5px 15px 5px 15px;
@@ -90,6 +88,8 @@
             margin-top: 7px;
             font-size: 15px;
             color: grey;
+            display: inline-block;
+            float: right;
             .dropdown-menu {
                 min-width: 0;
                 a {

@@ -2,7 +2,8 @@ angular.module('matchApp')
     .config(function($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: '../templates/main-page.html'
+                templateUrl: '../templates/home.html',
+                controller: 'LoginController'
             })
             .when('/main', {
                 templateUrl: '../templates/main-page.html'

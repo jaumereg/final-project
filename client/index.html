@@ -24,7 +24,7 @@
 
 <body>
     <!-- NAVBAR -->
-    <div ng-hide="navbarShown()" ng-include="'templates/includes/navbar.html'"></div>
+    <div ng-hide="section === 'login' || section === 'register' " ng-include="'templates/includes/navbar.html'"></div>
     <!-- /NAVBAR -->
     <!-- CONTENT -->
     <div>
@@ -37,6 +37,7 @@
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-moment/angular-moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-jwt/dist/angular-jwt.min.js"></script>
     <!-- jQuery -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -49,13 +50,19 @@
     <script type="text/javascript" src="js/controllers/ProfileController.js"></script>
     <script type="text/javascript" src="js/controllers/SearchController.js"></script>
     <script type="text/javascript" src="js/controllers/LoginController.js"></script>
+    <script type="text/javascript" src="js/controllers/RegisterController.js"></script>
     <!-- SERVICES/FACTORY -->
     <script type="text/javascript" src="js/services/ApiService.js"></script>
+    <script type="text/javascript" src="js/services/AuthInterceptor.js"></script>
+    <script type="text/javascript" src="js/services/StorageService.js"></script>
+    <script type="text/javascript" src="js/services/AuthService.js"></script>
+
+
     <!-- MATCHES PAGE -->
-    
+
     <!-- Carousel -->
-    
-    <script src="js/template/main.js"></script>
+
+<!--     <script src="js/template/main.js"></script> -->
     <!-- /SCRIPTS -->
 </body>
 

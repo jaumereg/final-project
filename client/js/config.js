@@ -1,9 +1,17 @@
 angular.module('matchApp')
     .config(function($routeProvider, $locationProvider) {
         $routeProvider
-            .when('/', {
-                templateUrl: '../templates/home.html',
+            // .when('/', {
+            //     templateUrl: '../templates/home.html',
+            //     controller: 'LoginController'
+            // })
+            .when('/login', {
+                templateUrl: '../templates/login.html',
                 controller: 'LoginController'
+            })
+            .when('/register', {
+                templateUrl: '../templates/register.html',
+                controller: 'RegisterController'
             })
             .when('/main', {
                 templateUrl: '../templates/main-page.html'
@@ -24,4 +32,5 @@ angular.module('matchApp')
                 templateUrl: '../templates/edit-profile.html',
                 controller: 'ProfileController'
             })
+            .otherwise('/login')
     })

@@ -1,1 +1,1 @@
-angular.module('matchApp', ['ngRoute'])
+angular.module('matchApp', ['ngRoute', 'angular-jwt'])

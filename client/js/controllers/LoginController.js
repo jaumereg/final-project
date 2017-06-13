@@ -1,11 +1,23 @@
 angular.module('matchApp')
-  .controller('LoginController', function($scope, $rootScope, ApiService) {
-    $rootScope.section = "login"
+  .controller('LoginController', function($scope, $rootScope, ApiService, AuthService) {
+  	$rootScope.section = "login"
 
-    function navbarShown () {
+ 		$scope.login = function (event) {
+	    event.preventDefault()
+	    const { username, password } = $scope
 
-      return true
-    
-    }
+	    AuthService.login(username, password)
+					.then(msg => {
+						console.log(msg)
+						//$location.path('/profile')
+					})
+					.catch(console.log)
+	  }
+
+	  // $scope.getData = function () {
+	  //   DataService.getSecretData()
+			// 		.then(data => $scope.message = data.msg)
+		 // }
+
 
   })

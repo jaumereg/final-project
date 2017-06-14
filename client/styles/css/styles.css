@@ -6,7 +6,9 @@
   #main #first-name {
     margin-bottom: 15px; }
   #main #gender {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  #main #gtco-header .mt-text {
+    text-align: center; } }
 
 @media (min-width: 991px) {
   #main .left-input {
@@ -73,6 +75,9 @@
 #main .label-login {
   color: white; }
 
+#main .animate-box {
+  margin-right: 0; }
+
 #main #gtco-header .form-wrap {
   box-sizing: content-box;
   border: 5px solid #A1A1A1;
@@ -91,7 +96,9 @@
 
 .login-form-container {
   border: 5px solid white;
-  padding: 25px; }
+  padding: 25px;
+  max-width: 340px;
+  margin: 0 auto; }
 
 .tab-menu {
   display: flex;

@@ -11,6 +11,9 @@
         #gender {
             margin-bottom: 15px;
         }
+        #gtco-header .mt-text {
+            text-align: center;
+        }
     }
     @media (min-width: 991px) {
         .left-input {
@@ -79,6 +82,9 @@
     .label-login {
         color: white;
     }
+    .animate-box {
+        margin-right: 0;
+    }
     #gtco-header .form-wrap {
         box-sizing: content-box;
         border: 5px solid #A1A1A1;
@@ -100,6 +106,8 @@
 .login-form-container {
     border: 5px solid white;
     padding: 25px;
+    max-width: 340px;
+    margin: 0 auto;
 }
 .tab-menu {
     display: flex;

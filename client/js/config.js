@@ -1,10 +1,10 @@
 angular.module('matchApp')
     .config(function($routeProvider, $locationProvider) {
         $routeProvider
-            // .when('/', {
-            //     templateUrl: '../templates/home.html',
-            //     controller: 'LoginController'
-            // })
+        // .when('/', {
+        //     templateUrl: '../templates/home.html',
+        //     controller: 'LoginController'
+        // })
             .when('/login', {
                 templateUrl: '../templates/login.html',
                 controller: 'LoginController'
@@ -14,7 +14,8 @@ angular.module('matchApp')
                 controller: 'RegisterController'
             })
             .when('/main', {
-                templateUrl: '../templates/main-page.html'
+                templateUrl: '../templates/main-page.html',
+                secure: true
             })
             .when('/matches', {
                 templateUrl: '../templates/matches.html',
@@ -31,6 +32,10 @@ angular.module('matchApp')
             .when('/edit-profile', {
                 templateUrl: '../templates/edit-profile.html',
                 controller: 'ProfileController'
+            })
+            .when('/logout', {
+                template: '<h1>Logging out..</h1>',
+                controller: 'LogoutController'
             })
             .otherwise('/login')
     })

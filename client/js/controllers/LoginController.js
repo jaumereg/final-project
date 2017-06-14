@@ -1,5 +1,5 @@
 angular.module('matchApp')
-  .controller('LoginController', function($scope, $rootScope, ApiService, AuthService) {
+  .controller('LoginController', function($scope, $rootScope, $location, ApiService, AuthService) {
   	$rootScope.section = "login"
 
  		$scope.login = function (event) {
@@ -9,15 +9,15 @@ angular.module('matchApp')
 	    AuthService.login(username, password)
 					.then(msg => {
 						console.log(msg)
-						//$location.path('/profile')
+						$location.path('/main')
 					})
 					.catch(console.log)
 	  }
 
-	  // $scope.getData = function () {
-	  //   DataService.getSecretData()
-			// 		.then(data => $scope.message = data.msg)
-		 // }
+	  $scope.getData = function () {
+	    DataService.getSecretData()
+					.then(data => $scope.message = data.msg)
+		 }
 
 
   })

@@ -1,4 +1,4 @@
-angular.module('mainApp')
+angular.module('matchApp')
 	.factory('DataService', function ($http) {
   	function getSecretData () {
   		return $http.get('/data')

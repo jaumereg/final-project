@@ -9,6 +9,7 @@ angular.module('matchApp')
 	    AuthService.login(username, password)
 					.then(msg => {
 						console.log(msg)
+						$rootScope.section = "main"
 						$location.path('/main')
 					})
 					.catch(console.log)

@@ -29,8 +29,12 @@ angular.module('matchApp')
 
 		function setCredentials( token ) {
 			var tokenPayload = jwtHelper.decodeToken( token )
-      $rootScope.loggedUser = tokenPayload.username;
+      $rootScope.loggedUser = capitalizeUser(tokenPayload.username)
 		}
+
+    function capitalizeUser(nickname) {
+      return nickname.charAt(0).toUpperCase() + nickname.slice(1)
+    }
 
   	return { login, register, isLoggedIn, logout, setCredentials}
 	})

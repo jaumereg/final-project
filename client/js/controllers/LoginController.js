@@ -1,5 +1,5 @@
 angular.module('matchApp')
-  .controller('LoginController', function($scope, $rootScope, $location, ApiService, AuthService) {
+  .controller('LoginController', function($scope, $rootScope, $location, ApiService, AuthService, toastr) {
   	$rootScope.section = "login"
 
  		$scope.login = function (event) {
@@ -9,10 +9,11 @@ angular.module('matchApp')
 	    AuthService.login(username, password)
 					.then(msg => {
 						console.log(msg)
+						toastr.success('Success logging in', 'Hello')
 						$rootScope.section = "main"
 						$location.path('/main')
 					})
-					.catch(console.log)
+					.catch(toastr.error('Wrong Username/Password ', 'Error'))
 	  }
 
 	  $scope.getData = function () {

@@ -1,5 +1,5 @@
 angular.module('matchApp')
-	.controller('RegisterController', function($scope, $rootScope, AuthService) {
+	.controller('RegisterController', function($scope, $rootScope, AuthService, toastr) {
 
 		$rootScope.section = 'register'
 
@@ -8,8 +8,8 @@ angular.module('matchApp')
 			const { username, password } = $scope
 
 			AuthService.register(username, password)
-				.then(console.log)
-				.catch(console.log)
+				.then(toastr.success('Success creating new user', 'Hello'))
+				.catch(toastr.error('Error', 'Error'))
 		}
 
 	})

@@ -1,5 +1,6 @@
 angular.module('matchApp')
-    .controller('MainController', function($scope, $location, ApiService, $window) {
+    .controller('MainController', function($scope, $location, $rootScope, ApiService, $window) {
+        $rootScope.section = "main"
         ApiService.getAllMatches()
             .then(matches => $scope.matches = matches)
 

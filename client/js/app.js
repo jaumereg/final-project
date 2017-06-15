@@ -1,1 +1,1 @@
-angular.module('matchApp', ['ngRoute', 'angular-jwt'])
+angular.module('matchApp', ['ngRoute', 'angular-jwt', 'toastr'])

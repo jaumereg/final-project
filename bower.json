@@ -19,6 +19,7 @@
     "components-font-awesome": "^4.7.0",
     "angular-route": "^1.6.4",
     "angular-moment": "^1.0.1",
-     "angular-jwt": "^0.1.9"
+    "angular-jwt": "^0.1.9",
+    "angular-toastr": "^2.1.1"
   }
 }

@@ -1,0 +1,33 @@
+footer {
+    font-family: 'Raleway', sans-serif;
+    min-height: 40px;
+    ul,
+    li {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style-type: none;
+    }
+    .copyright {
+        min-height: 40px;
+        background-color: #000000;
+    }
+    .copyright-text {
+        float: left;
+    }
+    .copyright p {
+        text-align: left;
+        color: #FFF;
+        padding: 10px 0;
+        margin-bottom: 0;
+    }
+    .made-by {
+        float: right;
+        p {
+            padding: 10px 0;
+            margin-bottom: 0;
+            display: inline-block;
+        }
+    }
+}

@@ -109,6 +109,32 @@
   .tab-menu li {
     display: inline-block; }
 
+footer {
+  font-family: 'Raleway', sans-serif;
+  min-height: 40px; }
+  footer ul,
+  footer li {
+    padding: 0;
+    margin: 0; }
+  footer li {
+    list-style-type: none; }
+  footer .copyright {
+    min-height: 40px;
+    background-color: #000000; }
+  footer .copyright-text {
+    float: left; }
+  footer .copyright p {
+    text-align: left;
+    color: #FFF;
+    padding: 10px 0;
+    margin-bottom: 0; }
+  footer .made-by {
+    float: right; }
+    footer .made-by p {
+      padding: 10px 0;
+      margin-bottom: 0;
+      display: inline-block; }
+
 .main-page {
   font-family: 'Raleway', sans-serif;
   background: white;
@@ -122,7 +148,7 @@
   .main-page .first-time {
     background: url("../../img/wallpaper-padel3.png") center center fixed;
     background-size: cover;
-    height: 93vh;
+    height: 87vh;
     display: flex;
     justify-content: center;
     align-items: center;

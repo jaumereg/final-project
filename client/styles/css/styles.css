@@ -49,12 +49,13 @@ body {
   border-radius: 27px;
   height: 35px;
   border: none;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: white; }
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 14px; }
 
 #main input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: black !important; }
+  color: #494949 !important; }
 
 #main #gtco-header .form-wrap .tab-menu li.gtco-first a {
   border-top-left-radius: 0px;
@@ -106,11 +107,26 @@ body {
 
 .login-form-container {
   font-family: 'Raleway', sans-serif;
-  border: 5px solid white;
+  border: 3px solid rgba(255, 255, 255, 0.75);
   padding: 25px;
   max-width: 340px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.15); }
+  .login-form-container li.active {
+    border-bottom: 3px solid green; }
+  .login-form-container li.gtco-first, .login-form-container li.gtco-second {
+    padding: 0 25px 5px 25px;
+    transition: 0.2s; }
+    .login-form-container li.gtco-first a:hover, .login-form-container li.gtco-second a:hover {
+      color: green !important; }
+  .login-form-container label {
+    font-size: 13px;
+    letter-spacing: 1px; }
+  .login-form-container .login-form-page,
+  .login-form-container .signup-form-page {
+    text-decoration: none;
+    transition: 0.2s;
+    letter-spacing: 4px; }
 
 .tab-menu {
   display: flex;
@@ -163,7 +179,7 @@ footer {
   .main-page .first-time {
     background: url("../../img/wallpaper-padel3.png") center center fixed;
     background-size: cover;
-    height: 87vh;
+    height: 91vh;
     display: flex;
     justify-content: center;
     align-items: center;

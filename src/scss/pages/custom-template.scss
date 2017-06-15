@@ -27,8 +27,8 @@
         color: white;
     }
     #gtco-header {
-    background: black;
-}
+        background: black;
+    }
     #gtco-header .form-wrap .tab-content {
         background-color: transparent;
     }
@@ -49,12 +49,13 @@
         border-radius: 27px;
         height: 35px;
         border: none;
-        background-color: rgba(255, 255, 255, 0.6);
-        color: white;
+        background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 14px;
     }
     input::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
-        color: black !important;
+        color: #494949 !important;
     }
     #gtco-header .form-wrap .tab-menu li.gtco-first a {
         border-top-left-radius: 0px;
@@ -105,15 +106,39 @@
         height: 100vh !important;
     }
 }
+
 // NEW SASS
 .login-form-container {
     font-family: 'Raleway', sans-serif;
-    border: 5px solid white;
+    border: 3px solid rgba(255, 255, 255, 0.75);
     padding: 25px;
     max-width: 340px;
     margin: 0 auto;
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
+    li.active {
+        border-bottom: 3px solid green;
+    }
+    li.gtco-first, li.gtco-second {
+        padding: 0 25px 5px 25px;
+        transition: 0.2s;
+        a {
+            &:hover {
+                color: green !important;
+            }
+        }
+    }
+    label {
+            font-size: 13px;
+            letter-spacing: 1px;
+    }
+    .login-form-page,
+    .signup-form-page {
+        text-decoration: none;
+        transition: 0.2s;
+        letter-spacing: 4px;
+    }
 }
+
 .tab-menu {
     display: flex;
     justify-content: space-around;

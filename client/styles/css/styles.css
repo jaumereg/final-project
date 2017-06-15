@@ -205,15 +205,15 @@ footer {
 
 .main-matches {
   font-family: 'Raleway', sans-serif;
-  background: #bbd7d5;
+  background: #f5f5f5;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
   @media (min-width: 1200px) {
     .main-matches .container {
-      width: 1000px; } }
+      width: 1100px; } }
   .main-matches .main-page-container {
-    background: rgba(255, 255, 255, 0.25); }
+    background: rgba(255, 255, 255, 0); }
   .main-matches h1,
   .main-matches h2 {
     text-align: center;
@@ -319,7 +319,7 @@ footer {
     margin-left: 115px;
     margin-top: 152px; }
   .main-matches .li-match {
-    margin: 5px; }
+    margin: 15px; }
   .main-matches .header-main {
     position: absolute;
     display: inline-block;

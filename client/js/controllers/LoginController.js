@@ -13,7 +13,9 @@ angular.module('matchApp')
 						$rootScope.section = "main"
 						$location.path('/main')
 					})
-					.catch(toastr.error('Wrong Username/Password ', 'Error'))
+					.catch( () => {
+						toastr.error('Wrong Username/Password ', 'Error prova')
+					})
 	  }
 
 	  $scope.getData = function () {

@@ -101,6 +101,9 @@
         background: rgba(0, 179, 0, 0.3);
         border: none;
     }
+    #gtco-header.gtco-cover {
+        height: 100vh !important;
+    }
 }
 // NEW SASS
 .login-form-container {

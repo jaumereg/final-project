@@ -247,7 +247,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   #gtco-header.gtco-cover {
-    height: inherit !important;
     padding: 3em 0 !important;
   }
 }
@@ -513,7 +512,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .gtco-cover.gtco-cover-xs {
-    height: inherit !important;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -527,7 +526,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .gtco-cover.gtco-cover-xs .display-t,
   .gtco-cover.gtco-cover-xs .display-tc {
     padding: 3em 0;
-    height: inherit !important;
+    height: inherit;
   }
 }
 

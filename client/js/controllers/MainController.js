@@ -1,5 +1,5 @@
 angular.module('matchApp')
-    .controller('MainController', function($scope, $location, $rootScope, ApiService, $window) {
+    .controller('MainController', function($scope, $location, $rootScope, ApiService, $window, toastr) {
         $rootScope.section = "main"
         ApiService.getAllMatches()
             .then(matches => $scope.matches = matches)
@@ -11,6 +11,7 @@ angular.module('matchApp')
             ApiService.addMatch({ location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right })
                 .then(matches => {
                     $scope.matches = matches
+                    // toastr.success('Match created successfully', 'Success')
                 })
                 $window.location.reload()
             
@@ -19,7 +20,10 @@ angular.module('matchApp')
         $scope.removeMatch = function(id) {
 
             ApiService.removeMatch(id)
-                .then( $window.location.reload() )
+                .then( () => {
+                    $window.location.reload() 
+                    // toastr.success('Match removed successfully', 'Success')
+                    })
                 
         }
 
@@ -29,6 +33,7 @@ angular.module('matchApp')
             ApiService.editMatch({ location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right }, id)
                 .then(matches => {
                     $scope.matches = matches
+                    // toastr.success('Match created successfully', 'Success')
                 })
                 $window.location.reload()
             

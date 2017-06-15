@@ -94,6 +94,9 @@
   background: rgba(0, 179, 0, 0.3);
   border: none; }
 
+#main #gtco-header.gtco-cover {
+  height: 100vh !important; }
+
 .login-form-container {
   border: 5px solid white;
   padding: 25px;
@@ -181,7 +184,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 270px;
     overflow: hidden;
-    border: 1px solid grey; }
+    border: none; }
     .main-matches .user-1 img,
     .main-matches .user-2 img,
     .main-matches .user-3 img,
@@ -248,12 +251,10 @@
         background-color: rgba(255, 255, 255, 0.7); }
   .main-matches .user-1 {
     margin-left: 15px;
-    margin-top: 58px;
-    border: none; }
+    margin-top: 58px; }
   .main-matches .user-2 {
     margin-left: 115px;
-    margin-top: 58px;
-    border: none; }
+    margin-top: 58px; }
   .main-matches .user-3 {
     margin-left: 15px;
     margin-top: 152px; }

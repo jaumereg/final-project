@@ -43,7 +43,7 @@
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 270px;
         overflow: hidden;
-        border: 1px solid grey;
+        border: none;
         img {
             width: 70px;
             border-radius: 270px;
@@ -123,12 +123,10 @@
     .user-1 {
         margin-left: 15px;
         margin-top: 58px;
-        border: none;
     }
     .user-2 {
         margin-left: 115px;
         margin-top: 58px;
-        border: none;
     }
     .user-3 {
         margin-left: 15px;

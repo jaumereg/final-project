@@ -8,8 +8,12 @@ angular.module('matchApp')
 			const { username, password } = $scope
 
 			AuthService.register(username, password)
-				.then(toastr.success('Success creating new user', 'Hello'))
-				.catch(toastr.error('Error', 'Error'))
+				.then( () => {
+					toastr.success('Success creating new user', 'Hello')
+				})
+				.catch( () => {
+					toastr.error('Error', 'Error')
+				})
 		}
 
 	})

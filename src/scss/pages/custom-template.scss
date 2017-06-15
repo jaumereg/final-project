@@ -107,6 +107,7 @@
 }
 // NEW SASS
 .login-form-container {
+    font-family: 'Raleway', sans-serif;
     border: 5px solid white;
     padding: 25px;
     max-width: 340px;
@@ -116,6 +117,9 @@
 .tab-menu {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 15px;
     li {
         display: inline-block;
     }

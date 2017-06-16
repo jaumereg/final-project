@@ -7,7 +7,9 @@ body {
 
 @media (min-width: 769px) {
   #main .container {
-    width: 100%; } }
+    width: 100%; }
+  #main .row.row-mt-15em {
+    margin-top: 70px; } }
 
 @media (max-width: 991px) {
   #main #first-name {
@@ -22,6 +24,14 @@ body {
     padding-right: 5px; }
   #main .right-input {
     padding-left: 5px; } }
+
+@media (min-width: 372px) and (max-width: 946px) {
+  #main .row.row-mt-15em {
+    margin-top: 70px; } }
+
+@media (max-width: 371px) {
+  #main .row.row-mt-15em {
+    margin-top: 30px; } }
 
 #main .gtco-cover a {
   color: white; }

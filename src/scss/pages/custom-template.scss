@@ -3,6 +3,9 @@
         .container {
             width: 100%;
         }
+        .row.row-mt-15em {
+            margin-top: 70px;
+        }
     }
     @media (max-width: 991px) {
         #first-name {
@@ -21,6 +24,16 @@
         }
         .right-input {
             padding-left: 5px;
+        }
+    }
+    @media (min-width: 372px) and (max-width: 946px) {
+        .row.row-mt-15em {
+            margin-top: 70px;
+        }
+    }
+    @media (max-width: 371px) {
+        .row.row-mt-15em {
+            margin-top: 30px;
         }
     }
     .gtco-cover a {

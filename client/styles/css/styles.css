@@ -7,9 +7,7 @@ body {
 
 @media (min-width: 769px) {
   #main .container {
-    width: 100%; }
-  #main .row.row-mt-15em {
-    margin-top: 70px; } }
+    width: 100%; } }
 
 @media (max-width: 991px) {
   #main #first-name {

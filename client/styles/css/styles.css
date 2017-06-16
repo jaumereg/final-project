@@ -122,6 +122,8 @@ body {
   .login-form-container label {
     font-size: 13px;
     letter-spacing: 1px; }
+  .login-form-container .gtco-logo {
+    font-family: 'Raleway', sans-serif; }
   .login-form-container .login-form-page,
   .login-form-container .signup-form-page {
     text-decoration: none;

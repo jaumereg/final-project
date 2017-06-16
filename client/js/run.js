@@ -9,7 +9,7 @@ angular.module('matchApp')
       $rootScope.$on( "$routeChangeStart", function(event, next, current) {
 
         if (next && next.secure) {
-          console.log("Secured route.")
+          // console.log("Secured route.")
           if ( !AuthService.isLoggedIn() ) {
             $location.path("/login");
           }

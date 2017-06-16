@@ -20,17 +20,14 @@ angular.module('matchApp')
             })
             .when('/user-profile', {
                 templateUrl: '../templates/user-profile.html',
-                controller: 'ProfileController',
                 secure: true
             })
             .when('/user-search', {
                 templateUrl: '../templates/user-search.html',
-                controller: 'SearchController',
                 secure: true
             })
             .when('/edit-profile', {
                 templateUrl: '../templates/edit-profile.html',
-                controller: 'ProfileController',
                 secure: true
             })
             .when('/logout', {

@@ -14,7 +14,7 @@ angular.module('matchApp')
 						$location.path('/main')
 					})
 					.catch( () => {
-						toastr.error('Wrong Username/Password ', 'Error prova')
+						toastr.error('Wrong Username/Password ', 'Error Logging In')
 					})
 	  }
 

@@ -12,7 +12,7 @@ angular.module('matchApp')
 					toastr.success('Success creating new user', 'Hello')
 				})
 				.catch( () => {
-					toastr.error('Error', 'Error')
+					toastr.error('Error creating new user', 'Error')
 				})
 		}
 

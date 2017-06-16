@@ -6,14 +6,14 @@ angular.module('matchApp')
 
         $scope.addMatch = function(e) {
             e.preventDefault()
-            const { location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right } = $scope
-
-            ApiService.addMatch({ location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right })
+            const { location, court, date, hour, duration, price, levelFrom, gender, team1Left, team1Right, team2Left, team2Right } = $scope
+            const data = { location, court, date, hour, duration, price, levelFrom, gender, team1Left, team1Right, team2Left, team2Right }
+            console.log(data)
+            ApiService.addMatch( data )
                 .then(matches => {
                     $scope.matches = matches
-                    // toastr.success('Match created successfully', 'Success')
+                    $window.location.reload()
                 })
-                $window.location.reload()
             
         }
 
@@ -21,28 +21,26 @@ angular.module('matchApp')
 
             ApiService.removeMatch(id)
                 .then( () => {
-                    $window.location.reload() 
-                    // toastr.success('Match removed successfully', 'Success')
+                    $window.location.reload()
                     })
                 
         }
 
         $scope.editMatch = function(id) {
-            const { location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right } = $scope
+            const { location, court, date, hour, duration, price, levelFrom, gender, team1Left, team1Right, team2Left, team2Right } = $scope
             
-            ApiService.editMatch({ location, court, date, hour, duration, price, levelFrom, levelTo, gender, team1Left, team1Right, team2Left, team2Right }, id)
+            ApiService.editMatch({ location, court, date, hour, duration, price, levelFrom, gender, team1Left, team1Right, team2Left, team2Right }, id)
                 .then(matches => {
                     $scope.matches = matches
-                    // toastr.success('Match created successfully', 'Success')
+                    $window.location.reload()
                 })
-                $window.location.reload()
             
         }
 
         var today = moment().format('YYYY, MM, DD')
-        $scope.dates = new Date(today)
+        $rootScope.dates = new Date(today)
 
-        var hour = moment().format('HH')
-        $scope.hours = new Date(0, 0, 0, hour, 0)
+        var hourNow = moment().format('HH')
+        $rootScope.hours = new Date(0, 0, 0, hourNow, 0)
 
     })

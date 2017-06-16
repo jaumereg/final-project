@@ -74,7 +74,7 @@ body {
   color: white; }
 
 #main #gtco-header .form-wrap .tab-menu li.active a {
-  color: yellowgreen;
+  color: #50B948;
   text-decoration: underline; }
 
 #main #gtco-header .form-wrap .tab-content {
@@ -113,12 +113,12 @@ body {
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.15); }
   .login-form-container li.active {
-    border-bottom: 3px solid green; }
+    border-bottom: 3px solid #50B948; }
   .login-form-container li.gtco-first, .login-form-container li.gtco-second {
     padding: 0 25px 5px 25px;
     transition: 0.2s; }
     .login-form-container li.gtco-first a:hover, .login-form-container li.gtco-second a:hover {
-      color: green !important; }
+      color: #50B948 !important; }
   .login-form-container label {
     font-size: 13px;
     letter-spacing: 1px; }
@@ -127,6 +127,10 @@ body {
     text-decoration: none;
     transition: 0.2s;
     letter-spacing: 4px; }
+  .login-form-container .btn-success.submit-button-main {
+    transition: 0.2s; }
+    .login-form-container .btn-success.submit-button-main:hover {
+      background: #50B948 !important; }
 
 .tab-menu {
   display: flex;
@@ -373,7 +377,10 @@ footer {
     display: inline-block;
     float: right;
     margin-top: 50px;
-    margin-right: 100px; }
+    margin-right: 100px;
+    background-color: #50B948; }
+    .main-matches .button-match i.fa-trophy {
+      font-size: 16px; }
   .main-matches .modal-content {
     background-color: #f8f8f8;
     max-width: 632px; }

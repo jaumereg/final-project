@@ -74,7 +74,7 @@
         color: white;
     }
     #gtco-header .form-wrap .tab-menu li.active a {
-        color: yellowgreen;
+        color: #50B948;
         text-decoration: underline;
     }
     #gtco-header .form-wrap .tab-content {
@@ -116,14 +116,14 @@
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.15);
     li.active {
-        border-bottom: 3px solid green;
+        border-bottom: 3px solid #50B948;
     }
     li.gtco-first, li.gtco-second {
         padding: 0 25px 5px 25px;
         transition: 0.2s;
         a {
             &:hover {
-                color: green !important;
+                color: #50B948 !important;
             }
         }
     }
@@ -136,6 +136,12 @@
         text-decoration: none;
         transition: 0.2s;
         letter-spacing: 4px;
+    }
+    .btn-success.submit-button-main {
+        transition: 0.2s;
+        &:hover {
+                background: #50B948 !important;
+        }
     }
 }
 

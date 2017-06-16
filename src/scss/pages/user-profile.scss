@@ -21,19 +21,18 @@
                 margin: 0 auto;
             }
         }
-
     }
     .mainbody {
         background: #f5f5f5;
         .left-user-block {
-        position: relative;
-    bottom: 110px;
-    }
+            position: relative;
+            bottom: 110px;
+        }
         .thumbnail-block {
             background: #445e6b;
-                position: relative;
-    border-radius: 5px 5px 0 0;
-    height: 110px;
+            position: relative;
+            border-radius: 5px 5px 0 0;
+            height: 110px;
         }
     }
     .dropdown-toggle {
@@ -74,8 +73,6 @@
         h4 {
             font-weight: bold;
             font-size: 16px;
-            border-bottom: 1px solid grey;
-            padding-bottom: 5px;
         }
         .user-gender {
             display: inline-block;
@@ -85,6 +82,15 @@
             display: inline-block;
             float: right;
             width: 45%;
+        }
+        .prop-top {
+            margin-top: 0;
+        }
+        .prop-bottom {
+            margin-bottom: 0;
+        }
+        hr {
+            margin: 10px 0 10px 0;
         }
     }
     .right-block-container {
@@ -107,5 +113,4 @@
         padding-top: 22px;
         padding-left: 22px;
     }
-
 }

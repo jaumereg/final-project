@@ -217,6 +217,21 @@ footer {
   @media (max-width: 1019px) and (min-width: 777px) {
     .main-matches .container {
       width: 750px; } }
+  @media (max-width: 1091px) {
+    .main-matches .main-page-container .title-matches {
+      margin-top: 20px;
+      display: block;
+      max-width: 100%;
+      margin-bottom: 20px; }
+      .main-matches .main-page-container .title-matches h2 {
+        text-align: center; }
+      .main-matches .main-page-container .title-matches p {
+        display: block;
+        text-align: center; }
+    .main-matches .main-page-container .btn-lg.button-match {
+      display: block;
+      margin: 0 auto;
+      float: none; } }
   @media (max-width: 766px) {
     .main-matches .matches-container {
       justify-content: center; } }
@@ -322,15 +337,22 @@ footer {
     top: 243px;
     max-width: 469px;
     margin-left: 33px; }
-  .main-matches .title-matches h2 {
-    text-align: center; }
+  .main-matches .title-matches {
+    margin-top: 20px;
+    margin-left: 15px;
+    display: inline-block;
+    max-width: 600px; }
+    .main-matches .title-matches h2 {
+      text-align: start; }
+    .main-matches .title-matches p {
+      display: inline-block; }
   .main-matches .container {
     padding: 0; }
   .main-matches .button-match {
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    display: inline-block;
+    float: right;
+    margin-top: 50px;
+    margin-right: 100px; }
   .main-matches .modal-content {
     background-color: #f8f8f8;
     max-width: 632px; }

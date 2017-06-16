@@ -2,16 +2,21 @@
     <div class="container main-page-container">
         <!-- MODAL -->
         <div class="container">
-            <!-- Button trigger modal -->
-            <button class="btn btn-success btn-lg button-match" title="Create a new match" data-toggle="modal" data-target="#create-match">
-                <i class="fa fa-bullseye"></i> Create your match!
-            </button>
             <!-- Modals -->
             <div ng-include src="'templates/includes/create-match.html'" ng-controller="MainController"></div>
         </div>
+        <div class="header-matches">
         <div class="title-matches">
-            <h2>Today's matches</h2>
+            <h2>Matches</h2>
+            <p>Are you looking to join some matches near to you? Do you want to create a new match?</p>
+            <p>Press the button "Create a new match" or click the "+" symbol to join someone's match</p>
         </div>
+        <!-- Button trigger modal -->
+        <button class="btn btn-success btn-lg button-match" title="Create a new match" data-toggle="modal" data-target="#create-match">
+            <i class="fa fa-bullseye"></i> Create your match!
+        </button>
+        </div>
+        <hr>
         <ul class="list-unstyled matches-container">
             <li ng-repeat="match in matches" class="li-match">
                 <div ng-include src="'templates/includes/edit-match.html'" ng-controller="MainController"></div>

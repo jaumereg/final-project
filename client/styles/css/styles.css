@@ -149,6 +149,9 @@ footer {
   width: 100%;
   height: 40px;
   font-family: 'Quicksand', sans-serif; }
+  @media (min-width: 1200px) {
+    footer .container {
+      width: 1000px; } }
   @media (max-width: 472px) {
     footer .container .copyright-text, footer .container .made-by {
       display: block;
@@ -158,7 +161,7 @@ footer {
       footer .container .copyright-text p, footer .container .made-by p {
         text-align: center; }
     footer .container .made-by {
-      padding-bottom: 10px; } }
+      padding-bottom: 8px; } }
   footer ul,
   footer li {
     padding: 0;
@@ -457,6 +460,12 @@ footer {
     display: inline-block; }
   .navbar-container .navbar-brand {
     padding-top: 12px; }
+    .navbar-container .navbar-brand .brand-sufix {
+      color: #50B948; }
+    .navbar-container .navbar-brand:hover {
+      color: white; }
+      .navbar-container .navbar-brand:hover span {
+        color: yellowgreen; }
   .navbar-container .inner-addon {
     position: relative; }
   .navbar-container .glyphicon-search {

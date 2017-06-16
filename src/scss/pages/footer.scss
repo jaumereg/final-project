@@ -1,4 +1,9 @@
 footer {
+    @media (min-width: 1200px) {
+        .container {
+            width: 1000px;
+        }
+    }
     @media (max-width: 472px) {
         .container .copyright-text, .container .made-by {
             display: block;

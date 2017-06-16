@@ -29,6 +29,15 @@
     }
     .navbar-brand {
         padding-top: 12px;
+        .brand-sufix {
+            color: #50B948;
+        }
+        &:hover {
+            color: white;
+            span {
+                color: yellowgreen;
+            }
+        }
     }
     .inner-addon {
         position: relative;

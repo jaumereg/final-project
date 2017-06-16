@@ -36,11 +36,11 @@
                                 <h3> WHEN? </h3>
                                 <div class="form-group">
                                     <label class="control-label" for="date">Date</label>
-                                    <input ng-model="$parent.date" class="form-control" id="date" type="date" value="{{date}}">
+                                    <input ng-model="$parent.date" class="form-control" id="date" type="date" value="{{dates | date: 'yyyy-MM-dd'}}">
                                 </div>
                                 <div class="form-group">
                                     <label class="label-time" for="time">Time</label>
-                                    <input ng-model="$parent.hour" class="form-control" type="time" id="time" value="{{hour}}">
+                                    <input ng-model="$parent.hour" class="form-control" type="time" id="time" value="{{hours | date : 'HH:mm'}}">
                                 </div>
                                 <div class="form-group">
                                     <label class="label-duration" for="duration">Duration</label>

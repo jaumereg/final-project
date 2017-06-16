@@ -40,9 +40,9 @@ angular.module('matchApp')
         }
 
         var today = moment().format('YYYY, MM, DD')
-        $scope.date = new Date(today)
+        $scope.dates = new Date(today)
 
-        var hours = moment().format('HH')
-        $scope.hour = new Date(0, 0, 0, hours, 0)
+        var hour = moment().format('HH')
+        $scope.hours = new Date(0, 0, 0, hour, 0)
 
     })

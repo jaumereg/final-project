@@ -1,12 +1,14 @@
 const Match = require( __base + 'models/Match')
+const moment = require('moment')
 
 function addMatch( req, res ) {
   let {location, court, date, hour, duration, price, levelFrom, gender, team1Left, team1Right, team2Left, team2Right} = req.body
   if (!date) {
-    date = '16 - 06 - 2017'
+    date = moment(new Date()).format()
   }
   if (!hour) {
-    hour = "17:00"
+    var hourNow = moment().format('HH')
+    hour = moment(new Date(0, 0, 0, hourNow, 0)).format("HH:mm")
   }
   const match = new Match( {location, court, date, hour, duration, price, levelFrom, gender, team1Left, team1Right, team2Left, team2Right} )
   match.save()

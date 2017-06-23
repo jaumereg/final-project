@@ -1,26 +1,30 @@
-<a href="http://www.skylabcoders.com/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/skylab.png" width= "156px"></a>
+<a href="https://www.javascript.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/javascript.png" width= "64px"></a>
+<a href="https://www.w3.org/standards/webdesign/htmlcss"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/html5-css3.png" width= "128px"></a>
+<a href="https://www.ecma-international.org/ecma-262/6.0/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/es6.png" width= "64px"></a>
+<a href="http://sass-lang.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/sass.png" width= "64px"></a>
+<a href="http://getbootstrap.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/bootstrap.png" width= "64px"></a>
+<a href="http://jquery.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/jquery.png" width= "128px"></a>
+<a href="https://angularjs.org/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/angularjs.png" width= "128px"></a>
+<a href="https://nodejs.org/en/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/nodejs.png" width= "128px"></a>
+<a href="https://www.expressjs.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/expressjs.png" width= "128px"></a>
+<a href="https://mlab.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/mongolab.png" width= "128px"></a>
+<a href="https://www.mongodb.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/mongodb.png" width= "128px"></a>
+<a href="https://www.mongoosejs.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/mongoose.png" width= "128px"></a>
+<a href="https://bower.io/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/bower.png" width= "64px"></a>
+<a href="https://www.npmjs.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/npm.png" width= "128px"></a>
+<a href="https://www.passportjs.org/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/passport.png" width= "64px"></a>
+<a href="https://www.sublimetext.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/sublimetext.png" width= "64px"></a>
 
-<a href="https://mlab.com/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/mongolab.png" width= "128px"></a> <a href="https://www.mongodb.com/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/mongodb.png" width= "128px"></a>
-<a href="https://www.javascript.com/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/javascript.png" width= "128px"></a>
-<a href="https://www.w3.org/standards/webdesign/htmlcss"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/html5-css3.png" width= "128px"></a>
-<a href="http://sass-lang.com/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/Sass.png" width= "128px"></a>
-<a href="http://getbootstrap.com/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/Boostrap.png" width= "128px"></a>
-<a href="http://jquery.com/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/jquery_logo.png" width= "128px"></a>
-<a href="https://angularjs.org/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/AngularJS.png" width= "128px"></a>
-<a href="https://bower.io/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/bower.png" width= "128px"></a>
-<a href="https://nodemailer.com"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/Nodemailer.png" width= "128px"></a>
-<a href="https://nodejs.org/en/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/Node.js.png" width= "128px"></a>
-<a href="https://www.npmjs.com/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/npm.png" width= "128px"></a>
-<a href="https://www.sublimetext.com/"><img src="https://github.com/tonimg/Img-lang-programing/blob/master/Sublimetext.png" width= "128px"></a>
 
-
-<a href="http://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" width= "128px"></a>
+<a href="http://standardjs.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/js-standard-style.png" width= "128px"></a>
 
 # [PADEL GO](https://padel-go.herokuapp.com/)
 
-This repo contains the Full Stack project **PADEL GO**.
+This repository contains the Full Stack project **PADEL GO**.
 
-**PADEL GO** is made with **Node.js** and **Express.js** for the part of the server, and the client part is made with **AngularJS**.
+**PADEL GO** is a platform where [Padel](https://en.wikipedia.org/wiki/Padel_(sport)) players can create matches in order to find new users to play with. Padel is a racquet sport played in doubles that is growing a lot in Spain, the main problem is that sometimes you don't find people to play, Padel Go is created to resolve this issue. 
+
+Padel Go is made with **Node.js** and **Express.js** for the server part, and **AngularJS** for the client part.
 
 ## Installation
 
@@ -36,7 +40,7 @@ You need to create an **.env** file in the project root with the following envir
   PORT=3000
   ```
 
-- Mongodb path and database to use:
+- MongoDB path and database to use:
 
   ```
   DB_URI=mongodb://localhost:27017/NAME_DB
@@ -48,7 +52,7 @@ You need to create an **.env** file in the project root with the following envir
   SECRET=XXXXXXXXXXXXXXXXXXXXXX
   ```
 
-### To run the server:
+### To run server:
 
 ```
 $ npm start
@@ -63,12 +67,12 @@ All dependencies will be installed automatically
 
     - angular: 1.6.4
       - angular-route: 1.6.5
+      - angular-moment: 1.0.1
       - angular-jwt: 0.1.9
-      - angular-css: 1.0.8,
-      - angular-sweetalert: 1.1.2,
+      - angular-toastr: 2.1.1
     - bower: 1.8.0,
     - bootstrap: 3.3.5
-    - font-awesome: 4.7.0,
+    - components-font-awesome: 4.7.0,
     - jquery: 3.2.1,
 
 - **Back End**
@@ -77,8 +81,8 @@ All dependencies will be installed automatically
   - express: 4.15.3
     - express-jwt: 5.3.0
   - jsonwebtoken: 7.4.1
-  - mongoose: 4.10.5,
-    - mongoose-simple-random: 0.4.1,
+  - mongoose: 4.10.4,
+  - body-parser: 1.8.0,
   - passport: 0.3.2,
     - passport-jwt: 2.2.1,
     - passport-local: 1.0.0,

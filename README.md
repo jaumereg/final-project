@@ -1,11 +1,12 @@
 <a href="https://www.javascript.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/javascript.png" width= "64px"></a>
 <a href="https://www.w3.org/standards/webdesign/htmlcss"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/html5-css3.png" width= "128px"></a>
+<a href="https://www.w3schools.com/html/html_responsive.asp"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/responsive.png" width= "72px"></a>
 <a href="https://www.ecma-international.org/ecma-262/6.0/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/es6.png" width= "64px"></a>
 <a href="http://sass-lang.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/sass.png" width= "64px"></a>
 <a href="http://getbootstrap.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/bootstrap.png" width= "64px"></a>
 <a href="http://jquery.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/jquery.png" width= "128px"></a>
 <a href="https://angularjs.org/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/angularjs.png" width= "128px"></a>
-<a href="https://nodejs.org/en/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/nodejs.png" width= "128px"></a>
+<a href="https://nodejs.org/en/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/nodejs.png" width= "96px"></a>
 <a href="https://www.expressjs.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/expressjs.png" width= "128px"></a>
 <a href="https://mlab.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/mongolab.png" width= "128px"></a>
 <a href="https://www.mongodb.com/"><img src="https://github.com/jaumereg/img-logos/blob/master/logos/mongodb.png" width= "128px"></a>
